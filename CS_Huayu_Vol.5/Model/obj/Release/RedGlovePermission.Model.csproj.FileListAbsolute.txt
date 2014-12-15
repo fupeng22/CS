@@ -1,0 +1,5 @@
+E:\MyWork\RedGlove\源码\RedGlovePermission.Model\bin\Release\RedGlovePermission.Model.dll
+E:\MyWork\RedGlove\源码\RedGlovePermission.Model\bin\Release\RedGlovePermission.Model.pdb
+E:\MyWork\RedGlove\源码\RedGlovePermission.Model\obj\Release\ResolveAssemblyReference.cache
+E:\MyWork\RedGlove\源码\RedGlovePermission.Model\obj\Release\RedGlovePermission.Model.dll
+E:\MyWork\RedGlove\源码\RedGlovePermission.Model\obj\Release\RedGlovePermission.Model.pdb

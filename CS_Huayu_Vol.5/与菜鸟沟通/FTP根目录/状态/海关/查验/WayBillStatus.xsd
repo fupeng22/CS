@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2011 (http://www.altova.com) by TeaM DJiNN (TeaM DJiNN) -->
+<xs:schema xmlns="http://tempuri.org/XMLSchema1.xsd" xmlns:mstns="http://tempuri.org/XMLSchema1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/XMLSchema1.xsd" elementFormDefault="qualified" id="XMLSchema1">
+	<xs:element name="Manifest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Head">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文名</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SenderID">
+								<xs:annotation>
+									<xs:documentation>发送方代码</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ReceiverID">
+								<xs:annotation>
+									<xs:documentation>接收方代码</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SendTime">
+								<xs:annotation>
+									<xs:documentation>发送时间</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:complexType>
+						<xs:sequence maxOccurs="9999">
+							<xs:element name="Status">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="wbSerialNum" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>主运单号</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="swbSerialNum" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>分运单号</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="swbCheckFlag_Custom" type="xs:int">
+											<xs:annotation>
+												<xs:documentation>查验状态</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

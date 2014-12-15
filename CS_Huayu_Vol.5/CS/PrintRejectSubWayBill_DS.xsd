@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrintRejectSubWayBill_DS" targetNamespace="http://tempuri.org/PrintRejectSubWayBill_DS.xsd" xmlns:mstns="http://tempuri.org/PrintRejectSubWayBill_DS.xsd" xmlns="http://tempuri.org/PrintRejectSubWayBill_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrintRejectSubWayBill_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PrintRejectSubWayBill_DS" msprop:Generator_UserDSName="PrintRejectSubWayBill_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="swbSerialNum" msprop:Generator_ColumnVarNameInTable="columnswbSerialNum" msprop:Generator_ColumnPropNameInRow="swbSerialNum" msprop:Generator_ColumnPropNameInTable="swbSerialNumColumn" msprop:Generator_UserColumnName="swbSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="swbDescription_CHN" msprop:Generator_ColumnVarNameInTable="columnswbDescription_CHN" msprop:Generator_ColumnPropNameInRow="swbDescription_CHN" msprop:Generator_ColumnPropNameInTable="swbDescription_CHNColumn" msprop:Generator_UserColumnName="swbDescription_CHN" type="xs:string" minOccurs="0" />
+              <xs:element name="swbDescription_ENG" msprop:Generator_ColumnVarNameInTable="columnswbDescription_ENG" msprop:Generator_ColumnPropNameInRow="swbDescription_ENG" msprop:Generator_ColumnPropNameInTable="swbDescription_ENGColumn" msprop:Generator_UserColumnName="swbDescription_ENG" type="xs:string" minOccurs="0" />
+              <xs:element name="swbNumber" msprop:Generator_ColumnVarNameInTable="columnswbNumber" msprop:Generator_ColumnPropNameInRow="swbNumber" msprop:Generator_ColumnPropNameInTable="swbNumberColumn" msprop:Generator_UserColumnName="swbNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="RejectDate" msdata:Caption="DetainDate" msprop:Generator_ColumnVarNameInTable="columnRejectDate" msprop:Generator_ColumnPropNameInRow="RejectDate" msprop:Generator_ColumnPropNameInTable="RejectDateColumn" msprop:Generator_UserColumnName="RejectDate" type="xs:string" minOccurs="0" />
+              <xs:element name="swbWeight" msprop:Generator_ColumnVarNameInTable="columnswbWeight" msprop:Generator_ColumnPropNameInRow="swbWeight" msprop:Generator_ColumnPropNameInTable="swbWeightColumn" msprop:Generator_UserColumnName="swbWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" msprop:Generator_UserColumnName="Operator" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

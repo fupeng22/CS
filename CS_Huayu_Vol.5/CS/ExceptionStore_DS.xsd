@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExceptionStore_DS" targetNamespace="http://tempuri.org/ExceptionStore_DS.xsd" xmlns:mstns="http://tempuri.org/ExceptionStore_DS.xsd" xmlns="http://tempuri.org/ExceptionStore_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExceptionStore_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ExceptionStore_DS" msprop:Generator_UserDSName="ExceptionStore_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wbStorageDate" msprop:Generator_ColumnVarNameInTable="columnwbStorageDate" msprop:Generator_ColumnPropNameInRow="wbStorageDate" msprop:Generator_ColumnPropNameInTable="wbStorageDateColumn" msprop:Generator_UserColumnName="wbStorageDate" type="xs:string" minOccurs="0" />
+              <xs:element name="operateDate" msprop:Generator_ColumnVarNameInTable="columnoperateDate" msprop:Generator_ColumnPropNameInRow="operateDate" msprop:Generator_ColumnPropNameInTable="operateDateColumn" msprop:Generator_UserColumnName="operateDate" type="xs:string" minOccurs="0" />
+              <xs:element name="wbCompany" msprop:Generator_ColumnVarNameInTable="columnwbCompany" msprop:Generator_ColumnPropNameInRow="wbCompany" msprop:Generator_ColumnPropNameInTable="wbCompanyColumn" msprop:Generator_UserColumnName="wbCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="Handler" msprop:Generator_ColumnVarNameInTable="columnHandler" msprop:Generator_ColumnPropNameInRow="Handler" msprop:Generator_ColumnPropNameInTable="HandlerColumn" msprop:Generator_UserColumnName="Handler" type="xs:string" minOccurs="0" />
+              <xs:element name="wbSerialNum" msprop:Generator_ColumnVarNameInTable="columnwbSerialNum" msprop:Generator_ColumnPropNameInRow="wbSerialNum" msprop:Generator_ColumnPropNameInTable="wbSerialNumColumn" msprop:Generator_UserColumnName="wbSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionStatus" msprop:Generator_ColumnVarNameInTable="columnExceptionStatus" msprop:Generator_ColumnPropNameInRow="ExceptionStatus" msprop:Generator_ColumnPropNameInTable="ExceptionStatusColumn" msprop:Generator_UserColumnName="ExceptionStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="swbSerialNum" msprop:Generator_ColumnVarNameInTable="columnswbSerialNum" msprop:Generator_ColumnPropNameInRow="swbSerialNum" msprop:Generator_ColumnPropNameInTable="swbSerialNumColumn" msprop:Generator_UserColumnName="swbSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusDecription" msprop:Generator_ColumnVarNameInTable="columnStatusDecription" msprop:Generator_ColumnPropNameInRow="StatusDecription" msprop:Generator_ColumnPropNameInTable="StatusDecriptionColumn" msprop:Generator_UserColumnName="StatusDecription" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionStatusDescription" msprop:Generator_ColumnVarNameInTable="columnExceptionStatusDescription" msprop:Generator_ColumnPropNameInRow="ExceptionStatusDescription" msprop:Generator_ColumnPropNameInTable="ExceptionStatusDescriptionColumn" msprop:Generator_UserColumnName="ExceptionStatusDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionDescription" msprop:Generator_ColumnVarNameInTable="columnExceptionDescription" msprop:Generator_ColumnPropNameInRow="ExceptionDescription" msprop:Generator_ColumnPropNameInTable="ExceptionDescriptionColumn" msprop:Generator_UserColumnName="ExceptionDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:string" minOccurs="0" />
+              <xs:element name="wbID" msprop:Generator_ColumnVarNameInTable="columnwbID" msprop:Generator_ColumnPropNameInRow="wbID" msprop:Generator_ColumnPropNameInTable="wbIDColumn" msprop:Generator_UserColumnName="wbID" type="xs:string" minOccurs="0" />
+              <xs:element name="swbID" msprop:Generator_ColumnVarNameInTable="columnswbID" msprop:Generator_ColumnPropNameInRow="swbID" msprop:Generator_ColumnPropNameInTable="swbIDColumn" msprop:Generator_UserColumnName="swbID" type="xs:string" minOccurs="0" />
+              <xs:element name="HandleDescription" msprop:Generator_ColumnVarNameInTable="columnHandleDescription" msprop:Generator_ColumnPropNameInRow="HandleDescription" msprop:Generator_ColumnPropNameInTable="HandleDescriptionColumn" msprop:Generator_UserColumnName="HandleDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="HandleDate" msprop:Generator_ColumnVarNameInTable="columnHandleDate" msprop:Generator_ColumnPropNameInRow="HandleDate" msprop:Generator_ColumnPropNameInTable="HandleDateColumn" msprop:Generator_UserColumnName="HandleDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" msprop:Generator_UserColumnName="Operator" type="xs:string" minOccurs="0" />
+              <xs:element name="WbfID" msprop:Generator_ColumnVarNameInTable="columnWbfID" msprop:Generator_ColumnPropNameInRow="WbfID" msprop:Generator_ColumnPropNameInTable="WbfIDColumn" msprop:Generator_UserColumnName="WbfID" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionTypeDescription" msprop:Generator_ColumnVarNameInTable="columnExceptionTypeDescription" msprop:Generator_ColumnPropNameInRow="ExceptionTypeDescription" msprop:Generator_ColumnPropNameInTable="ExceptionTypeDescriptionColumn" msprop:Generator_UserColumnName="ExceptionTypeDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionType" msprop:Generator_ColumnVarNameInTable="columnExceptionType" msprop:Generator_ColumnPropNameInRow="ExceptionType" msprop:Generator_ColumnPropNameInTable="ExceptionTypeColumn" msprop:Generator_UserColumnName="ExceptionType" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionOperator" msprop:Generator_ColumnVarNameInTable="columnExceptionOperator" msprop:Generator_ColumnPropNameInRow="ExceptionOperator" msprop:Generator_ColumnPropNameInTable="ExceptionOperatorColumn" msprop:Generator_UserColumnName="ExceptionOperator" type="xs:string" minOccurs="0" />
+              <xs:element name="ExceptionDate" msprop:Generator_ColumnVarNameInTable="columnExceptionDate" msprop:Generator_ColumnPropNameInRow="ExceptionDate" msprop:Generator_ColumnPropNameInTable="ExceptionDateColumn" msprop:Generator_UserColumnName="ExceptionDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

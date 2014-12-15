@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Administrator (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="MessageID" final=" ">
+		<xs:annotation>
+			<xs:documentation>报文编号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BusinessType">
+		<xs:annotation>
+			<xs:documentation>报文业务类型</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Sender">
+		<xs:annotation>
+			<xs:documentation>发送方</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="4"/>
+			<xs:pattern value="[0-9]{4}"/>
+			<xs:enumeration value="02"/>
+			<xs:enumeration value="01"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ReceiverID">
+		<xs:annotation>
+			<xs:documentation>接受方代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="4"/>
+			<xs:pattern value="[0-9]{4}"/>
+			<xs:enumeration value="02"/>
+			<xs:enumeration value="01"/>
+			<!-- 01 邮局 ，02 海关-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SendTime">
+		<xs:annotation>
+			<xs:documentation>发送时间</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="8"/>
+			<xs:maxLength value="17"/>
+			<xs:pattern value="((((1[6-9]|[2-9]\d)\d{2})(0[13578]|1[02])(0[1-9]|[12]\d|3[01]))|(((1[6-9]|[2-9]\d)\d{2})(0[13456789]|1[012])(0[1-9]|[12]\d|30))|(((1[6-9]|[2-9]\d)\d{2})02(0[1-9]|1\d|2[0-8]))|(((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))0229))((20|21|22|23|[0-1]\d)[0-5]\d([0-5]\d\d{3}|086|[0-5]\d))"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BillNo">
+		<xs:annotation>
+			<xs:documentation>总运单号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="32"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SepBillNo">
+		<xs:annotation>
+			<xs:documentation>分运单号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="32"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--日期时间格式，精确到秒，格式为 YYYYMMDDhhmmss。-->
+	<xs:simpleType name="DateTimeWithSecond">
+		<xs:annotation>
+			<xs:documentation>日期时间 精确到秒 格式为YYYYMMDDhhmmss</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="8"/>
+			<xs:maxLength value="17"/>
+			<xs:pattern value="((((1[6-9]|[2-9]\d)\d{2})(0[13578]|1[02])(0[1-9]|[12]\d|3[01]))|(((1[6-9]|[2-9]\d)\d{2})(0[13456789]|1[012])(0[1-9]|[12]\d|30))|(((1[6-9]|[2-9]\d)\d{2})02(0[1-9]|1\d|2[0-8]))|(((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))0229))((20|21|22|23|[0-1]\d)[0-5]\d([0-5]\d\d{3}|086|[0-5]\d))"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TransportContractDocumentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>015 Transport document number 总提（运）单号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--015 Transport document number 总提（运）单号-->
+		<!--Reference number to identify a document evidencing a transport contract.-->
+		<!--水运方式填写总提单号（Master B/L）-->
+		<!--空运方式填写总运单号（Master Air Waybill）-->
+		<!--理货报告：水运方式如果件杂货进出境溢装、溢卸（没有对应提单号），提单号为“FDCA +IMO号+航次”-->
+		<!--理货报告：空运方式进境理货为有货无运单号的，总运单号填写“FDCA+航班号+实际到达日期”-->
+		<!--填写内容必须由大写字母与数字组成，不能包括下划线“_”。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流 -->
+	</xs:simpleType>
+	<xs:simpleType name="AssociatedTransportDocumentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>189 Associated transport document number 分提（运）单号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="[A-Za-z0-9]+[_*/]{0,1}[A-Za-z0-9]+"/>
+		</xs:restriction>
+		<!--189 Associated transport document number 分提（运）单号-->
+		<!--Previous transport document number or other assigned reference number associated with the shipment.Applies to secondary cargo document report only.-->
+		<!--水运方式：由无船承运人承运的货物或集运分拨货物（Consolidation Cargo）必须填写分提单号（House B/L）。-->
+		<!--空运方式：收（发）货人为货运代理的填写分运单号（House Air Waybill）。-->
+		<!--理货报告：水运方式如果件杂货进出境溢装、溢卸（没有对应提单号），提单号为“FDCA +IMO号+航次+顺序号”-->
+		<!--理货报告：空运方式进境理货为有货无运单号的，分运单号填写“FDCA+航班号+实际到达日期+顺序号”-->
+		<!--填写内容必须由大写字母与字母组成，不得出现除“_”、“*”、“/”之外的其他特殊字符，特殊字符在分提（运）单号中最多出现一次，并不得作为分提（运）单号第一个字符。-->
+		<!--分提（运）单在一个船次中不能重复。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsigneeNameText">
+		<xs:annotation>
+			<xs:documentation>051 Consignee name 收货人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--051 Consignee name 收货人名称-->
+		<!--Name [and address] of party to which goods are consigned.-->
+		<!--填写实际收货人名称；如收货人为自然人，填写实际收货人具体人名或填写“××公司+实际收货人具体人名”；-->
+		<!--如收货人为“凭指令确定收货人（TO ORDER）”必须填写通知人数据元内容。-->
+		<!--最大长度：70位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="GoodsReceiptPlaceNameText">
+		<xs:annotation>
+			<xs:documentation>054 Goods receipt place 收货地点名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--054 Goods receipt place 收货地点名称-->
+		<!--Name of the place at which the goods have been or are to be received by the consignee.-->
+		<!--填写收货地点名称，是指承运人与收货人交接货物的地点（Place of receipt）名称。-->
+		<!--收货地点代码和收货地点名称可任填其一。-->
+		<!--最大长度：70位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignorNameText">
+		<xs:annotation>
+			<xs:documentation>071 consignor name 发货人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--071 consignor name 发货人名称-->
+		<!--Name [and address] of the party consigning goods as stipulated in the transport contract by the party ordering transport.-->
+		<!--填写发货人名称。-->
+		<!--如发货人为自然人，填写发货人具体人名或填写“××公司+发货人具体人名”。-->
+		<!--最大长度：70位-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="BorderTransportMeansNameText">
+		<xs:annotation>
+			<xs:documentation>160 Identification of means of transport crossing the border 运输工具名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--160 Identification of means of transport crossing the border 运输工具名称-->
+		<!--Name to identify the means of transport used in crossing the border.-->
+		<!--水运方式：使用在运输工具动态管理系统中备案的英文名称-->
+		<!--空运方式：填写IATA航空器编号或名称-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="BorderTransportMeansJourneyIdentifier">
+		<xs:annotation>
+			<xs:documentation>149 Conveyance reference number 航次航班编号/拖车牌号/车次</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+			<xs:pattern value="(([A-Z0-9]+)/((((1[6-9]|[2-9]\d)\d{2})(0[13578]|1[02])(0[1-9]|[12]\d|3[01]))|(((1[6-9]|[2-9]\d)\d{2})(0[13456789]|1[012])(0[1-9]|[12]\d|30))|(((1[6-9]|[2-9]\d)\d{2})02(0[1-9]|1\d|2[0-8]))|(((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))0229)))|([A-Z0-9]+)"/>
+		</xs:restriction>
+		<!--149 Conveyance reference number 航次航班编号/拖车牌号/车次-->
+		<!--To identify a journey of a means of transport,for example voyage number,flight number,trip number.-->
+		<!--水运方式：国际航行船舶填写航次号，如果船舶多次停靠同一个港口，1年内航次号不能重复。-->
+		<!--来往港澳小型船舶:12位数字的航次号。-->
+		<!--空运方式：原始舱单填写航班号/预计到达日期（CCYYMMDD）（北京时间）；-->
+		<!--空运方式：进境理货报告、分拨和疏港分流、进境运抵报告填写航班号/实际到达日期（CCYYMMDD）（北京时间）；-->
+		<!--空运方式：预配舱单、装载舱单、出境运抵报告填写航班号/预计起飞日期（CCYYMMDD）（北京时间）；-->
+		<!--空运方式：出境理货报告填写航班号/实际起飞日期（CCYYMMDD）（北京时间）。-->
+		<!--拖车牌号/车次：填写分拨和疏港分流的运输工具名称（船舶）、运输工具牌照号（汽车）或运输工具车号（火车）。-->
+		<!--填写内容必须由大写字母与数字组成（空运方式允许出现一次“/”，并不得作为开头和结尾）-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentItemPackagingQuantityQuantity">
+		<xs:annotation>
+			<xs:documentation>139 Number of packages per commodity 每类商品项下货物件数</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="8"/>
+			<xs:fractionDigits value="0"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--139 Number of packages per commodity 每类商品项下货物件数-->
+		<!--Number of packages per consignment item packaged in such a way that they cannot be divided without first undoing the package.-->
+		<!--填写本商品项货物的包装数量，包装以不再拆解为准。-->
+		<!--空运分批到货，填写本批次该商品项实际到/发货件数。-->
+		<!--最大长度：8位整数。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="GoodsMeasureGrossMassMeasure">
+		<xs:annotation>
+			<xs:documentation>126 Gross weight item level 每类商品项下货物毛重</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="14"/>
+			<xs:fractionDigits value="4"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--126 Gross weight item level 每类商品项下货物毛重-->
+		<!--Weight of line item including packaging but excluding the transport equipment.-->
+		<!--填写本商品项货物的毛重（单位：千克）。-->
+		<!--空运方式分批到货，填写商品项本批次实际到/发货毛重（单位：千克）。-->
+		<!--最大长度：10位整数，精确到小数点后4位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+</xs:schema>

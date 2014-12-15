@@ -1,0 +1,198 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/HuayuMain/_Layout.cshtml";
+}
+<div id="layout_Main" class="easyui-layout" data-options="fit:true,border:false">
+    <div region="north" split="false" style="height: 30px; padding: 2px" border="true">
+        <span style="float: left; font-weight: bold; font-size: medium">&nbsp;&nbsp;&nbsp; 当前登录:<font
+            style="color: Red">@Session["Global_Huayu_UserName"]</font> &nbsp;&nbsp;&nbsp;<span
+                class="bs"> <a class="styleswitch black" style="cursor: pointer" rel="black"></a>
+                <a class="styleswitch bootstrap" style="cursor: pointer" rel="bootstrap"></a><a class="styleswitch cupertino"
+                    style="cursor: pointer" rel="cupertino"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch dark-hive"
+                        style="cursor: pointer" rel="dark-hive"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch gray"
+                            style="cursor: pointer" rel="gray"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch default"
+                                style="cursor: pointer" rel="default"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro"
+                                    style="cursor: pointer" rel="metro"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro-blue"
+                                        style="cursor: pointer" rel="metro-blue"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro-gray"
+                                            style="cursor: pointer" rel="metro-gray"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro-green"
+                                                style="cursor: pointer" rel="metro-green"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro-orange"
+                                                    style="cursor: pointer" rel="metro-orange"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro-red" style="cursor: pointer"
+                    rel="metro-red"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch pepper-grinder"
+                        style="cursor: pointer" rel="pepper-grinder"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch sunny"
+                            style="cursor: pointer" rel="sunny"></a> </span></span><span style="float: right"><span
+                                id="lblCurrentDate"></span>&nbsp;&nbsp;&nbsp;<a href="#" id="btnRelogin" class="easyui-linkbutton"
+                                    data-options="iconCls:'icon-exit'">注销</a>&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <div region="west" split="true" style="width: 150px;" border="false">
+        <div id="LeftNavigation" class="easyui-accordion" fit="true">
+            <div title="货物信息修改" style="overflow: auto;" iconcls="icon-huayu-instore">
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnWayBillWeight" name="btnWayBillWeight" tabindex="1">货物重量等信息修改</a></li>
+                        <li><a href="#" id="btnWayBillFeeForeSetting" name="btnWayBillFeeForeSetting" tabindex="1">
+                            货&nbsp;物&nbsp;费&nbsp;用&nbsp;预&nbsp;设&nbsp;置</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="入库管理" style="overflow: auto;" iconcls="icon-huayu-instore">
+                <div class="cls_vertmenu">
+                    <ul>
+                        @*<li><a href="#" id="btnForeStore" name="btnForeStore" tabindex="1">预&nbsp;入&nbsp;库&nbsp;查&nbsp;询</a></li>*@
+                        @*<li><a href="#" id="btnWayBillWeight" name="btnWayBillWeight" tabindex="1">计&nbsp;费&nbsp;重&nbsp;量&nbsp;修&nbsp;改</a></li>*@
+                        @*<li><a href="#" id="btnConfirmInStore" name="btnConfirmInStore" tabindex="1">确&nbsp;&nbsp;认&nbsp;&nbsp;入&nbsp;&nbsp;仓</a></li>*@
+                        <li><a href="#" id="btnSaveInStore" name="btnSaveInStore" tabindex="1">确&nbsp;&nbsp;认&nbsp;&nbsp;入&nbsp;&nbsp;仓</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="查验管理" style="overflow: auto;" iconcls="icon-huayu-monitor">
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnCustomsCheck" name="btnCustomsCheck" tabindex="1">查&nbsp;&nbsp;验&nbsp;&nbsp;布&nbsp;&nbsp;控</a></li>
+                        <li><a href="#" id="btnViewCheckResult" name="btnViewCheckResult" tabindex="1">查&nbsp;看&nbsp;查&nbsp;验&nbsp;信&nbsp;息</a></li>
+                        <li><a href="#" id="btnCustomsConfirm" name="btnCustomsConfirm" tabindex="1">查&nbsp;&nbsp;验&nbsp;&nbsp;放&nbsp;&nbsp;行</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="出库管理" style="overflow: auto;" iconcls="icon-huayu-outstore">
+                <div class="cls_vertmenu">
+                    <ul>
+                        @*<li><a href="#" id="btnInStore" name="btnInStore" tabindex="1">批&nbsp;&nbsp;量&nbsp;&nbsp;出&nbsp;&nbsp;仓</a></li>*@
+                        <li><a href="#" id="btnRemoveStore" name="btnRemoveStore" tabindex="1">批&nbsp;&nbsp;量&nbsp;&nbsp;出&nbsp;&nbsp;仓</a></li>
+                        <li><a href="#" id="btnPrintWayBill_Main" name="btnPrintWayBill_Main" tabindex="1">打&nbsp;印&nbsp;提&nbsp;货&nbsp;单</a></li>
+                        <li><a href="#" id="btnUnReleasedWayBill_Main" name="btnUnReleasedWayBill_Main" tabindex="1">
+                            扣&nbsp;&nbsp;货&nbsp;&nbsp;处&nbsp;&nbsp;理</a></li>
+                        <li><a href="#" id="btnRejectWayBill_Main" name="btnRejectWayBill_Main" tabindex="1">
+                            退&nbsp;&nbsp;货&nbsp;&nbsp;处&nbsp;&nbsp;理</a></li>
+                       @* <li><a href="#" id="btnQueryRejectSubWayBillInfo" name="btnRejectWayBill_Main" tabindex="1">
+                            查&nbsp;询&nbsp;退&nbsp;货&nbsp;信&nbsp;息</a></li>*@
+                    </ul>
+                </div>
+            </div>
+            <div title="库区管理" style="overflow: auto;" iconcls="icon-huayu-store">
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnQueryStatus" name="btnQueryStatus" tabindex="1">货&nbsp;物&nbsp;状&nbsp;态&nbsp;查&nbsp;询</a></li>
+                        <li><a href="#" id="btnHuayu_QueryMainFrame" name="btnHuayu_QueryMainFrame" tabindex="1">
+                            &nbsp;库&nbsp;&nbsp;存&nbsp;&nbsp;查&nbsp;&nbsp;询&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="异常处理" style="overflow: auto;" iconcls="icon-huayu-exception">
+                @*<center>
+                    <br />
+                    <br />
+                    <a href="#" id="btnExceptionStore" class="easyui-linkbutton">&nbsp;&nbsp;异常件处理&nbsp;&nbsp;</a>
+                    <br />
+                    <br />
+                   <a href="#" id="btnInOutStoreExceptionEvent" class="easyui-linkbutton">&nbsp;异常事件查询&nbsp;</a>
+                    <br />
+                    <br />
+                    <a href="#" id="btnViewExceptionStoreHistory" class="easyui-linkbutton">历史异常件处理记录</a>
+                    <br />
+                    <br />
+                </center>*@
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnExceptionStore" name="btnExceptionStore" tabindex="1">&nbsp;&nbsp;异常件处理&nbsp;&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="报表管理" style="overflow: auto;" iconcls="icon-huayu-report">
+                @*<center>
+                    <br />
+                    <a href="#" id="btnQuery" class="easyui-linkbutton">报&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表</a><br />
+                    <br />
+                    <br />
+                    <a href="#" id="btnWayBillDailyReport" class="easyui-linkbutton">销&nbsp;&nbsp;售&nbsp;&nbsp;日&nbsp;&nbsp;报</a><br />
+                    <br />
+                    <a href="#" id="btAnanalyseStatistic" class="easyui-linkbutton">货物统计分析</a>
+                </center>*@
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnQuery" name="btnQuery" tabindex="1">报&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表</a></li>
+                        <li><a href="#" id="btnTotalStatisticByMonth" name="btnTotalStatisticByMonth" tabindex="1">
+                            报&nbsp;&nbsp;表&nbsp;(按&nbsp;&nbsp;月)</a></li>
+                        <li><a href="#" id="btnWayBillDailyReport" name="btnWayBillDailyReport" tabindex="1">
+                            销&nbsp;&nbsp;售&nbsp;&nbsp;日&nbsp;&nbsp;报</a></li>
+                        <li><a href="#" id="btnViewWayBillWeightStatistic" name="btnViewWayBillWeightStatistic" tabindex="1">货&nbsp;物&nbsp;重&nbsp;量&nbsp;统&nbsp;计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="系统管理" style="overflow: auto;" iconcls="icon-huayu-application">
+                @* <center>
+                    <br />
+                    <a href="#" id="btnUserManage" class="easyui-linkbutton">用&nbsp;户&nbsp;信&nbsp;息&nbsp;维&nbsp;护</a>
+                    <br />
+                    <br />
+                    <a href="#" id="btnEmailManage" class="easyui-linkbutton">邮&nbsp;件&nbsp;信&nbsp;息&nbsp;维&nbsp;护</a>
+                    <br />
+                    <br />
+                    <a href="#" id="btnPwdManage" class="easyui-linkbutton">密&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;管&nbsp;&nbsp;&nbsp;理</a>
+                    <br />
+                    <br />
+                    <a href="#" id="btnFeeSetting" class="easyui-linkbutton">费&nbsp;&nbsp;&nbsp;率&nbsp;&nbsp;&nbsp;设&nbsp;&nbsp;&nbsp;置</a>
+                </center>*@
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnUserManage" name="btnUserManage" tabindex="1">用&nbsp;户&nbsp;信&nbsp;息&nbsp;维&nbsp;护</a></li>
+                        <li><a href="#" id="btnEmailManage" name="btnEmailManage" tabindex="1">邮&nbsp;件&nbsp;信&nbsp;息&nbsp;维&nbsp;护</a></li>
+                        <li><a href="#" id="btnPwdManage" name="btnPwdManage" tabindex="1">密&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;管&nbsp;&nbsp;&nbsp;理</a></li>
+                        <li><a href="#" id="btnFeeSetting" name="btnFeeSetting" tabindex="1">费&nbsp;&nbsp;&nbsp;率&nbsp;&nbsp;&nbsp;设&nbsp;&nbsp;&nbsp;置</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div region="center" style="background: #eee;" border="false" split="true">
+        <div id="tab_Content" class="easyui-tabs" fit="true" border="false">
+            <div title="使用指南" style="padding: 0px;">
+            </div>
+        </div>
+    </div>
+    <div region="south" split="true" style="height: 30px;" border="false">
+        <div align="center">
+            CopyRight@2006-2012 <a target="_blank" href="http://www.chinabetter.com">www.chinabetter.com</a></div>
+    </div>
+</div>
+<div id="mm" class="easyui-menu" style="width: 150px; display: none">
+    <div id="mm-tabupdate" iconcls="icon-reload">
+        刷新</div>
+    <div class="menu-sep">
+    </div>
+    <div id="mm-tabclose">
+        关闭</div>
+    <div id="mm-tabcloseall">
+        全部关闭</div>
+    <div id="mm-tabcloseother">
+        除此之外全部关闭</div>
+    <div class="menu-sep">
+    </div>
+    <div id="mm-tabcloseright">
+        当前页右侧全部关闭</div>
+    <div id="mm-tabcloseleft">
+        当前页左侧全部关闭</div>
+    <div class="menu-sep">
+    </div>
+    <div id="mm-exit">
+        退出</div>
+</div>
+<div id="dlg_Print" data-options="iconCls:'icon-print'" style="padding: 1px; display: none">
+</div>
+<div id="dlg_GlobalPrint" fit="true" data-options="iconCls:'icon-print'" style="padding: 1px;
+    display: none">
+    @*    <div id="p" class="easyui-progressbar" data-options="value:60" style="width:400px;"></div>*@
+    <iframe src="" style="width: 98%; height: 98%" id="frmPrintURL"></iframe>
+</div>
+<div id="dlg_GlobalDetail" fit="true" data-options="iconCls:'icon-save'" style="padding: 1px;
+    width: 400px; height: 300px;">
+</div>
+<div id="dlg_GlobalPrintSheet" fit="true" data-options="iconCls:'icon-save'" style="padding: 1px;
+    width: 400px; height: 300px;">
+</div>
+<div id="dlg_MsgAlert" style="padding: 1px; display: none">
+    <input type="text" style="display: block; width: 0px; height: 0px; border: 0" id="txtGlobalTextInput"
+        name="txtGlobalTextInput" />
+    <div id="msgContent">
+    </div>
+</div>

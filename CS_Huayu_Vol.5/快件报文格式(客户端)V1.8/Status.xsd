@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation=".\Type\Type.xsd"/>
+	<xs:element name="StatusInfo">
+		<xs:annotation>
+			<xs:documentation>单证状态信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Head">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID" type="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文名</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="BusinessType" type="BusinessType">
+								<xs:annotation>
+									<xs:documentation>业务类型</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Sender" type="Sender">
+								<xs:annotation>
+									<xs:documentation>发送方
+001</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ReceiverID" type="ReceiverID">
+								<xs:annotation>
+									<xs:documentation>接收方代码
+华宇海关编码</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SendTime" type="SendTime">
+								<xs:annotation>
+									<xs:documentation>发送时间</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Version">
+								<xs:annotation>
+									<xs:documentation>报文版本号（循环次数：1）例如:1.0</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:complexType>
+						<xs:sequence maxOccurs="9999">
+							<xs:element name="Status">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TransportContractDocumentID" type="TransportContractDocumentIdentificationIdentifier">
+											<xs:annotation>
+												<xs:documentation>主单号</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="AssociatedTransportDocumentID" type="AssociatedTransportDocumentIdentificationIdentifier">
+											<xs:annotation>
+												<xs:documentation>分单号</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="TaxFlag" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>应税标记</xs:documentation>
+												<!-- 01应税 ，02 非税-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="02"/>
+													<xs:enumeration value="01"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Examed" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>审核标记</xs:documentation>
+												<!-- 01审核 ，02 未审核-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="01"/>
+													<xs:enumeration value="02"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Dispached" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>布控标记</xs:documentation>
+												<!-- 01布控 ，02 未布控-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="02"/>
+													<xs:enumeration value="01"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="UnDispached" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>解控标记</xs:documentation>
+												<!-- 01解控 ，02 未解控-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="02"/>
+													<xs:enumeration value="01"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Printed" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>税单打印标记</xs:documentation>
+												<!-- 01已打 ，02 未打-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="01"/>
+													<xs:enumeration value="02"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Taxed" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>完税标记</xs:documentation>
+												<!-- 01完税 ，02 未完税-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="01"/>
+													<xs:enumeration value="02"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Accord" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>查验标记
+海关：01 放行,02 改单重报,03 退运,04 移交缉私,05 移交法规,06 收缴,07 超期,08 放弃；
+检疫：01 放行 02 改单重报 03 退运 04 留验 05 截留销毁</xs:documentation>
+												<!-- 海关：01 放行,02 改单重报,03 退运,04 移交缉私,05 移交法规,06 收缴,07 超期,08 放弃；检疫：01 放行 02 改单重报 03 退运 04 留验 05 截留销毁-->
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="08"/>
+													<xs:enumeration value="07"/>
+													<xs:enumeration value="06"/>
+													<xs:enumeration value="05"/>
+													<xs:enumeration value="04"/>
+													<xs:enumeration value="03"/>
+													<xs:enumeration value="02"/>
+													<xs:enumeration value="01"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Release" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>放行信息
+海关：00 未放行 01 已放行
+检疫：00未放行 01已放行 02 部分放行</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="2"/>
+													<xs:pattern value="[0-9]{2}"/>
+													<xs:enumeration value="01"/>
+													<xs:enumeration value="02"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

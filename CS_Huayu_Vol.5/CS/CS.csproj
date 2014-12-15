@@ -1,0 +1,2858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B888292-808A-443F-930A-54AF801F959E}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CS</RootNamespace>
+    <AssemblyName>CS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Common\EmailController.cs" />
+    <Compile Include="Controllers\Common\ErrorController.cs" />
+    <Compile Include="Controllers\Common\FirstPickGoodsSheetSettingController.cs" />
+    <Compile Include="Controllers\Common\LocalizationHelpers.cs" />
+    <Compile Include="Controllers\Common\RejectSheetSettingController.cs" />
+    <Compile Include="Controllers\Common\Test1Controller.cs" />
+    <Compile Include="Controllers\Common\Test2Controller.cs" />
+    <Compile Include="Controllers\Common\Test3Controller.cs" />
+    <Compile Include="Controllers\Common\Test4Controller.cs" />
+    <Compile Include="Controllers\Common\Test5Controller.cs" />
+    <Compile Include="Controllers\Common\UnReleaseSheetSettingController.cs" />
+    <Compile Include="Controllers\Common\UtilController.cs" />
+    <Compile Include="Controllers\Common\ViewForeStoreWayBillDetailController.cs" />
+    <Compile Include="Controllers\Common\ViewInOutStoreWayBillDetailController.cs" />
+    <Compile Include="Controllers\Common\ViewRejectSubWayBillDetailController.cs" />
+    <Compile Include="Controllers\Common\ViewSubWayBillDetailController.cs" />
+    <Compile Include="Controllers\customs\Customer_CheckController.cs" />
+    <Compile Include="Controllers\customs\CustomerMainController.cs" />
+    <Compile Include="Controllers\customs\Customer_ConfirmController.cs" />
+    <Compile Include="Controllers\customs\Customer_DetailController.cs" />
+    <Compile Include="Controllers\customs\Customer_QueryController.cs" />
+    <Compile Include="Controllers\Forwarder\Forwarder_changePasswordController.cs" />
+    <Compile Include="Controllers\Forwarder\Forwarder_DataUpLoadController.cs" />
+    <Compile Include="Controllers\Forwarder\ForwarderMainController.cs" />
+    <Compile Include="Controllers\Forwarder\Forwarder_PersonalController.cs" />
+    <Compile Include="Controllers\Forwarder\Forwarder_QueryCompanyController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ConfirmInStoreController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_EmailManagementController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_QueryMainFrameController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_QueryRejectSubWayBillController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_RejectWayBillHandlerController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_RemoveStoreController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_TotalStatisticByMonthController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_UnReleaseWayBillHandlerController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_UserMaintainController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_InOutStoreExceptionEventController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ViewCheckResultController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ViewCheckResultDetailController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ViewExceptionStoreHistoryController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ViewFeeForeSettingInfoController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ViewWayBillWeightStatisticController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillFeeForeSettingController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillWeightController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_FeeRateSettingController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillDailyReportController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_SaveInStoreController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Huayu\HuayuMainController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_AnanalyseStatisticController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ChangePasswordController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ExceptionStoreController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ForeStoreController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_InStoreController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_OutStoreController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_PrintReleaseController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_ReleseController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_QueryController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_TotalController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillPatchOutController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillPatchOutExcelController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillPatchInController.cs" />
+    <Compile Include="Controllers\Huayu\Huayu_WayBillPatchInExcelController.cs" />
+    <Compile Include="CustomerCheck_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerCheck_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerConfirm_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerConfirm_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerQuery_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerQuery_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionStore_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExceptionStore_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Filter\CustomerRequiresLoginAttribute.cs" />
+    <Compile Include="Filter\ErrorAttribute.cs" />
+    <Compile Include="Filter\ForwarderRequiresLoginAttribute.cs" />
+    <Compile Include="Filter\HuayuRequiresLoginAttribute.cs" />
+    <Compile Include="FirstPickGoodsSheetSetting_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirstPickGoodsSheetSetting_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ForwarderQueryCompany_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForwarderQueryCompany_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuAnanalyseStatistic_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuAnanalyseStatistic_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuForeStore_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuForeStore_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuInOutStoreExceptionEvent_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuInOutStoreExceptionEvent_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuInStore_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuInStore_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuOutStore_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuOutStore_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuQuery_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuQuery_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuRelese_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuRelese_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuUserMaintain_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuUserMaintain_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuViewExceptionStoreHistory_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuViewExceptionStoreHistory_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuViewRejectSubWayBillDetail_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuViewRejectSubWayBillDetail_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HuayuWayBillWeight_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HuayuWayBillWeight_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_Print_Release_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_Print_Release_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_QueryRejectSubWayBill_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_QueryRejectSubWayBill_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_RejectWayBillHandler_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_RejectWayBillHandler_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_TotalStatisticByMonth_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_TotalStatisticByMonth_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_UnReleaseWayBillHandler_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_UnReleaseWayBillHandler_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_ViewWayBillWeightStatistic_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_ViewWayBillWeightStatistic_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Huayu_WayBillDailyReport_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Huayu_WayBillDailyReport_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InOutStoreCount_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InOutStoreCount_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRejectSubWayBill_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRejectSubWayBill_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintUnReleaseSheet_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintUnReleaseSheet_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\en-us.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en-us.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\zh-cn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zh-cn.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSubWayBillDetail_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShowSubWayBillDetail_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShowWayBillInfo_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShowWayBillInfo_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForeStoreWayBillDetail_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewForeStoreWayBillDetail_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInOutStoreWayBillDetail_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewInOutStoreWayBillDetail_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSubWayBillDetail_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewSubWayBillDetail_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ws_CS.asmx.cs">
+      <DependentUpon>ws_CS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\CS.dll" />
+    <Content Include="bin\CS.pdb" />
+    <Content Include="Content\Reports\CustomerCheck.rdlc" />
+    <Content Include="Content\Reports\CustomerConfirm.rdlc" />
+    <Content Include="Content\Reports\CustomerQuery.rdlc" />
+    <Content Include="Content\Reports\ForwarderQueryCompany.rdlc" />
+    <Content Include="Content\Reports\HuayuAnanalyseStatistic.rdlc" />
+    <Content Include="Content\Reports\HuayuExceptionStore.rdlc" />
+    <Content Include="Content\Reports\HuayuForeStore.rdlc" />
+    <Content Include="Content\Reports\HuayuInOutStoreExceptionEvent.rdlc" />
+    <Content Include="Content\Reports\HuayuInStore.rdlc" />
+    <Content Include="Content\Reports\HuayuOutStore.rdlc" />
+    <Content Include="Content\Reports\HuayuQuery.rdlc" />
+    <Content Include="Content\Reports\HuayuRelese.rdlc" />
+    <Content Include="Content\Reports\HuayuUserMaintain.rdlc" />
+    <Content Include="Content\Reports\ViewSubWayBillDetail.rdlc" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="images\Common\door.png" />
+    <Content Include="images\Common\map.jpg" />
+    <Content Include="images\Customer\currentsele.jpg" />
+    <Content Include="images\Error\bg.gif" />
+    <Content Include="images\Error\emessage.gif" />
+    <Content Include="images\Error\error.gif" />
+    <Content Include="images\Error\left.gif" />
+    <Content Include="Global.asax" />
+    <Content Include="images\Customer\bg.jpg" />
+    <Content Include="images\Customer\checkHead.jpg" />
+    <Content Include="images\Customer\query.jpg" />
+    <Content Include="images\Customer\seperator.png" />
+    <Content Include="images\Customer\top.jpg" />
+    <Content Include="images\Customer\公告信息.jpg" />
+    <Content Include="images\Customer\功能导航.jpg" />
+    <Content Include="images\Customer\发布公告.jpg" />
+    <Content Include="images\Customer\开箱查验 .jpg" />
+    <Content Include="images\Customer\开箱查验 1.jpg" />
+    <Content Include="images\Customer\luxiangchaxun.jpg" />
+    <Content Include="images\Customer\luxiangchaxun1.jpg" />
+    <Content Include="images\Customer\fangxingguanli.jpg" />
+    <Content Include="images\Customer\fangxingguanli1.jpg" />
+    <Content Include="images\Customer\更多.jpg" />
+    <Content Include="images\Customer\海关预检 1.jpg" />
+    <Content Include="images\Customer\haiguanyujian.jpg" />
+    <Content Include="images\Customer\haiguanyujian1.jpg" />
+    <Content Include="images\Customer\xitongguanli.jpg" />
+    <Content Include="images\Customer\xitongguanli1.jpg" />
+    <Content Include="images\Customer\tongjichaxun.jpg" />
+    <Content Include="images\Customer\tongjichaxun1.jpg" />
+    <Content Include="images\Customer\shipinjiankong.jpg" />
+    <Content Include="images\Customer\shipinjiankong1.jpg" />
+    <Content Include="images\Error\right.gif" />
+    <Content Include="images\Login\top.jpg" />
+    <Content Include="JqueryUI\datagrid-detailview.js" />
+    <Content Include="JqueryUI\datagrid-filter.js" />
+    <Content Include="JqueryUI\easyui-lang-zh_CN.js" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\align-center.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\align-justify.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\align-left.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\align-right.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\bold.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\bullets.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\case-font.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\copy.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\decrease-font.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\find.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\format.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\go.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\grow-font.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\increase-font.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\italic.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\numbers.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\paste.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\replace.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\select.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\selectall.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\shrink-font.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\strikethrough.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\subscript.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\superscript.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\16\underline.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\chart.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\clipart.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\paste.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\picture.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\shapes.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\smartart.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\images\32\table.png" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\jquery.ribbon.js" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\ribbon-icon.css" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\ribbon.css" />
+    <Content Include="JqueryUI\jquery-easyui-ribbon\ribbon.html" />
+    <Content Include="JqueryUI\jquery.easyui.min.js" />
+    <Content Include="JqueryUI\themes\black\accordion.css" />
+    <Content Include="JqueryUI\themes\black\calendar.css" />
+    <Content Include="JqueryUI\themes\black\combo.css" />
+    <Content Include="JqueryUI\themes\black\combobox.css" />
+    <Content Include="JqueryUI\themes\black\datagrid.css" />
+    <Content Include="JqueryUI\themes\black\datebox.css" />
+    <Content Include="JqueryUI\themes\black\dialog.css" />
+    <Content Include="JqueryUI\themes\black\easyui.css" />
+    <Content Include="JqueryUI\themes\black\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\black\images\black.png" />
+    <Content Include="JqueryUI\themes\black\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\blank.gif" />
+    <Content Include="JqueryUI\themes\black\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\black\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\black\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\black\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\black\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\black\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\black\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\black\images\default.png" />
+    <Content Include="JqueryUI\themes\black\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\gray.png" />
+    <Content Include="JqueryUI\themes\black\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\black\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\black\images\loading.gif" />
+    <Content Include="JqueryUI\themes\black\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\black\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\black\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\metro.png" />
+    <Content Include="JqueryUI\themes\black\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\black\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\black\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\black\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\black\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\black\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\black\images\sunny.png" />
+    <Content Include="JqueryUI\themes\black\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\black\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\black\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\black\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\black\layout.css" />
+    <Content Include="JqueryUI\themes\black\linkbutton.css" />
+    <Content Include="JqueryUI\themes\black\menu.css" />
+    <Content Include="JqueryUI\themes\black\menubutton.css" />
+    <Content Include="JqueryUI\themes\black\messager.css" />
+    <Content Include="JqueryUI\themes\black\pagination.css" />
+    <Content Include="JqueryUI\themes\black\panel.css" />
+    <Content Include="JqueryUI\themes\black\progressbar.css" />
+    <Content Include="JqueryUI\themes\black\propertygrid.css" />
+    <Content Include="JqueryUI\themes\black\searchbox.css" />
+    <Content Include="JqueryUI\themes\black\slider.css" />
+    <Content Include="JqueryUI\themes\black\spinner.css" />
+    <Content Include="JqueryUI\themes\black\splitbutton.css" />
+    <Content Include="JqueryUI\themes\black\tabs.css" />
+    <Content Include="JqueryUI\themes\black\tooltip.css" />
+    <Content Include="JqueryUI\themes\black\tree.css" />
+    <Content Include="JqueryUI\themes\black\validatebox.css" />
+    <Content Include="JqueryUI\themes\black\window.css" />
+    <Content Include="JqueryUI\themes\bootstrap\accordion.css" />
+    <Content Include="JqueryUI\themes\bootstrap\calendar.css" />
+    <Content Include="JqueryUI\themes\bootstrap\combo.css" />
+    <Content Include="JqueryUI\themes\bootstrap\combobox.css" />
+    <Content Include="JqueryUI\themes\bootstrap\datagrid.css" />
+    <Content Include="JqueryUI\themes\bootstrap\datebox.css" />
+    <Content Include="JqueryUI\themes\bootstrap\dialog.css" />
+    <Content Include="JqueryUI\themes\bootstrap\easyui.css" />
+    <Content Include="JqueryUI\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\black.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\blank.gif" />
+    <Content Include="JqueryUI\themes\bootstrap\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\default.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\gray.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\loading.gif" />
+    <Content Include="JqueryUI\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\sunny.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\bootstrap\layout.css" />
+    <Content Include="JqueryUI\themes\bootstrap\linkbutton.css" />
+    <Content Include="JqueryUI\themes\bootstrap\menu.css" />
+    <Content Include="JqueryUI\themes\bootstrap\menubutton.css" />
+    <Content Include="JqueryUI\themes\bootstrap\messager.css" />
+    <Content Include="JqueryUI\themes\bootstrap\pagination.css" />
+    <Content Include="JqueryUI\themes\bootstrap\panel.css" />
+    <Content Include="JqueryUI\themes\bootstrap\progressbar.css" />
+    <Content Include="JqueryUI\themes\bootstrap\propertygrid.css" />
+    <Content Include="JqueryUI\themes\bootstrap\searchbox.css" />
+    <Content Include="JqueryUI\themes\bootstrap\slider.css" />
+    <Content Include="JqueryUI\themes\bootstrap\spinner.css" />
+    <Content Include="JqueryUI\themes\bootstrap\splitbutton.css" />
+    <Content Include="JqueryUI\themes\bootstrap\tabs.css" />
+    <Content Include="JqueryUI\themes\bootstrap\tooltip.css" />
+    <Content Include="JqueryUI\themes\bootstrap\tree.css" />
+    <Content Include="JqueryUI\themes\bootstrap\validatebox.css" />
+    <Content Include="JqueryUI\themes\bootstrap\window.css" />
+    <Content Include="JqueryUI\themes\cupertino\accordion.css" />
+    <Content Include="JqueryUI\themes\cupertino\calendar.css" />
+    <Content Include="JqueryUI\themes\cupertino\combo.css" />
+    <Content Include="JqueryUI\themes\cupertino\combobox.css" />
+    <Content Include="JqueryUI\themes\cupertino\datagrid.css" />
+    <Content Include="JqueryUI\themes\cupertino\datebox.css" />
+    <Content Include="JqueryUI\themes\cupertino\dialog.css" />
+    <Content Include="JqueryUI\themes\cupertino\easyui.css" />
+    <Content Include="JqueryUI\themes\cupertino\images\black.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\blank.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\calendar_nextmonth.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\calendar_nextyear.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\calendar_prevmonth.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\calendar_prevyear.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\datagrid_row_collapse.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\datagrid_row_expand.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\default.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\gray.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\menu.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\menu_downarrow.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\menu_rightarrow.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\menu_sep.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\menu_split_downarrow.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\messager_error.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\messager_info.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\messager_question.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\messager_warning.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\pagination_loading.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\panel_loading.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\sunny.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\tabs_close.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_arrows.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_arrows.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_checkbox_0.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_checkbox_1.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_checkbox_2.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_dnd_no.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_dnd_yes.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_elbow.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_file.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_folder.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_folder_open.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\tree_loading.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\validatebox_pointer.gif" />
+    <Content Include="JqueryUI\themes\cupertino\images\validatebox_pointer.png" />
+    <Content Include="JqueryUI\themes\cupertino\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\cupertino\layout.css" />
+    <Content Include="JqueryUI\themes\cupertino\linkbutton.css" />
+    <Content Include="JqueryUI\themes\cupertino\menu.css" />
+    <Content Include="JqueryUI\themes\cupertino\menubutton.css" />
+    <Content Include="JqueryUI\themes\cupertino\messager.css" />
+    <Content Include="JqueryUI\themes\cupertino\pagination.css" />
+    <Content Include="JqueryUI\themes\cupertino\panel.css" />
+    <Content Include="JqueryUI\themes\cupertino\progressbar.css" />
+    <Content Include="JqueryUI\themes\cupertino\propertygrid.css" />
+    <Content Include="JqueryUI\themes\cupertino\searchbox.css" />
+    <Content Include="JqueryUI\themes\cupertino\slider.css" />
+    <Content Include="JqueryUI\themes\cupertino\spinner.css" />
+    <Content Include="JqueryUI\themes\cupertino\splitbutton.css" />
+    <Content Include="JqueryUI\themes\cupertino\tabs.css" />
+    <Content Include="JqueryUI\themes\cupertino\tree.css" />
+    <Content Include="JqueryUI\themes\cupertino\validatebox.css" />
+    <Content Include="JqueryUI\themes\cupertino\window.css" />
+    <Content Include="JqueryUI\themes\dark-hive\accordion.css" />
+    <Content Include="JqueryUI\themes\dark-hive\calendar.css" />
+    <Content Include="JqueryUI\themes\dark-hive\combo.css" />
+    <Content Include="JqueryUI\themes\dark-hive\combobox.css" />
+    <Content Include="JqueryUI\themes\dark-hive\datagrid.css" />
+    <Content Include="JqueryUI\themes\dark-hive\datebox.css" />
+    <Content Include="JqueryUI\themes\dark-hive\dialog.css" />
+    <Content Include="JqueryUI\themes\dark-hive\easyui.css" />
+    <Content Include="JqueryUI\themes\dark-hive\images\black.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\blank.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\calendar_nextmonth.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\calendar_nextyear.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\calendar_prevmonth.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\calendar_prevyear.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\datagrid_row_collapse.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\datagrid_row_expand.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\default.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\gray.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\menu.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\menu_downarrow.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\menu_rightarrow.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\menu_sep.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\menu_split_downarrow.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\messager_error.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\messager_info.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\messager_question.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\messager_warning.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\pagination_loading.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\panel_loading.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\sunny.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tabs_close.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_arrows.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_arrows.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_checkbox_0.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_checkbox_1.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_checkbox_2.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_dnd_no.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_dnd_yes.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_elbow.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_file.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_folder.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_folder_open.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\tree_loading.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_highlight-soft_33_003147_1x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_highlight-soft_35_222222_1x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_highlight-soft_44_444444_1x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-bg_loop_25_000000_21x21.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-icons_222222_256x240.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-icons_a83300_256x240.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\validatebox_pointer.gif" />
+    <Content Include="JqueryUI\themes\dark-hive\images\validatebox_pointer.png" />
+    <Content Include="JqueryUI\themes\dark-hive\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\dark-hive\layout.css" />
+    <Content Include="JqueryUI\themes\dark-hive\linkbutton.css" />
+    <Content Include="JqueryUI\themes\dark-hive\menu.css" />
+    <Content Include="JqueryUI\themes\dark-hive\menubutton.css" />
+    <Content Include="JqueryUI\themes\dark-hive\messager.css" />
+    <Content Include="JqueryUI\themes\dark-hive\pagination.css" />
+    <Content Include="JqueryUI\themes\dark-hive\panel.css" />
+    <Content Include="JqueryUI\themes\dark-hive\progressbar.css" />
+    <Content Include="JqueryUI\themes\dark-hive\propertygrid.css" />
+    <Content Include="JqueryUI\themes\dark-hive\searchbox.css" />
+    <Content Include="JqueryUI\themes\dark-hive\slider.css" />
+    <Content Include="JqueryUI\themes\dark-hive\spinner.css" />
+    <Content Include="JqueryUI\themes\dark-hive\splitbutton.css" />
+    <Content Include="JqueryUI\themes\dark-hive\tabs.css" />
+    <Content Include="JqueryUI\themes\dark-hive\tree.css" />
+    <Content Include="JqueryUI\themes\dark-hive\validatebox.css" />
+    <Content Include="JqueryUI\themes\dark-hive\window.css" />
+    <Content Include="JqueryUI\themes\default\accordion.css" />
+    <Content Include="JqueryUI\themes\default\calendar.css" />
+    <Content Include="JqueryUI\themes\default\combo.css" />
+    <Content Include="JqueryUI\themes\default\combobox.css" />
+    <Content Include="JqueryUI\themes\default\datagrid.css" />
+    <Content Include="JqueryUI\themes\default\datebox.css" />
+    <Content Include="JqueryUI\themes\default\dialog.css" />
+    <Content Include="JqueryUI\themes\default\easyui.css" />
+    <Content Include="JqueryUI\themes\default\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\default\images\black.png" />
+    <Content Include="JqueryUI\themes\default\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\blank.gif" />
+    <Content Include="JqueryUI\themes\default\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\default\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\default\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\default\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\default\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\default\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\default\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\default\images\default.png" />
+    <Content Include="JqueryUI\themes\default\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\gray.png" />
+    <Content Include="JqueryUI\themes\default\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\default\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\default\images\loading.gif" />
+    <Content Include="JqueryUI\themes\default\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\default\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\default\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\metro.png" />
+    <Content Include="JqueryUI\themes\default\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\default\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\default\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\default\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\default\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\default\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\default\images\sunny.png" />
+    <Content Include="JqueryUI\themes\default\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\default\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\default\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\default\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\default\layout.css" />
+    <Content Include="JqueryUI\themes\default\linkbutton.css" />
+    <Content Include="JqueryUI\themes\default\menu.css" />
+    <Content Include="JqueryUI\themes\default\menubutton.css" />
+    <Content Include="JqueryUI\themes\default\messager.css" />
+    <Content Include="JqueryUI\themes\default\pagination.css" />
+    <Content Include="JqueryUI\themes\default\panel.css" />
+    <Content Include="JqueryUI\themes\default\progressbar.css" />
+    <Content Include="JqueryUI\themes\default\propertygrid.css" />
+    <Content Include="JqueryUI\themes\default\searchbox.css" />
+    <Content Include="JqueryUI\themes\default\slider.css" />
+    <Content Include="JqueryUI\themes\default\spinner.css" />
+    <Content Include="JqueryUI\themes\default\splitbutton.css" />
+    <Content Include="JqueryUI\themes\default\tabs.css" />
+    <Content Include="JqueryUI\themes\default\tooltip.css" />
+    <Content Include="JqueryUI\themes\default\tree.css" />
+    <Content Include="JqueryUI\themes\default\validatebox.css" />
+    <Content Include="JqueryUI\themes\default\window.css" />
+    <Content Include="JqueryUI\themes\gray\accordion.css" />
+    <Content Include="JqueryUI\themes\gray\calendar.css" />
+    <Content Include="JqueryUI\themes\gray\combo.css" />
+    <Content Include="JqueryUI\themes\gray\combobox.css" />
+    <Content Include="JqueryUI\themes\gray\datagrid.css" />
+    <Content Include="JqueryUI\themes\gray\datebox.css" />
+    <Content Include="JqueryUI\themes\gray\dialog.css" />
+    <Content Include="JqueryUI\themes\gray\easyui.css" />
+    <Content Include="JqueryUI\themes\gray\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\gray\images\black.png" />
+    <Content Include="JqueryUI\themes\gray\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\blank.gif" />
+    <Content Include="JqueryUI\themes\gray\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\gray\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\gray\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\gray\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\gray\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\gray\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\gray\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\gray\images\default.png" />
+    <Content Include="JqueryUI\themes\gray\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\gray.png" />
+    <Content Include="JqueryUI\themes\gray\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\gray\images\loading.gif" />
+    <Content Include="JqueryUI\themes\gray\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\gray\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro.png" />
+    <Content Include="JqueryUI\themes\gray\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\gray\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\gray\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\gray\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\gray\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\gray\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\gray\images\sunny.png" />
+    <Content Include="JqueryUI\themes\gray\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\gray\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\gray\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\gray\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\gray\layout.css" />
+    <Content Include="JqueryUI\themes\gray\linkbutton.css" />
+    <Content Include="JqueryUI\themes\gray\menu.css" />
+    <Content Include="JqueryUI\themes\gray\menubutton.css" />
+    <Content Include="JqueryUI\themes\gray\messager.css" />
+    <Content Include="JqueryUI\themes\gray\pagination.css" />
+    <Content Include="JqueryUI\themes\gray\panel.css" />
+    <Content Include="JqueryUI\themes\gray\progressbar.css" />
+    <Content Include="JqueryUI\themes\gray\propertygrid.css" />
+    <Content Include="JqueryUI\themes\gray\searchbox.css" />
+    <Content Include="JqueryUI\themes\gray\slider.css" />
+    <Content Include="JqueryUI\themes\gray\spinner.css" />
+    <Content Include="JqueryUI\themes\gray\splitbutton.css" />
+    <Content Include="JqueryUI\themes\gray\tabs.css" />
+    <Content Include="JqueryUI\themes\gray\tooltip.css" />
+    <Content Include="JqueryUI\themes\gray\tree.css" />
+    <Content Include="JqueryUI\themes\gray\validatebox.css" />
+    <Content Include="JqueryUI\themes\gray\window.css" />
+    <Content Include="JqueryUI\themes\icon.css" />
+    <Content Include="JqueryUI\themes\icons\huayu_exception.png" />
+    <Content Include="JqueryUI\themes\icons\accordion_collapse.png" />
+    <Content Include="JqueryUI\themes\icons\accordion_expand.png" />
+    <Content Include="JqueryUI\themes\icons\attachment.png" />
+    <Content Include="JqueryUI\themes\icons\back.png" />
+    <Content Include="JqueryUI\themes\icons\blacklist_type.png" />
+    <Content Include="JqueryUI\themes\icons\blank.gif" />
+    <Content Include="JqueryUI\themes\icons\cancel.png" />
+    <Content Include="JqueryUI\themes\icons\Check.png" />
+    <Content Include="JqueryUI\themes\icons\custmer_scensecheck.png" />
+    <Content Include="JqueryUI\themes\icons\customer_check.png" />
+    <Content Include="JqueryUI\themes\icons\customer_exceptionhandler.png" />
+    <Content Include="JqueryUI\themes\icons\customer_prosecc.png" />
+    <Content Include="JqueryUI\themes\icons\customer_rejectgoods.png" />
+    <Content Include="JqueryUI\themes\icons\customer_release.png" />
+    <Content Include="JqueryUI\themes\icons\customer_setting.png" />
+    <Content Include="JqueryUI\themes\icons\customer_statistic.png" />
+    <Content Include="JqueryUI\themes\icons\customer_taxvaluecheck.png" />
+    <Content Include="JqueryUI\themes\icons\customer_unrelease.png" />
+    <Content Include="JqueryUI\themes\icons\cut.png" />
+    <Content Include="JqueryUI\themes\icons\Detain.png" />
+    <Content Include="JqueryUI\themes\icons\edit_add.png" />
+    <Content Include="JqueryUI\themes\icons\edit_remove.png" />
+    <Content Include="JqueryUI\themes\icons\email.png" />
+    <Content Include="JqueryUI\themes\icons\Excel.png" />
+    <Content Include="JqueryUI\themes\icons\exit.png" />
+    <Content Include="JqueryUI\themes\icons\filesave.png" />
+    <Content Include="JqueryUI\themes\icons\forwarder_import.png" />
+    <Content Include="JqueryUI\themes\icons\forwarder_personal.png" />
+    <Content Include="JqueryUI\themes\icons\forwarder_search.png" />
+    <Content Include="JqueryUI\themes\icons\FullScreen.png" />
+    <Content Include="JqueryUI\themes\icons\help.png" />
+    <Content Include="JqueryUI\themes\icons\homepage.png" />
+    <Content Include="JqueryUI\themes\icons\huayu_application.png" />
+    <Content Include="JqueryUI\themes\icons\huayu_instore.png" />
+    <Content Include="JqueryUI\themes\icons\huayu_monitor.png" />
+    <Content Include="JqueryUI\themes\icons\huayu_outstore.png" />
+    <Content Include="JqueryUI\themes\icons\huayu_report.png" />
+    <Content Include="JqueryUI\themes\icons\huayu_store.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-appworkspace.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-blue.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-fuchsia.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-green.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-lime.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-maroon.png" />
+    <Content Include="JqueryUI\themes\icons\icon-color-red.png" />
+    <Content Include="JqueryUI\themes\icons\icon-customer_check.png" />
+    <Content Include="JqueryUI\themes\icons\Information.png" />
+    <Content Include="JqueryUI\themes\icons\InStore.png" />
+    <Content Include="JqueryUI\themes\icons\InverseSele.png" />
+    <Content Include="JqueryUI\themes\icons\mini_add.png" />
+    <Content Include="JqueryUI\themes\icons\mini_edit.png" />
+    <Content Include="JqueryUI\themes\icons\mini_refresh.png" />
+    <Content Include="JqueryUI\themes\icons\no.png" />
+    <Content Include="JqueryUI\themes\icons\ok.png" />
+    <Content Include="JqueryUI\themes\icons\operation_blacklist.png" />
+    <Content Include="JqueryUI\themes\icons\operation_dealwith.png" />
+    <Content Include="JqueryUI\themes\icons\OutStore.png" />
+    <Content Include="JqueryUI\themes\icons\pdf.png" />
+    <Content Include="JqueryUI\themes\icons\pencil.png" />
+    <Content Include="JqueryUI\themes\icons\Preview.png" />
+    <Content Include="JqueryUI\themes\icons\print.png" />
+    <Content Include="JqueryUI\themes\icons\redo.png" />
+    <Content Include="JqueryUI\themes\icons\Reject.png" />
+    <Content Include="JqueryUI\themes\icons\Release.png" />
+    <Content Include="JqueryUI\themes\icons\reload.png" />
+    <Content Include="JqueryUI\themes\icons\report.png" />
+    <Content Include="JqueryUI\themes\icons\ResetScreen.png" />
+    <Content Include="JqueryUI\themes\icons\search.png" />
+    <Content Include="JqueryUI\themes\icons\SeleAll.png" />
+    <Content Include="JqueryUI\themes\icons\sum.png" />
+    <Content Include="JqueryUI\themes\icons\tip.png" />
+    <Content Include="JqueryUI\themes\icons\UnCheck.png" />
+    <Content Include="JqueryUI\themes\icons\undo.png" />
+    <Content Include="JqueryUI\themes\icons\up.png" />
+    <Content Include="JqueryUI\themes\icons\user.png" />
+    <Content Include="JqueryUI\themes\icons\user_accept.png" />
+    <Content Include="JqueryUI\themes\icons\window_remove.png" />
+    <Content Include="JqueryUI\themes\metro-blue\accordion.css" />
+    <Content Include="JqueryUI\themes\metro-blue\calendar.css" />
+    <Content Include="JqueryUI\themes\metro-blue\combo.css" />
+    <Content Include="JqueryUI\themes\metro-blue\combobox.css" />
+    <Content Include="JqueryUI\themes\metro-blue\datagrid.css" />
+    <Content Include="JqueryUI\themes\metro-blue\datebox.css" />
+    <Content Include="JqueryUI\themes\metro-blue\dialog.css" />
+    <Content Include="JqueryUI\themes\metro-blue\easyui.css" />
+    <Content Include="JqueryUI\themes\metro-blue\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\black.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\blank.gif" />
+    <Content Include="JqueryUI\themes\metro-blue\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\default.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\gray.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\loading.gif" />
+    <Content Include="JqueryUI\themes\metro-blue\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\sunny.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\metro-blue\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\metro-blue\layout.css" />
+    <Content Include="JqueryUI\themes\metro-blue\linkbutton.css" />
+    <Content Include="JqueryUI\themes\metro-blue\menu.css" />
+    <Content Include="JqueryUI\themes\metro-blue\menubutton.css" />
+    <Content Include="JqueryUI\themes\metro-blue\messager.css" />
+    <Content Include="JqueryUI\themes\metro-blue\pagination.css" />
+    <Content Include="JqueryUI\themes\metro-blue\panel.css" />
+    <Content Include="JqueryUI\themes\metro-blue\progressbar.css" />
+    <Content Include="JqueryUI\themes\metro-blue\propertygrid.css" />
+    <Content Include="JqueryUI\themes\metro-blue\searchbox.css" />
+    <Content Include="JqueryUI\themes\metro-blue\slider.css" />
+    <Content Include="JqueryUI\themes\metro-blue\spinner.css" />
+    <Content Include="JqueryUI\themes\metro-blue\splitbutton.css" />
+    <Content Include="JqueryUI\themes\metro-blue\tabs.css" />
+    <Content Include="JqueryUI\themes\metro-blue\tooltip.css" />
+    <Content Include="JqueryUI\themes\metro-blue\tree.css" />
+    <Content Include="JqueryUI\themes\metro-blue\validatebox.css" />
+    <Content Include="JqueryUI\themes\metro-blue\window.css" />
+    <Content Include="JqueryUI\themes\metro-gray\accordion.css" />
+    <Content Include="JqueryUI\themes\metro-gray\calendar.css" />
+    <Content Include="JqueryUI\themes\metro-gray\combo.css" />
+    <Content Include="JqueryUI\themes\metro-gray\combobox.css" />
+    <Content Include="JqueryUI\themes\metro-gray\datagrid.css" />
+    <Content Include="JqueryUI\themes\metro-gray\datebox.css" />
+    <Content Include="JqueryUI\themes\metro-gray\dialog.css" />
+    <Content Include="JqueryUI\themes\metro-gray\easyui.css" />
+    <Content Include="JqueryUI\themes\metro-gray\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\black.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\blank.gif" />
+    <Content Include="JqueryUI\themes\metro-gray\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\default.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\gray.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\loading.gif" />
+    <Content Include="JqueryUI\themes\metro-gray\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\sunny.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\metro-gray\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\metro-gray\layout.css" />
+    <Content Include="JqueryUI\themes\metro-gray\linkbutton.css" />
+    <Content Include="JqueryUI\themes\metro-gray\menu.css" />
+    <Content Include="JqueryUI\themes\metro-gray\menubutton.css" />
+    <Content Include="JqueryUI\themes\metro-gray\messager.css" />
+    <Content Include="JqueryUI\themes\metro-gray\pagination.css" />
+    <Content Include="JqueryUI\themes\metro-gray\panel.css" />
+    <Content Include="JqueryUI\themes\metro-gray\progressbar.css" />
+    <Content Include="JqueryUI\themes\metro-gray\propertygrid.css" />
+    <Content Include="JqueryUI\themes\metro-gray\searchbox.css" />
+    <Content Include="JqueryUI\themes\metro-gray\slider.css" />
+    <Content Include="JqueryUI\themes\metro-gray\spinner.css" />
+    <Content Include="JqueryUI\themes\metro-gray\splitbutton.css" />
+    <Content Include="JqueryUI\themes\metro-gray\tabs.css" />
+    <Content Include="JqueryUI\themes\metro-gray\tooltip.css" />
+    <Content Include="JqueryUI\themes\metro-gray\tree.css" />
+    <Content Include="JqueryUI\themes\metro-gray\validatebox.css" />
+    <Content Include="JqueryUI\themes\metro-gray\window.css" />
+    <Content Include="JqueryUI\themes\metro-green\accordion.css" />
+    <Content Include="JqueryUI\themes\metro-green\calendar.css" />
+    <Content Include="JqueryUI\themes\metro-green\combo.css" />
+    <Content Include="JqueryUI\themes\metro-green\combobox.css" />
+    <Content Include="JqueryUI\themes\metro-green\datagrid.css" />
+    <Content Include="JqueryUI\themes\metro-green\datebox.css" />
+    <Content Include="JqueryUI\themes\metro-green\dialog.css" />
+    <Content Include="JqueryUI\themes\metro-green\easyui.css" />
+    <Content Include="JqueryUI\themes\metro-green\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\black.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\blank.gif" />
+    <Content Include="JqueryUI\themes\metro-green\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\default.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\gray.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\loading.gif" />
+    <Content Include="JqueryUI\themes\metro-green\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\sunny.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\metro-green\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\metro-green\layout.css" />
+    <Content Include="JqueryUI\themes\metro-green\linkbutton.css" />
+    <Content Include="JqueryUI\themes\metro-green\menu.css" />
+    <Content Include="JqueryUI\themes\metro-green\menubutton.css" />
+    <Content Include="JqueryUI\themes\metro-green\messager.css" />
+    <Content Include="JqueryUI\themes\metro-green\pagination.css" />
+    <Content Include="JqueryUI\themes\metro-green\panel.css" />
+    <Content Include="JqueryUI\themes\metro-green\progressbar.css" />
+    <Content Include="JqueryUI\themes\metro-green\propertygrid.css" />
+    <Content Include="JqueryUI\themes\metro-green\searchbox.css" />
+    <Content Include="JqueryUI\themes\metro-green\slider.css" />
+    <Content Include="JqueryUI\themes\metro-green\spinner.css" />
+    <Content Include="JqueryUI\themes\metro-green\splitbutton.css" />
+    <Content Include="JqueryUI\themes\metro-green\tabs.css" />
+    <Content Include="JqueryUI\themes\metro-green\tooltip.css" />
+    <Content Include="JqueryUI\themes\metro-green\tree.css" />
+    <Content Include="JqueryUI\themes\metro-green\validatebox.css" />
+    <Content Include="JqueryUI\themes\metro-green\window.css" />
+    <Content Include="JqueryUI\themes\metro-orange\accordion.css" />
+    <Content Include="JqueryUI\themes\metro-orange\calendar.css" />
+    <Content Include="JqueryUI\themes\metro-orange\combo.css" />
+    <Content Include="JqueryUI\themes\metro-orange\combobox.css" />
+    <Content Include="JqueryUI\themes\metro-orange\datagrid.css" />
+    <Content Include="JqueryUI\themes\metro-orange\datebox.css" />
+    <Content Include="JqueryUI\themes\metro-orange\dialog.css" />
+    <Content Include="JqueryUI\themes\metro-orange\easyui.css" />
+    <Content Include="JqueryUI\themes\metro-orange\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\black.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\blank.gif" />
+    <Content Include="JqueryUI\themes\metro-orange\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\default.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\gray.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\loading.gif" />
+    <Content Include="JqueryUI\themes\metro-orange\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\sunny.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\metro-orange\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\metro-orange\layout.css" />
+    <Content Include="JqueryUI\themes\metro-orange\linkbutton.css" />
+    <Content Include="JqueryUI\themes\metro-orange\menu.css" />
+    <Content Include="JqueryUI\themes\metro-orange\menubutton.css" />
+    <Content Include="JqueryUI\themes\metro-orange\messager.css" />
+    <Content Include="JqueryUI\themes\metro-orange\pagination.css" />
+    <Content Include="JqueryUI\themes\metro-orange\panel.css" />
+    <Content Include="JqueryUI\themes\metro-orange\progressbar.css" />
+    <Content Include="JqueryUI\themes\metro-orange\propertygrid.css" />
+    <Content Include="JqueryUI\themes\metro-orange\searchbox.css" />
+    <Content Include="JqueryUI\themes\metro-orange\slider.css" />
+    <Content Include="JqueryUI\themes\metro-orange\spinner.css" />
+    <Content Include="JqueryUI\themes\metro-orange\splitbutton.css" />
+    <Content Include="JqueryUI\themes\metro-orange\tabs.css" />
+    <Content Include="JqueryUI\themes\metro-orange\tooltip.css" />
+    <Content Include="JqueryUI\themes\metro-orange\tree.css" />
+    <Content Include="JqueryUI\themes\metro-orange\validatebox.css" />
+    <Content Include="JqueryUI\themes\metro-orange\window.css" />
+    <Content Include="JqueryUI\themes\metro-red\accordion.css" />
+    <Content Include="JqueryUI\themes\metro-red\calendar.css" />
+    <Content Include="JqueryUI\themes\metro-red\combo.css" />
+    <Content Include="JqueryUI\themes\metro-red\combobox.css" />
+    <Content Include="JqueryUI\themes\metro-red\datagrid.css" />
+    <Content Include="JqueryUI\themes\metro-red\datebox.css" />
+    <Content Include="JqueryUI\themes\metro-red\dialog.css" />
+    <Content Include="JqueryUI\themes\metro-red\easyui.css" />
+    <Content Include="JqueryUI\themes\metro-red\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\black.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\blank.gif" />
+    <Content Include="JqueryUI\themes\metro-red\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\default.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\gray.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\loading.gif" />
+    <Content Include="JqueryUI\themes\metro-red\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\sunny.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\metro-red\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\metro-red\layout.css" />
+    <Content Include="JqueryUI\themes\metro-red\linkbutton.css" />
+    <Content Include="JqueryUI\themes\metro-red\menu.css" />
+    <Content Include="JqueryUI\themes\metro-red\menubutton.css" />
+    <Content Include="JqueryUI\themes\metro-red\messager.css" />
+    <Content Include="JqueryUI\themes\metro-red\pagination.css" />
+    <Content Include="JqueryUI\themes\metro-red\panel.css" />
+    <Content Include="JqueryUI\themes\metro-red\progressbar.css" />
+    <Content Include="JqueryUI\themes\metro-red\propertygrid.css" />
+    <Content Include="JqueryUI\themes\metro-red\searchbox.css" />
+    <Content Include="JqueryUI\themes\metro-red\slider.css" />
+    <Content Include="JqueryUI\themes\metro-red\spinner.css" />
+    <Content Include="JqueryUI\themes\metro-red\splitbutton.css" />
+    <Content Include="JqueryUI\themes\metro-red\tabs.css" />
+    <Content Include="JqueryUI\themes\metro-red\tooltip.css" />
+    <Content Include="JqueryUI\themes\metro-red\tree.css" />
+    <Content Include="JqueryUI\themes\metro-red\validatebox.css" />
+    <Content Include="JqueryUI\themes\metro-red\window.css" />
+    <Content Include="JqueryUI\themes\metro\accordion.css" />
+    <Content Include="JqueryUI\themes\metro\calendar.css" />
+    <Content Include="JqueryUI\themes\metro\combo.css" />
+    <Content Include="JqueryUI\themes\metro\combobox.css" />
+    <Content Include="JqueryUI\themes\metro\datagrid.css" />
+    <Content Include="JqueryUI\themes\metro\datebox.css" />
+    <Content Include="JqueryUI\themes\metro\dialog.css" />
+    <Content Include="JqueryUI\themes\metro\easyui.css" />
+    <Content Include="JqueryUI\themes\metro\images\accordion_arrows.png" />
+    <Content Include="JqueryUI\themes\metro\images\black.png" />
+    <Content Include="JqueryUI\themes\metro\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\blank.gif" />
+    <Content Include="JqueryUI\themes\metro\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\metro\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\metro\images\combo_arrow.png" />
+    <Content Include="JqueryUI\themes\metro\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\metro\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\metro\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\datagrid_icons.png" />
+    <Content Include="JqueryUI\themes\metro\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\metro\images\default.png" />
+    <Content Include="JqueryUI\themes\metro\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\gray.png" />
+    <Content Include="JqueryUI\themes\metro\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\layout_arrows.png" />
+    <Content Include="JqueryUI\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="JqueryUI\themes\metro\images\loading.gif" />
+    <Content Include="JqueryUI\themes\metro\images\menu_arrows.png" />
+    <Content Include="JqueryUI\themes\metro\images\messager_icons.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro.png" />
+    <Content Include="JqueryUI\themes\metro\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\pagination_icons.png" />
+    <Content Include="JqueryUI\themes\metro\images\panel_tools.png" />
+    <Content Include="JqueryUI\themes\metro\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\metro\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\searchbox_button.png" />
+    <Content Include="JqueryUI\themes\metro\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\metro\images\spinner_arrows.png" />
+    <Content Include="JqueryUI\themes\metro\images\sunny.png" />
+    <Content Include="JqueryUI\themes\metro\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\metro\images\tabs_icons.png" />
+    <Content Include="JqueryUI\themes\metro\images\tree_icons.png" />
+    <Content Include="JqueryUI\themes\metro\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\metro\layout.css" />
+    <Content Include="JqueryUI\themes\metro\linkbutton.css" />
+    <Content Include="JqueryUI\themes\metro\menu.css" />
+    <Content Include="JqueryUI\themes\metro\menubutton.css" />
+    <Content Include="JqueryUI\themes\metro\messager.css" />
+    <Content Include="JqueryUI\themes\metro\pagination.css" />
+    <Content Include="JqueryUI\themes\metro\panel.css" />
+    <Content Include="JqueryUI\themes\metro\progressbar.css" />
+    <Content Include="JqueryUI\themes\metro\propertygrid.css" />
+    <Content Include="JqueryUI\themes\metro\searchbox.css" />
+    <Content Include="JqueryUI\themes\metro\slider.css" />
+    <Content Include="JqueryUI\themes\metro\spinner.css" />
+    <Content Include="JqueryUI\themes\metro\splitbutton.css" />
+    <Content Include="JqueryUI\themes\metro\tabs.css" />
+    <Content Include="JqueryUI\themes\metro\tooltip.css" />
+    <Content Include="JqueryUI\themes\metro\tree.css" />
+    <Content Include="JqueryUI\themes\metro\validatebox.css" />
+    <Content Include="JqueryUI\themes\metro\window.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\accordion.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\calendar.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\combo.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\combobox.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\datagrid.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\datebox.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\dialog.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\easyui.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\black.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\blank.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\calendar_nextmonth.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\calendar_nextyear.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\calendar_prevmonth.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\calendar_prevyear.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\datagrid_row_collapse.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\datagrid_row_expand.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\default.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\gray.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\menu.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\menu_downarrow.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\menu_rightarrow.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\menu_sep.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\menu_split_downarrow.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\messager_error.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\messager_info.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\messager_question.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\messager_warning.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\pagination_loading.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\panel_loading.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\sunny.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tabs_close.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_arrows.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_arrows.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_checkbox_0.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_checkbox_1.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_checkbox_2.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_dnd_no.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_dnd_yes.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_elbow.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_file.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_folder.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_folder_open.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\tree_loading.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_65_654b24_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-bg_fine-grain_68_b83400_60x60.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-icons_222222_256x240.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-icons_3572ac_256x240.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-icons_8c291d_256x240.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-icons_b83400_256x240.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-icons_fbdb93_256x240.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\validatebox_pointer.gif" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\validatebox_pointer.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\pepper-grinder\layout.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\linkbutton.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\menu.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\menubutton.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\messager.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\pagination.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\panel.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\progressbar.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\propertygrid.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\searchbox.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\slider.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\spinner.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\splitbutton.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\tabs.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\tree.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\validatebox.css" />
+    <Content Include="JqueryUI\themes\pepper-grinder\window.css" />
+    <Content Include="JqueryUI\themes\sunny\accordion.css" />
+    <Content Include="JqueryUI\themes\sunny\calendar.css" />
+    <Content Include="JqueryUI\themes\sunny\combo.css" />
+    <Content Include="JqueryUI\themes\sunny\combobox.css" />
+    <Content Include="JqueryUI\themes\sunny\datagrid.css" />
+    <Content Include="JqueryUI\themes\sunny\datebox.css" />
+    <Content Include="JqueryUI\themes\sunny\dialog.css" />
+    <Content Include="JqueryUI\themes\sunny\easyui.css" />
+    <Content Include="JqueryUI\themes\sunny\images\black.png" />
+    <Content Include="JqueryUI\themes\sunny\images\black_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\blank.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\bootstrap.png" />
+    <Content Include="JqueryUI\themes\sunny\images\bootstrap_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\calendar_arrows.png" />
+    <Content Include="JqueryUI\themes\sunny\images\calendar_nextmonth.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\calendar_nextyear.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\calendar_prevmonth.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\calendar_prevyear.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\cupertino.png" />
+    <Content Include="JqueryUI\themes\sunny\images\cupertino_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\dark-hive.png" />
+    <Content Include="JqueryUI\themes\sunny\images\dark-hive_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\datagrid_row_collapse.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\datagrid_row_expand.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\datebox_arrow.png" />
+    <Content Include="JqueryUI\themes\sunny\images\default.png" />
+    <Content Include="JqueryUI\themes\sunny\images\default_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\gray.png" />
+    <Content Include="JqueryUI\themes\sunny\images\gray_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\menu.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\menu_downarrow.png" />
+    <Content Include="JqueryUI\themes\sunny\images\menu_rightarrow.png" />
+    <Content Include="JqueryUI\themes\sunny\images\menu_sep.png" />
+    <Content Include="JqueryUI\themes\sunny\images\menu_split_downarrow.png" />
+    <Content Include="JqueryUI\themes\sunny\images\messager_error.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\messager_info.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\messager_question.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\messager_warning.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-blue.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-blue_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-gray.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-gray_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-green.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-green_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-orange.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-orange_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-red.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro-red_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro.png" />
+    <Content Include="JqueryUI\themes\sunny\images\metro_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\pagination_loading.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\panel_loading.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\pepper-grinder.png" />
+    <Content Include="JqueryUI\themes\sunny\images\pepper-grinder_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\slider_handle.png" />
+    <Content Include="JqueryUI\themes\sunny\images\sunny.png" />
+    <Content Include="JqueryUI\themes\sunny\images\sunny_cur.png" />
+    <Content Include="JqueryUI\themes\sunny\images\tabs_close.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_arrows.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_arrows.png" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_checkbox_0.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_checkbox_1.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_checkbox_2.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_dnd_no.png" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_dnd_yes.png" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_elbow.png" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_file.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_folder.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_folder_open.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\tree_loading.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="JqueryUI\themes\sunny\images\validatebox_pointer.gif" />
+    <Content Include="JqueryUI\themes\sunny\images\validatebox_pointer.png" />
+    <Content Include="JqueryUI\themes\sunny\images\validatebox_warning.png" />
+    <Content Include="JqueryUI\themes\sunny\layout.css" />
+    <Content Include="JqueryUI\themes\sunny\linkbutton.css" />
+    <Content Include="JqueryUI\themes\sunny\menu.css" />
+    <Content Include="JqueryUI\themes\sunny\menubutton.css" />
+    <Content Include="JqueryUI\themes\sunny\messager.css" />
+    <Content Include="JqueryUI\themes\sunny\pagination.css" />
+    <Content Include="JqueryUI\themes\sunny\panel.css" />
+    <Content Include="JqueryUI\themes\sunny\progressbar.css" />
+    <Content Include="JqueryUI\themes\sunny\propertygrid.css" />
+    <Content Include="JqueryUI\themes\sunny\searchbox.css" />
+    <Content Include="JqueryUI\themes\sunny\slider.css" />
+    <Content Include="JqueryUI\themes\sunny\spinner.css" />
+    <Content Include="JqueryUI\themes\sunny\splitbutton.css" />
+    <Content Include="JqueryUI\themes\sunny\tabs.css" />
+    <Content Include="JqueryUI\themes\sunny\tree.css" />
+    <Content Include="JqueryUI\themes\sunny\validatebox.css" />
+    <Content Include="JqueryUI\themes\sunny\window.css" />
+    <Content Include="JS\Common\Common.js" />
+    <Content Include="JS\Common\Test1.js" />
+    <Content Include="JS\Common\Test2.js" />
+    <Content Include="JS\Common\Test5.js" />
+    <Content Include="JS\Common\UnReleaseSheetSetting.js" />
+    <Content Include="JS\Common\util.js" />
+    <Content Include="JS\Common\ViewInOutStoreWayBillDetail.js" />
+    <Content Include="JS\Common\ViewRejectSubWayBillDetail.js" />
+    <Content Include="JS\Common\ViewSubWayBillDetail.js" />
+    <Content Include="JS\Common\RejectSheetSetting.js" />
+    <Content Include="JS\Common\FirstPickGoodsSheetSetting.js" />
+    <Content Include="JS\Common\ViewForeStoreWayBillDetail.js" />
+    <Content Include="JS\Common\Test3.js" />
+    <Content Include="JS\Common\Test4.js" />
+    <Content Include="JS\Customer\CustomerCheck.js" />
+    <Content Include="JS\Customer\CustomerConfirm.js" />
+    <Content Include="JS\Huayu\Huayu_SaveInStore.js" />
+    <Content Include="JS\Huayu\ForeStore_Add.js" />
+    <Content Include="JS\Huayu\HuayuUserMaintain.js" />
+    <Content Include="JS\Customer\Query.js" />
+    <Content Include="JS\Customer\Site.js" />
+    <Content Include="JS\Customer\CustomerDetail.js" />
+    <Content Include="JS\Huayu\HuayuUserMaintain_Update.js" />
+    <Content Include="JS\Forwarder\Site.js" />
+    <Content Include="JS\Forwarder\QueryCompany.js" />
+    <Content Include="JS\Forwarder\ChangePassword.js" />
+    <Content Include="JS\Forwarder\DataUpload.js" />
+    <Content Include="JS\Forwarder\Personal.js" />
+    <Content Include="JS\Huayu\ChangePassword.js" />
+    <Content Include="JS\Huayu\ExceptionHandle.js" />
+    <Content Include="JS\Huayu\ForeStore.js" />
+    <Content Include="JS\Huayu\Huayu_EmailManagement.js" />
+    <Content Include="JS\Huayu\Huayu_ViewFeeForeSettingInfo.js" />
+    <Content Include="JS\Huayu\Huayu_WayBillWeight.js" />
+    <Content Include="JS\Huayu\InOutStoreExceptionEvent.js" />
+    <Content Include="JS\Huayu\PrintRelese.js" />
+    <Content Include="JS\Huayu\AnanalyseStatistic.js" />
+    <Content Include="JS\Huayu\QueryMainFrame.js" />
+    <Content Include="JS\Huayu\Total.js" />
+    <Content Include="JS\Huayu\Query.js" />
+    <Content Include="JS\Huayu\Relese.js" />
+    <Content Include="JS\Huayu\Site.js" />
+    <Content Include="JS\Huayu\TotalStatisticByMonth.js" />
+    <Content Include="JS\Huayu\ViewExceptionStoreHistory.js" />
+    <Content Include="JS\Huayu\Huayu_ViewCheckResultDetail.js" />
+    <Content Include="JS\Huayu\WayBillPatchOut.js" />
+    <Content Include="JS\Huayu\WayBillPatchOutExcel.js" />
+    <Content Include="JS\Huayu\InStore.js" />
+    <Content Include="JS\Huayu\OutStore.js" />
+    <Content Include="JS\Huayu\ExceptionStore.js" />
+    <Content Include="JS\Huayu\WayBillPatchIn.js" />
+    <Content Include="JS\Huayu\WayBillPatchInExcel.js" />
+    <Content Include="JS\Huayu\ConfirmInStore.js" />
+    <Content Include="JS\Huayu\Huayu_UnReleaseWayBillHandler.js" />
+    <Content Include="JS\Huayu\Huayu_RejectWayBillHandler.js" />
+    <Content Include="JS\Huayu\Huayu_QueryRejectSubWayBill.js" />
+    <Content Include="JS\Huayu\HuayuFeeRateSetting.js" />
+    <Content Include="JS\Huayu\Huayu_WayBillDailyReport.js" />
+    <Content Include="JS\Huayu\Huayu_RemoveStore.js" />
+    <Content Include="JS\Huayu\Huayu_ViewCheckResult.js" />
+    <Content Include="JS\Huayu\Huayu_WayBillFeeForeSetting.js" />
+    <Content Include="JS\Huayu\Huayu_ViewWayBillWeightStatistic.js" />
+    <Content Include="JS\Login.js" />
+    <Content Include="obj\Debug\CS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CS.dll" />
+    <Content Include="obj\Debug\CS.pdb" />
+    <Content Include="Resource\ResGen.exe" />
+    <Content Include="Scripts\jquery.PrintArea.js" />
+    <Content Include="Scripts\jquery.PrintArea.js_4.js" />
+    <Content Include="Scripts\My97DatePicker\calendar.js" />
+    <Content Include="Scripts\My97DatePicker\lang\en.js" />
+    <Content Include="Scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="Scripts\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="Scripts\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="Scripts\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="Scripts\My97DatePicker\开发包\readme.txt" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Error.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\ForwarderMain\_Layout.cshtml" />
+    <Content Include="ws_CS.asmx" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\changelog.txt" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\ckfinder.html" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\ckfinder.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\ckfinder_v1.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\config.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\install.txt" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\lang\en.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\lang\zh-cn.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\lang\zh-tw.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\lang\_translationstatus.txt" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\license.txt" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.css" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\mode\clike\clike.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\mode\css\css.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\mode\javascript\javascript.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\mode\php\php.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\mode\xml\xml.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\plugin.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\flashupload\flash\Uploader.swf" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\flashupload\Uploader.html" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\imageresize\images\mini.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\imageresize\plugin.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\plugins\zip\images\zip.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\app.css" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\host.css" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\ckffolder.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\ckffolderopened.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\ckfminus.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\ckfnothumb.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\ckfplus.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons.png" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\ai.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\avi.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\bmp.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\cs.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\default.icon.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\dll.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\doc.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\docx.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\exe.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\fla.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\gif.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\jpg.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\js.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\mdb.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\mp3.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\ogg.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\pdf.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\ppt.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\pptx.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\rdp.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\swf.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\swt.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\txt.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\vsd.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\xls.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\xlsx.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\xml.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\16\zip.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\ai.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\avi.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\bmp.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\cs.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\default.icon.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\dll.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\doc.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\docx.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\exe.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\fla.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\gif.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\jpg.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\js.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\mdb.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\mp3.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\ogg.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\ogg.png" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\pdf.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\ppt.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\pptx.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\rdp.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\swf.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\swt.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\txt.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\vsd.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\xls.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\xlsx.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\xml.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\icons\32\zip.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\loaders\16x16.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\loaders\32x32.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\spacer.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\sprites.png" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\sprites_ie6.png" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\add.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\clear_basket.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\delete.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\download.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\help.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\maximize.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\refresh.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\settings.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\images\toolbar\view.gif" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\richcombo.css" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\skin.js" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\skins\kama\uipanel.css" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\translations.txt" />
+    <Content Include="xheditor-1.2.1\demos\ckfinder\upload.html" />
+    <Content Include="xheditor-1.2.1\demos\common.css" />
+    <Content Include="xheditor-1.2.1\demos\demo01.html" />
+    <Content Include="xheditor-1.2.1\demos\demo02.html" />
+    <Content Include="xheditor-1.2.1\demos\demo03.html" />
+    <Content Include="xheditor-1.2.1\demos\demo04.html" />
+    <Content Include="xheditor-1.2.1\demos\demo05.html" />
+    <Content Include="xheditor-1.2.1\demos\demo06.html" />
+    <Content Include="xheditor-1.2.1\demos\demo07.html" />
+    <Content Include="xheditor-1.2.1\demos\demo08.html" />
+    <Content Include="xheditor-1.2.1\demos\demo09.html" />
+    <Content Include="xheditor-1.2.1\demos\demo10.html" />
+    <Content Include="xheditor-1.2.1\demos\demo11.html" />
+    <Content Include="xheditor-1.2.1\demos\demo12.html" />
+    <Content Include="xheditor-1.2.1\demos\demo13.html" />
+    <Content Include="xheditor-1.2.1\demos\demo14.html" />
+    <Content Include="xheditor-1.2.1\demos\googlemap\googlemap.html" />
+    <Content Include="xheditor-1.2.1\demos\googlemap\googlemap.js" />
+    <Content Include="xheditor-1.2.1\demos\googlemap\map.gif" />
+    <Content Include="xheditor-1.2.1\demos\img\plugin.gif" />
+    <Content Include="xheditor-1.2.1\demos\img\tabbgl.gif" />
+    <Content Include="xheditor-1.2.1\demos\img\tabbgr.gif" />
+    <Content Include="xheditor-1.2.1\demos\img\xheditor.gif" />
+    <Content Include="xheditor-1.2.1\demos\img\xheditorbg.gif" />
+    <Content Include="xheditor-1.2.1\demos\index.html" />
+    <Content Include="xheditor-1.2.1\demos\mediaplayer\flv.gif" />
+    <Content Include="xheditor-1.2.1\demos\mediaplayer\player.swf" />
+    <Content Include="xheditor-1.2.1\demos\prettify\code.gif" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-apollo.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-hs.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-lisp.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-lua.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-ml.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-proto.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-scala.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-sql.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-vhdl.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-wiki.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\lang-yaml.js" />
+    <Content Include="xheditor-1.2.1\demos\prettify\prettify.css" />
+    <Content Include="xheditor-1.2.1\demos\prettify\prettify.js" />
+    <Content Include="xheditor-1.2.1\demos\saveremoteimg.asp" />
+    <Content Include="xheditor-1.2.1\demos\saveremoteimg.aspx" />
+    <Content Include="xheditor-1.2.1\demos\showubb.asp" />
+    <Content Include="xheditor-1.2.1\demos\test.swf" />
+    <Content Include="xheditor-1.2.1\demos\upload.asp" />
+    <Content Include="xheditor-1.2.1\demos\upload.aspx" />
+    <Content Include="xheditor-1.2.1\demos\uptest.html" />
+    <Content Include="xheditor-1.2.1\jquery\jquery-1.4.4.min.js" />
+    <Content Include="xheditor-1.2.1\jquery\jquery-1.4.4.src.js" />
+    <Content Include="xheditor-1.2.1\LGPL-LICENSE.txt" />
+    <Content Include="xheditor-1.2.1\serverscript\asp\ubb2html.asp" />
+    <Content Include="xheditor-1.2.1\wizard.html" />
+    <Content Include="xheditor-1.2.1\xheditor-1.2.1.min.js" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\angry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\awkward.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\bye.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\config.txt" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\crazy.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\cry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\curse.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\cute.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\despise.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\doubt.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\envy.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\fastcry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\knock.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\laugh.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\mad.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\ohmy.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\panic.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\proud.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\quiet.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\sad.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\shutup.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\shy.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\sleep.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\smile.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\struggle.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\titter.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\tongue.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\wail.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\default\wronged.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\alien.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\angel.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\angry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\blink.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\blush.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\config.txt" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\cool.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\cry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\depres.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\devil.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\glare.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\heart.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\magician.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\police.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\sad.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\sick.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\smile.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\ipb\wub.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\10.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\11.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\12.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\13.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\14.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\15.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\16.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\17.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\18.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\19.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\20.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\21.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\22.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\23.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\24.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\25.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\26.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\27.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\28.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\29.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\3.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\30.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\31.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\32.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\33.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\34.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\35.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\36.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\37.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\38.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\39.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\4.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\40.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\5.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\6.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\7.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\8.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\msn\9.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\config.txt" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\good.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\love.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\music.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\question.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_lang\en.js" />
+    <Content Include="xheditor-1.2.1\xheditor_lang\zh-cn.js" />
+    <Content Include="xheditor-1.2.1\xheditor_lang\zh-tw.js" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\html2markdown.js" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\htmldomparser.js" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\showdown.js" />
+    <Content Include="xheditor-1.2.1\xheditor_plugins\ubb.js" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\blank.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\iframe.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\close.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\flash.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\icons.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\loading.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\progress.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\img\wordimg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\default\ui.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\img\wordimg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\nostyle\ui.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\img\wordimg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\img\wordimg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\iframe.css" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\close.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\img\wordimg.gif" />
+    <Content Include="xheditor-1.2.1\xheditor_skin\vista\ui.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Models\" />
+    <Folder Include="Temp\PDF\" />
+    <Folder Include="Temp\txt\" />
+    <Folder Include="Temp\xls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomerCheck_DS.xsc">
+      <DependentUpon>CustomerCheck_DS.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerCheck_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerCheck_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerCheck_DS.xss">
+      <DependentUpon>CustomerCheck_DS.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerConfirm_DS.xsc">
+      <DependentUpon>CustomerConfirm_DS.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerConfirm_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerConfirm_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerConfirm_DS.xss">
+      <DependentUpon>CustomerConfirm_DS.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerQuery_DS.xsc">
+      <DependentUpon>CustomerQuery_DS.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerQuery_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerQuery_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerQuery_DS.xss">
+      <DependentUpon>CustomerQuery_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ExceptionStore_DS.xsc">
+      <DependentUpon>ExceptionStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ExceptionStore_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExceptionStore_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ExceptionStore_DS.xss">
+      <DependentUpon>ExceptionStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="FirstPickGoodsSheetSetting_DS.xsc">
+      <DependentUpon>FirstPickGoodsSheetSetting_DS.xsd</DependentUpon>
+    </None>
+    <None Include="FirstPickGoodsSheetSetting_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirstPickGoodsSheetSetting_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FirstPickGoodsSheetSetting_DS.xss">
+      <DependentUpon>FirstPickGoodsSheetSetting_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ForwarderQueryCompany_DS.xsc">
+      <DependentUpon>ForwarderQueryCompany_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ForwarderQueryCompany_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ForwarderQueryCompany_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ForwarderQueryCompany_DS.xss">
+      <DependentUpon>ForwarderQueryCompany_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuAnanalyseStatistic_DS.xsc">
+      <DependentUpon>HuayuAnanalyseStatistic_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuAnanalyseStatistic_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuAnanalyseStatistic_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuAnanalyseStatistic_DS.xss">
+      <DependentUpon>HuayuAnanalyseStatistic_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuForeStore_DS.xsc">
+      <DependentUpon>HuayuForeStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuForeStore_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuForeStore_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuForeStore_DS.xss">
+      <DependentUpon>HuayuForeStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuInOutStoreExceptionEvent_DS.xsc">
+      <DependentUpon>HuayuInOutStoreExceptionEvent_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuInOutStoreExceptionEvent_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuInOutStoreExceptionEvent_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuInOutStoreExceptionEvent_DS.xss">
+      <DependentUpon>HuayuInOutStoreExceptionEvent_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuInStore_DS.xsc">
+      <DependentUpon>HuayuInStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuInStore_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuInStore_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuInStore_DS.xss">
+      <DependentUpon>HuayuInStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuOutStore_DS.xsc">
+      <DependentUpon>HuayuOutStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuOutStore_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuOutStore_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuOutStore_DS.xss">
+      <DependentUpon>HuayuOutStore_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuQuery_DS.xsc">
+      <DependentUpon>HuayuQuery_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuQuery_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuQuery_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuQuery_DS.xss">
+      <DependentUpon>HuayuQuery_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuRelese_DS.xsc">
+      <DependentUpon>HuayuRelese_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuRelese_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuRelese_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuRelese_DS.xss">
+      <DependentUpon>HuayuRelese_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuUserMaintain_DS.xsc">
+      <DependentUpon>HuayuUserMaintain_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuUserMaintain_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuUserMaintain_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuUserMaintain_DS.xss">
+      <DependentUpon>HuayuUserMaintain_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuViewExceptionStoreHistory_DS.xsc">
+      <DependentUpon>HuayuViewExceptionStoreHistory_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuViewExceptionStoreHistory_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuViewExceptionStoreHistory_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuViewExceptionStoreHistory_DS.xss">
+      <DependentUpon>HuayuViewExceptionStoreHistory_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuViewRejectSubWayBillDetail_DS.xsc">
+      <DependentUpon>HuayuViewRejectSubWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuViewRejectSubWayBillDetail_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuViewRejectSubWayBillDetail_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuViewRejectSubWayBillDetail_DS.xss">
+      <DependentUpon>HuayuViewRejectSubWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuWayBillWeight_DS.xsc">
+      <DependentUpon>HuayuWayBillWeight_DS.xsd</DependentUpon>
+    </None>
+    <None Include="HuayuWayBillWeight_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HuayuWayBillWeight_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HuayuWayBillWeight_DS.xss">
+      <DependentUpon>HuayuWayBillWeight_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_Print_Release_DS.xsc">
+      <DependentUpon>Huayu_Print_Release_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_Print_Release_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_Print_Release_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_Print_Release_DS.xss">
+      <DependentUpon>Huayu_Print_Release_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_QueryRejectSubWayBill_DS.xsc">
+      <DependentUpon>Huayu_QueryRejectSubWayBill_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_QueryRejectSubWayBill_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_QueryRejectSubWayBill_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_QueryRejectSubWayBill_DS.xss">
+      <DependentUpon>Huayu_QueryRejectSubWayBill_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_RejectWayBillHandler_DS.xsc">
+      <DependentUpon>Huayu_RejectWayBillHandler_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_RejectWayBillHandler_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_RejectWayBillHandler_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_RejectWayBillHandler_DS.xss">
+      <DependentUpon>Huayu_RejectWayBillHandler_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_TotalStatisticByMonth_DS.xsc">
+      <DependentUpon>Huayu_TotalStatisticByMonth_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_TotalStatisticByMonth_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_TotalStatisticByMonth_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_TotalStatisticByMonth_DS.xss">
+      <DependentUpon>Huayu_TotalStatisticByMonth_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_UnReleaseWayBillHandler_DS.xsc">
+      <DependentUpon>Huayu_UnReleaseWayBillHandler_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_UnReleaseWayBillHandler_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_UnReleaseWayBillHandler_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_UnReleaseWayBillHandler_DS.xss">
+      <DependentUpon>Huayu_UnReleaseWayBillHandler_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_ViewWayBillWeightStatistic_DS.xsc">
+      <DependentUpon>Huayu_ViewWayBillWeightStatistic_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_ViewWayBillWeightStatistic_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_ViewWayBillWeightStatistic_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_ViewWayBillWeightStatistic_DS.xss">
+      <DependentUpon>Huayu_ViewWayBillWeightStatistic_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_WayBillDailyReport_DS.xsc">
+      <DependentUpon>Huayu_WayBillDailyReport_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Huayu_WayBillDailyReport_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Huayu_WayBillDailyReport_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Huayu_WayBillDailyReport_DS.xss">
+      <DependentUpon>Huayu_WayBillDailyReport_DS.xsd</DependentUpon>
+    </None>
+    <None Include="images\Customer\Thumbs.db" />
+    <Content Include="Views\ForwarderMain\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Forwarder_DataUpLoad\Index.cshtml" />
+    <Content Include="Views\Forwarder_Personal\Index.cshtml" />
+    <Content Include="Views\Forwarder_QueryCompany\Index.cshtml" />
+    <Content Include="Views\Forwarder_changePassword\Index.cshtml" />
+    <Content Include="Views\CustomerMain\Index.cshtml">
+      <SubType>
+      </SubType>
+    </Content>
+    <Content Include="Views\CustomerMain\_Layout.cshtml" />
+    <Content Include="Views\Customer_Check\Index.cshtml" />
+    <Content Include="Views\Customer_Confirm\Index.cshtml" />
+    <Content Include="Views\Customer_Query\Index.cshtml" />
+    <Content Include="Views\Huayu_UserMaintain\Index.cshtml" />
+    <Content Include="Views\HuayuMain\_Layout.cshtml" />
+    <Content Include="Views\HuayuMain\Index.cshtml" />
+    <Content Include="Views\Huayu_Query\Index.cshtml" />
+    <Content Include="Views\Huayu_Relese\Index.cshtml" />
+    <Content Include="Views\Huayu_Total\Index.cshtml" />
+    <Content Include="Views\Huayu_ChangePassword\Index.cshtml" />
+    <None Include="InOutStoreCount_DS.xsc">
+      <DependentUpon>InOutStoreCount_DS.xsd</DependentUpon>
+    </None>
+    <None Include="InOutStoreCount_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InOutStoreCount_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="InOutStoreCount_DS.xss">
+      <DependentUpon>InOutStoreCount_DS.xsd</DependentUpon>
+    </None>
+    <None Include="JqueryUI\jquery-easyui-ribbon\images\16\Thumbs.db" />
+    <None Include="JqueryUI\themes\black\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\bootstrap\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\cupertino\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\dark-hive\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\default\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\gray\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\icons\Thumbs.db" />
+    <None Include="JqueryUI\themes\metro-blue\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\metro-gray\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\metro-green\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\metro-orange\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\metro-red\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\metro\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\pepper-grinder\images\Thumbs.db" />
+    <None Include="JqueryUI\themes\sunny\images\Thumbs.db" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="PrintRejectSubWayBill_DS.xsc">
+      <DependentUpon>PrintRejectSubWayBill_DS.xsd</DependentUpon>
+    </None>
+    <None Include="PrintRejectSubWayBill_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintRejectSubWayBill_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PrintRejectSubWayBill_DS.xss">
+      <DependentUpon>PrintRejectSubWayBill_DS.xsd</DependentUpon>
+    </None>
+    <None Include="PrintUnReleaseSheet_DS.xsc">
+      <DependentUpon>PrintUnReleaseSheet_DS.xsd</DependentUpon>
+    </None>
+    <None Include="PrintUnReleaseSheet_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintUnReleaseSheet_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PrintUnReleaseSheet_DS.xss">
+      <DependentUpon>PrintUnReleaseSheet_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Resource\res.bat" />
+    <None Include="Scripts\My97DatePicker\WdatePicker.js.bak" />
+    <Content Include="Views\Customer_Detail\Index.cshtml" />
+    <Content Include="Views\Huayu_PrintRelease\Index.cshtml" />
+    <Content Include="Views\Huayu_ForeStore\Index.cshtml" />
+    <Content Include="Views\Huayu_WayBillPatchOut\Index.cshtml" />
+    <Content Include="Views\Huayu_WayBillPatchOutExcel\Index.cshtml" />
+    <Content Include="Views\Huayu_InStore\Index.cshtml" />
+    <Content Include="Views\Huayu_OutStore\Index.cshtml" />
+    <Content Include="Views\Huayu_ExceptionStore\Index.cshtml" />
+    <Content Include="Views\Huayu_UserMaintain\Create.cshtml" />
+    <Content Include="Views\Huayu_UserMaintain\Edit.cshtml" />
+    <Content Include="Views\Huayu_AnanalyseStatistic\Index.cshtml" />
+    <Content Include="Views\Huayu_ExceptionStore\ExceptionHandle.cshtml" />
+    <Content Include="Views\Huayu_WayBillPatchInExcel\Index.cshtml" />
+    <Content Include="Views\Huayu_WayBillPatchIn\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\ViewSubWayBillDetail\Index.cshtml" />
+    <Content Include="Views\Huayu_InOutStoreExceptionEvent\Index.cshtml" />
+    <Content Include="Temp\Template\template.xls" />
+    <None Include="ShowSubWayBillDetail_DS.xsc">
+      <DependentUpon>ShowSubWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ShowSubWayBillDetail_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShowSubWayBillDetail_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ShowSubWayBillDetail_DS.xss">
+      <DependentUpon>ShowSubWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ShowWayBillInfo_DS.xsc">
+      <DependentUpon>ShowWayBillInfo_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ShowWayBillInfo_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShowWayBillInfo_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ShowWayBillInfo_DS.xss">
+      <DependentUpon>ShowWayBillInfo_DS.xsd</DependentUpon>
+    </None>
+    <None Include="Test\Manifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Test\Type\Type.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Test\WayBillInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ViewForeStoreWayBillDetail_DS.xsc">
+      <DependentUpon>ViewForeStoreWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ViewForeStoreWayBillDetail_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewForeStoreWayBillDetail_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ViewForeStoreWayBillDetail_DS.xss">
+      <DependentUpon>ViewForeStoreWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ViewInOutStoreWayBillDetail_DS.xsc">
+      <DependentUpon>ViewInOutStoreWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ViewInOutStoreWayBillDetail_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewInOutStoreWayBillDetail_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ViewInOutStoreWayBillDetail_DS.xss">
+      <DependentUpon>ViewInOutStoreWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ViewSubWayBillDetail_DS.xsc">
+      <DependentUpon>ViewSubWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <None Include="ViewSubWayBillDetail_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewSubWayBillDetail_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ViewSubWayBillDetail_DS.xss">
+      <DependentUpon>ViewSubWayBillDetail_DS.xsd</DependentUpon>
+    </None>
+    <Content Include="Views\ViewInOutStoreWayBillDetail\Index.cshtml" />
+    <Content Include="Views\Huayu_QueryMainFrame\Index.cshtml" />
+    <Content Include="Views\Huayu_ViewExceptionStoreHistory\Index.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\Huayu_ConfirmInStore\Index.cshtml" />
+    <Content Include="Views\Huayu_ConfirmInStore\Create.cshtml" />
+    <Content Include="Views\Huayu_WayBillWeight\Index.cshtml" />
+    <Content Include="Views\Huayu_UnReleaseWayBillHandler\Index.cshtml" />
+    <Content Include="Views\Huayu_RejectWayBillHandler\Index.cshtml" />
+    <Content Include="Views\ViewRejectSubWayBillDetail\Index.cshtml" />
+    <Content Include="Views\Huayu_QueryRejectSubWayBill\Index.cshtml" />
+    <Content Include="Views\Huayu_FeeRateSetting\Index.cshtml" />
+    <Content Include="Views\Huayu_WayBillDailyReport\Index.cshtml" />
+    <Content Include="Views\UnReleaseSheetSetting\Index.cshtml" />
+    <Content Include="Views\RejectSheetSetting\Index.cshtml" />
+    <Content Include="Views\FirstPickGoodsSheetSetting\Index.cshtml" />
+    <Content Include="Views\Email\EmailRequest.cshtml" />
+    <Content Include="Views\Email\ProcessRequest.cshtml" />
+    <Content Include="Views\Huayu_EmailManagement\Index.cshtml" />
+    <Content Include="Views\Huayu_TotalStatisticByMonth\Index.cshtml" />
+    <Content Include="Views\Huayu_SaveInStore\Index.cshtml" />
+    <Content Include="Views\ViewForeStoreWayBillDetail\Index.cshtml" />
+    <Content Include="Views\Huayu_RemoveStore\Index.cshtml" />
+    <Content Include="Views\Huayu_ViewCheckResult\Index.cshtml" />
+    <Content Include="Views\Huayu_ViewCheckResultDetail\Index.cshtml" />
+    <Content Include="Views\Huayu_WayBillFeeForeSetting\Index.cshtml" />
+    <Content Include="Views\Huayu_ViewFeeForeSettingInfo\Index.cshtml" />
+    <Content Include="Views\Huayu_ViewWayBillWeightStatistic\Index.cshtml" />
+    <Content Include="Views\Test1\Index.cshtml" />
+    <Content Include="Views\Test2\Index.cshtml" />
+    <Content Include="Views\Test3\Index.cshtml" />
+    <Content Include="Views\Test4\Index.cshtml" />
+    <Content Include="Views\Test5\Index.cshtml" />
+    <None Include="xheditor-1.2.1\CHANGE.md" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\ckfinder.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\config.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\ckfinder_php5.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\connector.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\constants.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\lang\en.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\lang\zh-cn.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\lang\zh-tw.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\CommandHandlerBase.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\CopyFiles.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\CreateFolder.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\DeleteFiles.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\DeleteFolder.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\DownloadFile.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\FileUpload.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\GetFiles.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\GetFolders.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\Init.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\LoadCookies.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\MoveFiles.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\QuickUpload.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\RenameFile.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\RenameFolder.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\Thumbnail.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\CommandHandler\XmlCommandHandlerBase.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\AccessControlConfig.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\Config.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\Connector.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\Factory.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\FolderHandler.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\Hooks.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\ImagesConfig.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\Registry.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\ResourceTypeConfig.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\ThumbnailsConfig.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Core\Xml.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\ErrorHandler\Base.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\ErrorHandler\FileUpload.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\ErrorHandler\Http.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\ErrorHandler\QuickUpload.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Utils\FileSystem.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Utils\Misc.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Utils\Security.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\core\connector\php\php5\Utils\XmlNode.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\plugins\fileeditor\plugin.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\plugins\imageresize\plugin.php" />
+    <None Include="xheditor-1.2.1\demos\ckfinder\plugins\zip\plugin.php" />
+    <None Include="xheditor-1.2.1\demos\saveremoteimg.php" />
+    <None Include="xheditor-1.2.1\demos\show.php" />
+    <None Include="xheditor-1.2.1\demos\showplugin.php" />
+    <None Include="xheditor-1.2.1\demos\showubb.php" />
+    <None Include="xheditor-1.2.1\demos\upload.php" />
+    <None Include="xheditor-1.2.1\demos\uploadattach.php" />
+    <None Include="xheditor-1.2.1\demos\uploadembed.php" />
+    <None Include="xheditor-1.2.1\demos\uploadgui.php" />
+    <None Include="xheditor-1.2.1\demos\uploadguiupload.php" />
+    <None Include="xheditor-1.2.1\demos\uploadthumb.php" />
+    <None Include="xheditor-1.2.1\README.md" />
+    <None Include="xheditor-1.2.1\serverscript\php\ubb2html.php" />
+    <None Include="xheditor-1.2.1\THANKS.md" />
+    <None Include="xheditor-1.2.1\TODO.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{DA0106FE-A1EE-4C5E-8AC6-81A0472429CD}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{E274FF69-C3F4-4C2A-9CF5-C2938C3D4B41}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.csproj">
+      <Project>{A9A4351C-ADB2-4D79-A35B-11971CE94531}</Project>
+      <Name>SQLDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{8A88DB43-170A-427C-AD8A-C92513B97A8C}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Reports\ViewInOutStoreWayBillDetail.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Reports\ShowSubWayBillDetail.rdlc" />
+    <Content Include="Content\Reports\ShowWayBillInfo.rdlc" />
+    <Content Include="Content\Reports\HuayuViewExceptionStoreHistory.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\en-us.resources" />
+    <Content Include="Content\Reports\Huayu_Print_Release.rdlc" />
+    <Content Include="Content\Reports\HuayuWayBillWeight.rdlc" />
+    <Content Include="Content\Reports\HuayuViewRejectSubWayBillDetail.rdlc" />
+    <Content Include="Content\Reports\Huayu_UnReleaseWayBillHandler.rdlc" />
+    <Content Include="Content\Reports\Huayu_RejectWayBillHandler.rdlc" />
+    <Content Include="Content\Reports\Huayu_QueryRejectSubWayBill.rdlc" />
+    <Content Include="Content\Reports\Huayu_WayBillDailyReport.rdlc" />
+    <Content Include="Content\Reports\Huayu_UnReleaseSeet.rdlc" />
+    <Content Include="Content\Reports\Huayu_RejectSeet.rdlc" />
+    <Content Include="Content\Reports\FirstPickGoodsSheetSetting.rdlc" />
+    <Content Include="Content\Reports\InOutStoreCount.rdlc" />
+    <Content Include="Content\Reports\ViewForeStoreWayBillDetail.rdlc" />
+    <Content Include="Content\Reports\Huayu_TotalStatisticByMonth.rdlc" />
+    <Content Include="Content\Reports\Huayu_ViewWayBillWeightStatistic.rdlc" />
+    <EmbeddedResource Include="Resource\en-us.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>en-us.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Resource\zh-cn.resources" />
+    <EmbeddedResource Include="Resource\zh-cn.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>zh-cn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2595</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3950/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

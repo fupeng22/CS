@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Head>
+    <MessageID>KJ_MF_0732_20140127223759748</MessageID>
+    <BusinessType>100</BusinessType>
+    <Sender>0000</Sender>
+    <ReceiverID>0732</ReceiverID>
+    <SendTime>20140127223759748</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <TransportContractDocument>
+      <ID>QQ0987</ID>
+      <JourneyID>BR0619</JourneyID>
+      <JourneyDate>20140120</JourneyDate>
+      <DeliveryDate>20140120</DeliveryDate>
+      <Export>天津机场口岸</Export>
+      <TransportMeans>飞机</TransportMeans>
+      <VoyageNo />
+      <Quantity>20.00</Quantity>
+      <Measure>1114.0000</Measure>
+      <Country>US</Country>
+      <Port />
+      <IsIndividual>0</IsIndividual>
+    </TransportContractDocument>
+    <AssociatedTransportDocumentList>
+      <AssociatedTransportDocument>
+        <ID>DB093201342US</ID>
+        <GoodsName>钙片/1*100</GoodsName>
+        <Quantity>1.00</Quantity>
+        <Measure>0.4000</Measure>
+        <ConsignorName />
+        <ConsigneeName>冯一兵</ConsigneeName>
+        <ConsigneeIDNumber>110105193301315425</ConsigneeIDNumber>
+        <ConsigneeAddress>北京北京朝阳区五环到六环之间北京市朝阳区万科星园5栋306室</ConsigneeAddress>
+        <ConsigneeTel>13611022246</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>2</DeclarationType>
+        <BillType>0</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>钙片</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB093201363US</ID>
+        <GoodsName>维生素/1*100</GoodsName>
+        <Quantity>1.00</Quantity>
+        <Measure>0.8000</Measure>
+        <ConsignorName />
+        <ConsigneeName>邓新荣</ConsigneeName>
+        <ConsigneeIDNumber>110107197001220046</ConsigneeIDNumber>
+        <ConsigneeAddress>北京北京房山区城区以内房山北坊中国原子能科学研究院</ConsigneeAddress>
+        <ConsigneeTel>13641397285</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>2</DeclarationType>
+        <BillType>0</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>维生素</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB103202591US</ID>
+        <GoodsName>维生素/2*100</GoodsName>
+        <Quantity>2.00</Quantity>
+        <Measure>1.0000</Measure>
+        <ConsignorName />
+        <ConsigneeName>季捷</ConsigneeName>
+        <ConsigneeIDNumber>110108197803268929</ConsigneeIDNumber>
+        <ConsigneeAddress>北京北京海淀区西二旗领秀硅谷B-7-1-502</ConsigneeAddress>
+        <ConsigneeTel>13671343080</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>2</DeclarationType>
+        <BillType>0</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>维生素</GoodsName>
+            <Quantity>2.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB103205520US</ID>
+        <GoodsName>钙片/1*100</GoodsName>
+        <Quantity>1.00</Quantity>
+        <Measure>0.5000</Measure>
+        <ConsignorName />
+        <ConsigneeName>徐秀莲</ConsigneeName>
+        <ConsigneeIDNumber>420107197104222047</ConsigneeIDNumber>
+        <ConsigneeAddress>湖北省武汉市青山区 钢花村街道112社区100门8号</ConsigneeAddress>
+        <ConsigneeTel>13638674226</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>2</DeclarationType>
+        <BillType>0</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>钙片</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB103207982US</ID>
+        <GoodsName>钙片/2*100</GoodsName>
+        <Quantity>2.00</Quantity>
+        <Measure>0.8000</Measure>
+        <ConsignorName />
+        <ConsigneeName>代壁壕</ConsigneeName>
+        <ConsigneeIDNumber>410901198910030814</ConsigneeIDNumber>
+        <ConsigneeAddress>河南濮阳市华龙区胜利路街道省天运小区58号楼2单元12号</ConsigneeAddress>
+        <ConsigneeTel>15093174710</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>2</DeclarationType>
+        <BillType>0</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>钙片</GoodsName>
+            <Quantity>2.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB103208024US</ID>
+        <GoodsName>维生素/2*100</GoodsName>
+        <Quantity>2.00</Quantity>
+        <Measure>1.0000</Measure>
+        <ConsignorName />
+        <ConsigneeName>葛庆玉</ConsigneeName>
+        <ConsigneeIDNumber>110106195803103946</ConsigneeIDNumber>
+        <ConsigneeAddress>北京北京昌平区六环以内北清路2号园墅802</ConsigneeAddress>
+        <ConsigneeTel>13701203105</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>2</DeclarationType>
+        <BillType>0</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>维生素</GoodsName>
+            <Quantity>2.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+    </AssociatedTransportDocumentList>
+  </Body>
+</Manifest>

@@ -1,0 +1,9 @@
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\bin\Debug\RedGlovePermission.DAL.dll
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\bin\Debug\RedGlovePermission.DAL.pdb
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\bin\Debug\RedGlovePermission.DBUtility.dll
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\bin\Debug\RedGlovePermission.Model.dll
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\bin\Debug\RedGlovePermission.DBUtility.pdb
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\bin\Debug\RedGlovePermission.Model.pdb
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\obj\Debug\RedGlovePermission.DAL.dll
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.DAL\obj\Debug\RedGlovePermission.DAL.pdb

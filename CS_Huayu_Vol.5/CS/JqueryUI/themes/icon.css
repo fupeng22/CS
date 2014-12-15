@@ -1,0 +1,303 @@
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat center center;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+.icon-excel
+{
+	background: url('icons/Excel.png') no-repeat;
+}
+.icon-seleall
+{
+	background: url('icons/SeleAll.png') no-repeat;
+}
+.icon-inversesele
+{
+	background: url('icons/InverseSele.png') no-repeat;
+}
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+.icon-mini-collapse
+{
+	background: url('icons/accordion_collapse.png') no-repeat 3px 2px;
+}
+.icon-mini-expand
+{
+	background: url('icons/accordion_expand.png') no-repeat 3px 2px;
+}
+.icon-mini-upload
+{
+	background: url('icons/up.png') no-repeat 0px 0px;
+}
+.icon-people-accept
+{
+	background: url('icons/user_accept.png') no-repeat 0px 0px;
+}
+.icon-exception_handle
+{
+	background: url('icons/window_remove.png') no-repeat 0px 0px;
+}
+.icon-login
+{
+	background: url('icons/user.png') no-repeat 0px 0px;
+}
+.icon-infomation
+{
+	background: url('icons/Information.png') no-repeat 0px 0px;
+}
+.icon-exit
+{
+	background: url('icons/exit.png') no-repeat 0px 0px;
+}
+.icon-instore
+{
+	background: url('icons/InStore.png') no-repeat 0px 0px;
+}
+.icon-outstore
+{
+	background: url('icons/OutStore.png') no-repeat 0px 0px;
+}
+.icon-report
+{
+	background: url('icons/report.png') no-repeat 0px 0px;
+}
+.icon-viewdetail
+{
+	background: url('icons/viewDetail.png') no-repeat 3px 2px;
+}
+.icon-detain
+{
+	background: url('icons/Detain.png') no-repeat 0px 0px;
+}
+.icon-reject
+{
+	background: url('icons/Reject.png') no-repeat 0px 0px;
+}
+.icon-release
+{
+	background: url('icons/Release.png') no-repeat 0px 0px;
+}
+.icon-preview
+{
+	background: url('icons/Preview.png') no-repeat 0px 0px;
+}
+.icon-email
+{
+	background: url('icons/email.png') no-repeat 0px 0px;
+}
+.icon-attachment
+{
+	background: url('icons/attachment.png') no-repeat 0px 0px;
+}
+.icon-pdf
+{
+	background: url('icons/pdf.png') no-repeat 0px 0px;
+}
+.icon-preview
+{
+	background: url('icons/Preview.png') no-repeat;
+}
+.icon-fullscreen
+{
+	background: url('icons/FullScreen.png') no-repeat;
+}
+.icon-resetscreen
+{
+	background: url('icons/ResetScreen.png') no-repeat;
+}
+.icon-check
+{
+	background: url('icons/Check.png') no-repeat;
+}
+.icon-uncheck
+{
+	background: url('icons/UnCheck.png') no-repeat;
+}
+.icon-color-red
+{
+	background: url('icons/icon-color-red.png') no-repeat center center;
+}
+.icon-color-blue
+{
+	background: url('icons/icon-color-blue.png') no-repeat center center;
+}
+.icon-color-green
+{
+	background: url('icons/icon-color-green.png') no-repeat center center;
+}
+.icon-color-fuchsia
+{
+	background: url('icons/icon-color-fuchsia.png') no-repeat center center;
+}
+.icon-color-appworkspace
+{
+	background: url('icons/icon-color-appworkspace.png') no-repeat center center;
+}
+.icon-color-maroon
+{
+	background: url('icons/icon-color-maroon.png') no-repeat center center;
+}
+.icon-color-lime
+{
+	background: url('icons/icon-color-lime.png') no-repeat center center;
+}
+.icon-homepage
+{
+	background: url('icons/homepage.png') no-repeat center center;
+}
+.icon-customer-check
+{
+	background: url('icons/customer_check.png') no-repeat center center;
+}
+.icon-customer-scensecheck
+{
+	background: url('icons/custmer_scensecheck.png') no-repeat center center;
+}
+.icon-customer-exceptionhandler
+{
+	background: url('icons/customer_exceptionhandler.png') no-repeat center center;
+}
+.icon-customer-taxvaluecheck
+{
+	background:url('icons/customer_taxvaluecheck.png') no-repeat center center;
+}
+.icon-customer-setting
+{
+	background:url('icons/customer_setting.png') no-repeat center center;
+}
+.icon-customer-statistic
+{
+	background:url('icons/customer_statistic.png') no-repeat center center;
+}
+.icon-customer-release
+{
+	background:url('icons/customer_release.png') no-repeat center center;
+}
+.icon-forwarder-import
+{
+	background:url('icons/forwarder_import.png') no-repeat center center;
+}
+.icon-forwarder-search
+{
+	background:url('icons/forwarder_search.png') no-repeat center center;
+}
+.icon-forwarder-personal
+{
+	background:url('icons/forwarder_personal.png') no-repeat center center;
+}
+.icon-huayu-instore
+{
+	background:url('icons/huayu_instore.png') no-repeat center center;
+}
+.icon-huayu-monitor
+{
+	background:url('icons/huayu_monitor.png') no-repeat center center;
+}
+.icon-huayu-outstore
+{
+	background:url('icons/huayu_outstore.png') no-repeat center center;
+}
+.icon-huayu-store
+{
+	background:url('icons/huayu_store.png') no-repeat center center;
+}
+.icon-huayu-report
+{
+	background:url('icons/huayu_report.png') no-repeat center center;
+}
+.icon-huayu-application
+{
+	background:url('icons/huayu_application.png') no-repeat center center;
+}
+.icon-customer-rejectgoods
+{
+	background:url('icons/customer_rejectgoods.png') no-repeat center center;
+}
+.icon-customer-prosecc
+{
+	background:url('icons/customer_prosecc.png') no-repeat center center;
+}
+.icon-operation-blacklist
+{
+	background:url('icons/operation_blacklist.png') no-repeat center center;
+}
+.icon-operation-dealwith
+{
+	background:url('icons/operation_dealwith.png') no-repeat center center;
+}
+.icon-blacklist-type
+{
+	background:url('icons/blacklist_type.png') no-repeat center center;
+}
+.icon-customer-unrelease
+{
+	background:url('icons/customer_unrelease.png') no-repeat center center;
+}
+.icon-customer-check
+{
+	background:url('icons/icon-customer_check.png') no-repeat center center;
+}
+.icon-huayu-exception
+{
+	background:url('icons/huayu_exception.png') no-repeat center center;
+}
+
+
+
+

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HuayuWayBillWeight_DS" targetNamespace="http://tempuri.org/HuayuWayBillWeight_DS.xsd" xmlns:mstns="http://tempuri.org/HuayuWayBillWeight_DS.xsd" xmlns="http://tempuri.org/HuayuWayBillWeight_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HuayuWayBillWeight_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="HuayuWayBillWeight_DS" msprop:Generator_UserDSName="HuayuWayBillWeight_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wbStorageDate" msprop:Generator_ColumnVarNameInTable="columnwbStorageDate" msprop:Generator_ColumnPropNameInRow="wbStorageDate" msprop:Generator_ColumnPropNameInTable="wbStorageDateColumn" msprop:Generator_UserColumnName="wbStorageDate" type="xs:string" minOccurs="0" />
+              <xs:element name="wbCompany" msprop:Generator_ColumnVarNameInTable="columnwbCompany" msprop:Generator_ColumnPropNameInRow="wbCompany" msprop:Generator_ColumnPropNameInTable="wbCompanyColumn" msprop:Generator_UserColumnName="wbCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="wbSerialNum" msprop:Generator_ColumnVarNameInTable="columnwbSerialNum" msprop:Generator_ColumnPropNameInRow="wbSerialNum" msprop:Generator_ColumnPropNameInTable="wbSerialNumColumn" msprop:Generator_UserColumnName="wbSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="wbSubNumber" msprop:Generator_ColumnVarNameInTable="columnwbSubNumber" msprop:Generator_ColumnPropNameInRow="wbSubNumber" msprop:Generator_ColumnPropNameInTable="wbSubNumberColumn" msprop:Generator_UserColumnName="wbSubNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalWeight" msprop:Generator_ColumnVarNameInTable="columnwbTotalWeight" msprop:Generator_ColumnPropNameInRow="wbTotalWeight" msprop:Generator_ColumnPropNameInTable="wbTotalWeightColumn" msprop:Generator_UserColumnName="wbTotalWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="swbTotalNumber" msprop:Generator_ColumnVarNameInTable="columnswbTotalNumber" msprop:Generator_ColumnPropNameInRow="swbTotalNumber" msprop:Generator_ColumnPropNameInTable="swbTotalNumberColumn" msprop:Generator_UserColumnName="swbTotalNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="swbTotalWeight" msprop:Generator_ColumnVarNameInTable="columnswbTotalWeight" msprop:Generator_ColumnPropNameInRow="swbTotalWeight" msprop:Generator_ColumnPropNameInTable="swbTotalWeightColumn" msprop:Generator_UserColumnName="swbTotalWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="swbTotalActualWeight" msprop:Generator_ColumnVarNameInTable="columnswbTotalActualWeight" msprop:Generator_ColumnPropNameInRow="swbTotalActualWeight" msprop:Generator_ColumnPropNameInTable="swbTotalActualWeightColumn" msprop:Generator_UserColumnName="swbTotalActualWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="wbStatus" msprop:Generator_ColumnVarNameInTable="columnwbStatus" msprop:Generator_ColumnPropNameInRow="wbStatus" msprop:Generator_ColumnPropNameInTable="wbStatusColumn" msprop:Generator_UserColumnName="wbStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="releseNum" msprop:Generator_ColumnVarNameInTable="columnreleseNum" msprop:Generator_ColumnPropNameInRow="releseNum" msprop:Generator_ColumnPropNameInTable="releseNumColumn" msprop:Generator_UserColumnName="releseNum" type="xs:string" minOccurs="0" />
+              <xs:element name="notReleseNum" msprop:Generator_ColumnVarNameInTable="columnnotReleseNum" msprop:Generator_ColumnPropNameInRow="notReleseNum" msprop:Generator_ColumnPropNameInTable="notReleseNumColumn" msprop:Generator_UserColumnName="notReleseNum" type="xs:string" minOccurs="0" />
+              <xs:element name="wbID" msprop:Generator_ColumnVarNameInTable="columnwbID" msprop:Generator_ColumnPropNameInRow="wbID" msprop:Generator_ColumnPropNameInTable="wbIDColumn" msprop:Generator_UserColumnName="wbID" type="xs:string" minOccurs="0" />
+              <xs:element name="wbwId" msprop:Generator_ColumnVarNameInTable="columnwbwId" msprop:Generator_ColumnPropNameInRow="wbwId" msprop:Generator_ColumnPropNameInTable="wbwIdColumn" msprop:Generator_UserColumnName="wbwId" type="xs:string" minOccurs="0" />
+              <xs:element name="ActualWeight" msprop:Generator_ColumnVarNameInTable="columnActualWeight" msprop:Generator_ColumnPropNameInRow="ActualWeight" msprop:Generator_ColumnPropNameInTable="ActualWeightColumn" msprop:Generator_UserColumnName="ActualWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="wbSRport" msprop:Generator_ColumnVarNameInTable="columnwbSRport" msprop:Generator_ColumnPropNameInRow="wbSRport" msprop:Generator_ColumnPropNameInTable="wbSRportColumn" msprop:Generator_UserColumnName="wbSRport" type="xs:string" minOccurs="0" />
+              <xs:element name="wbArrivalDate" msprop:Generator_ColumnVarNameInTable="columnwbArrivalDate" msprop:Generator_ColumnPropNameInRow="wbArrivalDate" msprop:Generator_ColumnPropNameInTable="wbArrivalDateColumn" msprop:Generator_UserColumnName="wbArrivalDate" type="xs:string" minOccurs="0" />
+              <xs:element name="wbImportType" msprop:Generator_ColumnVarNameInTable="columnwbImportType" msprop:Generator_ColumnPropNameInRow="wbImportType" msprop:Generator_ColumnPropNameInTable="wbImportTypeColumn" msprop:Generator_UserColumnName="wbImportType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

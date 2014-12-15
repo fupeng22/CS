@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <table cellpadding="3">
+            <tr>
+                <td>
+                    用户名:
+                </td>
+                <td>
+                    <input type="text" id="txtUserID" name="txtUserID" class="easyui-validatebox" required="true" />
+                </td>
+                <td>
+                    密码:
+                </td>
+                <td>
+                    <input type="password" id="txtUserPassword" name="txtUserPassword" class="easyui-validatebox"
+                        required="true" />
+                </td>
+                <td>
+                    确认密码:
+                </td>
+                <td>
+                    <input type="password" id="txtReUserPassword" name="txtReUserPassword" class="easyui-validatebox"
+                        required="true" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    权限:
+                </td>
+                <td>
+                    <select id="ddAuthority" name="ddAuthority" class="easyui-combobox" editable="false">
+                        <option value="---请选择---">---请选择---</option>
+                        <option value="1">一级权限</option>
+                        <option value="2">二级权限</option>
+                        <option value="3">三级权限</option>
+                        <option value="4">四级权限</option>
+                    </select>
+                </td>
+                <td>
+                    单位类别:
+                </td>
+                <td>
+                    <select id="ddComment" name="ddComment" class="easyui-combobox" editable="false">
+                        <option value="---请选择---">---请选择---</option>
+                        <option value="0">海关</option>
+                        <option value="1">清关公司</option>
+                        <option value="2">货代公司</option>
+                    </select>
+                </td>
+                <td>
+                    联系人:
+                </td>
+                <td>
+                    <input type="text" id="txtLinkPerson" name="txtLinkPerson" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    联系人电话:
+                </td>
+                <td>
+                    <input type="text" id="txtLinkTel" name="txtLinkTel" />
+                </td>
+                <td>
+                    联系人身份证号:
+                </td>
+                <td colspan="3">
+                    <input type="text" id="txtIndentityCpde" name="txtIndentityCpde" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    公司全称:
+                </td>
+                <td colspan="3">
+                    <input type="text" id="txtCompanyFullName" name="txtCompanyFullName" style="width: 100%" />
+                </td>
+                <td>
+                    邮箱地址:
+                </td>
+                <td>
+                    <input type="text" id="txtLinkMail" name="txtLinkMail" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    公司名称:
+                </td>
+                <td colspan="3">
+                    <input type="text" id="txtCompany" name="txtCompany" style="width: 100%" class="easyui-validatebox"
+                        required="true" />
+                </td>
+                <td>
+                    公司电话:
+                </td>
+                <td>
+                    <input type="text" id="txtCompanyPhone" name="txtCompanyPhone" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    公司地址:
+                </td>
+                <td colspan="5">
+                    <textarea id="txtCompanyAddr" name="txtCompanyAddr" style="width: 100%"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="checkbox" id="chkiSendFirstPickGoodsEmail" name="chkiSendFirstPickGoodsEmail" /><label
+                        for="chkiSendFirstPickGoodsEmail">放行单邮件通知</label>
+                </td>
+                <td colspan="2"  align="center">
+                    <input type="checkbox" id="chkiSendUnReleaseGoodsEmail" name="chkiSendUnReleaseGoodsEmail" /><label
+                        for="chkiSendUnReleaseGoodsEmail">扣货单邮件通知</label>
+                </td>
+                <td colspan="2"  align="center">
+                    <input type="checkbox" id="chkiSendRejectGoodsEmail" name="chkiSendRejectGoodsEmail" /><label
+                        for="chkiSendRejectGoodsEmail">退货单邮件通知</label>
+                </td>
+            </tr>
+        </table>
+    }
+</body>
+</html>

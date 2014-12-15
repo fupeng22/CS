@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tax xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Head>
+    <MessageID>KJ_TA_1002_20140319090445236</MessageID>
+    <BusinessType>800</BusinessType>
+    <Sender>001</Sender>
+    <ReceiverID>1001</ReceiverID>
+    <SendTime>20140319090445</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <TransportContractDocument>
+      <ID>99935423850</ID>
+    </TransportContractDocument>
+    <AssociatedTransportDocument>
+      <Item>
+        <ID>060001185453</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>80.0000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>200.0000</TaxPrice>
+            <Price>80.0000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401318754</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>211.4000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>2114.0000</TaxPrice>
+            <Price>211.4000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401318790</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>102.9000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>1029.0000</TaxPrice>
+            <Price>102.9000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401318851</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>80.0000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>800.0000</TaxPrice>
+            <Price>80.0000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401323897</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>89.6000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>112.0000</TaxPrice>
+            <Price>11.2000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>112.0000</TaxPrice>
+            <Price>22.4000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>112.0000</TaxPrice>
+            <Price>11.2000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>112.0000</TaxPrice>
+            <Price>22.4000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>112.0000</TaxPrice>
+            <Price>11.2000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>112.0000</TaxPrice>
+            <Price>11.2000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401323921</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>73.6000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>92.0000</TaxPrice>
+            <Price>18.4000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>92.0000</TaxPrice>
+            <Price>9.2000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>92.0000</TaxPrice>
+            <Price>27.6000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>92.0000</TaxPrice>
+            <Price>18.4000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401332628</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>152.4000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.20</TaxRate>
+            <TaxPrice>300.0000</TaxPrice>
+            <Price>60.0000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.20</TaxRate>
+            <TaxPrice>262.0000</TaxPrice>
+            <Price>52.4000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.20</TaxRate>
+            <TaxPrice>200.0000</TaxPrice>
+            <Price>40.0000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401332664</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>352.5000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.50</TaxRate>
+            <TaxPrice>305.0000</TaxPrice>
+            <Price>152.5000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.50</TaxRate>
+            <TaxPrice>200.0000</TaxPrice>
+            <Price>100.0000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.50</TaxRate>
+            <TaxPrice>200.0000</TaxPrice>
+            <Price>100.0000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401338352</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>187.8000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.20</TaxRate>
+            <TaxPrice>939.0000</TaxPrice>
+            <Price>187.8000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401338361</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>103.0000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>515.0000</TaxPrice>
+            <Price>51.5000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>515.0000</TaxPrice>
+            <Price>51.5000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+      <Item>
+        <ID>070401338616</ID>
+        <Discount>0.0000</Discount>
+        <TotalPrice>51.6000</TotalPrice>
+        <TaxBill>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>129.0000</TaxPrice>
+            <Price>12.9000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>129.0000</TaxPrice>
+            <Price>12.9000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>129.0000</TaxPrice>
+            <Price>12.9000</Price>
+          </Item>
+          <Item>
+            <TaxID />
+            <TaxRate>0.10</TaxRate>
+            <TaxPrice>129.0000</TaxPrice>
+            <Price>12.9000</Price>
+          </Item>
+        </TaxBill>
+      </Item>
+    </AssociatedTransportDocument>
+  </Body>
+</Tax>

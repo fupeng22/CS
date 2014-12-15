@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script src="@Url.Content("~/JS/Customer/CustomerDetail.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="toolBarDetail" style="padding: 2px; height: auto">
+        <input type="hidden" id="hid_Checked_swbSerialNum" name="hid_Checked_swbSerialNum"
+            style="width: 700px" />
+        <input type="hidden" id="hid_unChecked_swbSerialNum" name="hid_Checked_swbSerialNum"
+            style="width: 700px" />
+        <input type="hidden" id="hid_wbImportType" name="hid_wbImportType"
+            style="width: 700px"  value='@ViewData["wbImportType_ViewData"]'/>
+        <input  type="hidden" id="hid_wbID" name="hid_wbID" value='@ViewData["Detail_wbID"]'/>
+        <span>总运单号:<font style="font-weight: bold; color: Red">@ViewData["Detail_wbSerialNum"]</font>&nbsp;&nbsp;&nbsp;分运单号:<input
+            type="text" id="txtSubWayBillCode" name="txtSubWayBillCode" /></span>&nbsp;<a href="#"
+                id="btnQuery_Detail" name="btnQuery_Detail" class="easyui-linkbutton" data-options="iconCls:'icon-search'">
+                查询</a>&nbsp;<span style="color: Red; font-weight: bold">按下回车键即可查询，按下上下箭头键即可选中\不选中行,Ctrl+Enter/Shift+Enter可进行提交,按下ESC可关闭提示框</span><br />
+        内部数据：整行标<span style='width: 40px; background-color: Red'>&nbsp;</span>为布控状态&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海关同步的数据：<span
+            style='width: 40px; background-color: Green'>&nbsp;</span>海关布控&nbsp;&nbsp;&nbsp;<span
+                style='width: 40px; background-color: Blue'>&nbsp;</span>检疫布控&nbsp;&nbsp;&nbsp;<span
+                    style='width: 40px; background-color: Red'>&nbsp;</span>同时布控
+    </div>
+    <div id="DG_SubWayBillDetail" fit="true">
+    </div>
+</body>
+</html>

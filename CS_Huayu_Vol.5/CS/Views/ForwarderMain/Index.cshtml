@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/ForwarderMain/_Layout.cshtml";
+}
+<div id="layout_Main" class="easyui-layout" data-options="fit:true,border:false">
+    <div region="north" split="false" style="height: 30px; padding: 2px" border="true">
+        <span style="float: left; font-weight: bold; font-size: medium">&nbsp;&nbsp;&nbsp;当前登录:<font
+            style="color: Red">@Session["Global_Forwarder_UserName"]</font> &nbsp;&nbsp;&nbsp;
+            货代公司:<font style="color: Red">@Session["Global_Company"]</font> &nbsp;&nbsp;&nbsp;<span
+                class="bs"> <a class="styleswitch black" style="cursor: pointer" rel="black"></a>
+                <a class="styleswitch bootstrap" style="cursor: pointer" rel="bootstrap"></a><a class="styleswitch cupertino"
+                    style="cursor: pointer" rel="cupertino"></a>&nbsp;&nbsp;<a class="styleswitch dark-hive"
+                        style="cursor: pointer" rel="dark-hive"></a>&nbsp;&nbsp;<a class="styleswitch gray"
+                            style="cursor: pointer" rel="gray"></a>&nbsp;&nbsp;<a class="styleswitch default"
+                                style="cursor: pointer" rel="default"></a> &nbsp;&nbsp;<a class="styleswitch metro"
+                                    style="cursor: pointer" rel="metro"></a> &nbsp;&nbsp;<a class="styleswitch metro-blue"
+                                        style="cursor: pointer" rel="metro-blue"></a> &nbsp;&nbsp;<a class="styleswitch metro-gray"
+                                            style="cursor: pointer" rel="metro-gray"></a> &nbsp;&nbsp;<a class="styleswitch metro-green"
+                                                style="cursor: pointer" rel="metro-green"></a> &nbsp;&nbsp;<a class="styleswitch metro-orange"
+                                                    style="cursor: pointer" rel="metro-orange"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch metro-red" style="cursor: pointer"
+                    rel="metro-red"></a> &nbsp;&nbsp;&nbsp;&nbsp;<a class="styleswitch pepper-grinder"
+                        style="cursor: pointer" rel="pepper-grinder"></a> &nbsp;&nbsp;<a class="styleswitch sunny"
+                            style="cursor: pointer" rel="sunny"></a> </span></span><span style="float: right"><span
+                                id="lblCurrentDate"></span>&nbsp;&nbsp;&nbsp; <a href="#" id="btnRelogin" class="easyui-linkbutton"
+                                    data-options="iconCls:'icon-exit'">注销</a>&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <div region="west" split="true" style="width: 150px;" border="false">
+        <div id="LeftNavigation" class="easyui-accordion" fit="true">
+            <div title="数据导入" style="overflow: auto;" iconcls="icon-forwarder-import">
+                @* <center>
+                    <br />
+                    <a href="#" id="btnNormalBill" class="easyui-linkbutton">普 货 数 据 导 入</a>
+                    <br />
+                    <br />
+                    <a href="#" id="btnPersonalBill" class="easyui-linkbutton">个人物品数据导入 </a>
+                </center>*@
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnNormalBill" name="btnNormalBill" tabindex="1">普 货 数 据 导 入</a></li>
+                        <li><a href="#" id="btnPersonalBill" name="btnPersonalBill" tabindex="1">个人物品数据导入</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="数 据 查 询" style="overflow: auto;" iconcls="icon-forwarder-search">
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnQuery" name="btnQuery" tabindex="1">货 物 状 态 查 询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div title="个人中心" style="overflow: auto;" iconcls="icon-forwarder-personal">
+                <div class="cls_vertmenu">
+                    <ul>
+                        <li><a href="#" id="btnChangePWD" name="btnChangePWD" tabindex="1">密 码 修 改</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div region="center" border="false" split="true">
+        <div id="tab_Content" class="easyui-tabs" fit="true" border="false">
+            <div title="使用指南" style="padding: 0px; display: none;">
+            </div>
+        </div>
+    </div>
+    <div region="south" split="true" style="height: 30px;" border="false">
+        <div align="center">
+            CopyRight@2006-2012 <a target="_blank" href="http://www.chinabetter.com">www.chinabetter.com</a></div>
+    </div>
+</div>
+<div id="mm" class="easyui-menu" style="width: 150px; display: none">
+    <div id="mm-tabupdate" iconcls="icon-reload">
+        刷新</div>
+    <div class="menu-sep">
+    </div>
+    <div id="mm-tabclose">
+        关闭</div>
+    <div id="mm-tabcloseall">
+        全部关闭</div>
+    <div id="mm-tabcloseother">
+        除此之外全部关闭</div>
+    <div class="menu-sep">
+    </div>
+    <div id="mm-tabcloseright">
+        当前页右侧全部关闭</div>
+    <div id="mm-tabcloseleft">
+        当前页左侧全部关闭</div>
+    <div class="menu-sep">
+    </div>
+    <div id="mm-exit">
+        退出</div>
+</div>
+<div id="dlg_GlobalPrint" data-options="iconCls:'icon-print'" style="padding: 1px;
+    display: none">
+    <iframe src="" style="width: 98%; height: 98%" id="frmPrintURL"></iframe>
+</div>
+<div id="dlg_GlobalDetail" fit="true" data-options="iconCls:'icon-save'" style="padding: 1px;
+    width: 400px; height: 300px;">
+</div>
+<div id="dlg_MsgAlert" style="padding: 1px; display: none">
+    <input type="text" style="display: block; width: 0px; height: 0px; border: 0" id="txtGlobalTextInput"
+        name="txtGlobalTextInput" />
+    <div id="msgContent">
+    </div>
+</div>

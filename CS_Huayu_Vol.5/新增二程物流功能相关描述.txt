@@ -1,0 +1,38 @@
+CREATE TABLE [dbo].[FirSecLogisticsBinds] (                                            --// 一二程物流绑定表 //
+	[fslbID] [int] IDENTITY (1, 1) NOT NULL ,                                      --ID(自增)
+	[fslb_swbID] [int] NULL ,                                                      --关联一程物流的子运单表ID
+	[fslb_slID] [int] NULL ,                                                       --关联二程物流公司表ID
+	[fslbSecLogisticsWaybillNum] [nvarchar] (100) COLLATE Chinese_PRC_CI_AS NULL   --对应二程物流面单单号(可能会有一对多的情况，
+                                                                                       --即一个一程物流的分运单号一票多件，对于二程物
+                                                                                       --流会对多件单独贴唯一面单单号)
+) ON [PRIMARY]
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[SecondLogistics] (                                                 --// 二程物流管理表(这部分内容根据实际流程待定) //
+	[slID] [int] IDENTITY (1, 1) NOT NULL ,                                        --ID(自增)
+	[slName] [nvarchar] (100) COLLATE Chinese_PRC_CI_AS NULL ,                     --二程物流公司名称
+	[slSegment_Common] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NULL ,            --面单单号的公共部分
+	[slSegment_IndexStart] [int] NULL ,                                            --物流公司提供的面单单号的段号开始索引
+	[slSegment_IndexEnd] [int] NULL ,                                              --物流公司提供的面单单号的段号结束索引
+	[slSegment_IndexUsedTo] [int] NULL ,                                           --物流公司提供的面单单号的段号目前已使用到的索引
+	[slDelFlag] [int] NULL                                                         --删除标记
+) ON [PRIMARY]
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[SecondLogistics_WBTrackLog] (                                      --// 二程物流运单跟踪日志(注：需保存所有运单路由变化) //
+	[slwtID] [int] IDENTITY (1, 1) NOT NULL ,                                      --ID(自增)
+	[slwt_fslbID] [int] NULL ,                                                     --关联一二程物流绑定表的ID
+	[slwtWaybillStatus] [int] NULL ,                                               --物流路由状态，注：只用4种状态表示，
+                                                                                       --0:未提交给二程物流公司（二程物流公司还未做他们的
+                                                                                       --  系统登记），
+                                                                                       --1:已经提交给二程物流公司（此状态用于向二程物流公
+                                                                                       --  司订阅路由信息），
+                                                                                       --2:开始二程物流的各项流转（二程除下单和签收状态外
+                                                                                       --  的所有状态在这里都用2表示，中间状态将记录在描述
+                                                                                       --  slwtWaybillStatusMemo字段中），
+                                                                                       --3:已签收并结单（注，此状态用于指示向二程物流的路由
+                                                                                       --  信息退订）
+	[slwtWaybillStatusMemo] [nvarchar] (200) COLLATE Chinese_PRC_CI_AS NULL        --物流路由状态描述
+) ON [PRIMARY]

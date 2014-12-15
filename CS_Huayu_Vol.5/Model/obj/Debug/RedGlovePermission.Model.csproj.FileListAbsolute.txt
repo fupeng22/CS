@@ -1,0 +1,15 @@
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.dll
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.pdb
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.dll
+E:\MyWork\RedGlovePermission3.5-Ajax\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.pdb
+E:\MyWork\RedGlovePermission3.5\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.dll
+E:\MyWork\RedGlovePermission3.5\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.pdb
+E:\MyWork\RedGlovePermission3.5\RedGlovePermission.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\RedGlovePermission3.5\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.dll
+E:\MyWork\RedGlovePermission3.5\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.pdb
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.dll
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.pdb
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.dll
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.pdb

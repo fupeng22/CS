@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="@Url.Content("~/JS/Huayu/ExceptionHandle.js")" type="text/javascript"></script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {  
+        @Html.ValidationSummary(true)
+        <input type="hidden" id="hidIds" name="hidIds"  value='@ViewData["ExceptionHandle_Ids"]'/>
+        <div id="layout_SubFrm_Create" class="easyui-layout" style="width: 300px; height: 220px;"
+            data-options="fit:true,border:false">
+            <div data-options="region:'west',split:true" style="width: 730px;">
+                <div id="DG_WayBillResultForHandle" fit="true">
+                </div>
+            </div>
+            <div title="" data-options="region:'center'">
+                <table>
+                    <tr>
+                        <td>
+                            处理状态:
+                        </td>
+                        <td>
+                            <select id="ddlExceptionStatus" name="ddlExceptionStatus" class="easyui-combobox"
+                                editable="false" panelHeight="auto">
+                                <option value="---请选择---">---请选择---</option>
+                                <option value="0">待处理</option>
+                                <option value="1">正在处理</option>
+                                <option value="2">已处理</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            处理意见:
+                        </td>
+                        <td>
+                            <textarea id="txtExceptionDescription" name="txtExceptionDescription" rows="8" style="width: 150px"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    }
+</body>
+</html>

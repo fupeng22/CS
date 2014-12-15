@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script  src="@Url.Content("~/JS/Common/UnReleaseSheetSetting.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="14" align="center">
+                    <span style="font-weight: bold; font-size: large;">扣货单打印设置信息</span><span id="lblTip"></span><hr />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    扣货单流水号:
+                </td>
+                <td>
+                    <input  type="text" id="FlowNum_ForPrint" name="FlowNum_ForPrint" value='@ViewData["FlowNum_ForSetting"]' />
+                </td>
+                <td align="right">
+                    主运单号:
+                </td>
+                <td>
+                    <input  type="text" id="wbSerialNum_ForPrint" name="wbSerialNum_ForPrint" value='@ViewData["wbSerialNum_ForSetting"]' readonly/>
+                    <input  type="hidden" id="wbID_ForPrint" name="wbID_ForPrint" value='@ViewData["wbID_ForSetting"]'/>
+                </td>
+                <td align="right">
+                    业务类型:
+                </td>
+                <td>
+                    <input  type="text" id="CustomCategory_ForSetting" name="CustomCategory_ForSetting" value='@ViewData["CustomCategory_ForSetting"]' readonly style="width:100px"/>
+                    <input  type="hidden" id="hid_CustomCategory_ForSetting" name="hid_CustomCategory_ForSetting" value='@ViewData["hid_CustomCategory_ForSetting"]'/>
+                </td>
+                <td align="right">
+                    总运单入库日期:
+                </td>
+                <td>
+                    <input type="text" id="InStoreDate_ForSetting" name="InStoreDate_ForSetting" onfocus="WdatePicker();"
+                class="Wdate" style="width: 90px"  value='@ViewData["InStoreDate_ForSetting"]'/>
+                </td>
+                <td align="right">
+                    扣留单提货日期:
+                </td>
+                <td>
+                    <input type="text" id="PickGoodsDate_ForSetting" name="PickGoodsDate_ForSetting" onfocus="WdatePicker();"
+                class="Wdate" style="width: 90px"  value='@(DateTime.Now.ToString("yyyy-MM-dd"))'/>
+                </td>
+                <td align="right">
+                    放行件数:
+                </td>
+                <td>
+                    <input  type="text" id="EverUnReleaseNum_ForSetting" name="EverUnReleaseNum_ForSetting" value='@ViewData["EverUnReleaseNum_ForSetting"]'  style="width:60px"/>
+                </td>
+                <td>
+                    日期:
+                </td>
+                <td>
+                    @DateTime.Now.ToString("yyyy-MM-dd")
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="14">
+                    当前处于扣留的货物分运单明细:
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14">
+                    <div id="DG_SubWayBillResult" style="width: 1200px; height: 330px">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="14">
+                    请填写本次放行的货物分运单, 分单号之间以","分开:
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14">
+                    <textarea id="currentReleaseSubWayBill" name="currentReleaseSubWayBill" cols="90"
+                        rows="2" style="width: 100%">@ViewData["OldUnReleaseSubWayBill"]</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14">
+                    <table>
+                        <tr>
+                            @*<td align="right">
+                                直航\转关:
+                            </td>
+                            <td>
+                                <input type="text" id="ddlReceiptMode_ForSetting" name="ddlReceiptMode_ForSetting" />
+                            </td>*@
+                            <td align="right">
+                                结算方式:
+                            </td>
+                            <td>
+                                <input type="text" id="ddlPayMode_ForSetting" name="ddlPayMode_ForSetting" />
+                            </td>
+                            <td align="right">
+                                扣留天数:
+                            </td>
+                            <td>
+                                <input  type="text" style="width:60px" id="IntervalDays_ForSetting" name="IntervalDays_ForSetting" value='@ViewData["IntervalDays_ForSetting"]' />
+                            </td>
+                            <td align="right">
+                                总重量:
+                            </td>
+                            <td>
+                                <input  type="text"  style="width:80px" id="EverUnReleaseWeight_ForSetting" name="EverUnReleaseWeight_ForSetting" value='@ViewData["EverUnReleaseWeight_ForSetting"]' />
+                            </td>
+                            <td align="right">
+                                扣货费:
+                            </td>
+                            <td>
+                                <input type="text" style="width: 80px" id="EverUnReleaseFee_ForSetting" name="EverUnReleaseFee_ForSetting"
+                                     value='@ViewData["EverUnReleaseFee_ForSetting"]' />
+                            </td>
+                            <td align="right">
+                                合计:
+                            </td>
+                            <td colspan="5">
+                                <input type="text"  style="width:100px"  id="TotalFee_ForSetting" name="TotalFee_ForSetting"
+                          value='@ViewData["TotalFee_ForSetting"]'/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14" align="center">
+                    <a href="#" id="btnPrePrint" name="btnPrePrint" class="easyui-linkbutton" data-options="iconCls:'icon-print'">
+                        打印预览</a>|<a href="#" id="btnPreExcel" name="btnPreExcel" class="easyui-linkbutton"
+                            data-options="iconCls:'icon-excel'">导出查看</a> &nbsp;&nbsp;&nbsp; <a href="#" id="btnConfirmPrint"
+                                name="btnConfirmPrint" class="easyui-linkbutton" data-options="iconCls:'icon-print'"
+                                style="color: Red">正式打印</a>|<a href="#" id="btnConfirmExcel" name="btnConfirmExcel"
+                                    class="easyui-linkbutton" data-options="iconCls:'icon-excel'" style="color: Red">正式导出</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

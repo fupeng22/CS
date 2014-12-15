@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="@Url.Content("~/JS/Huayu/ForeStore_Add.js")" type="text/javascript"></script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <table cellpadding="3">
+            <tr>
+                <td>
+                    总运单编号:
+                </td>
+                <td>
+                    <input type="text" id="ddlwbSerialNum" name="ddlwbSerialNum" />
+                </td>
+                <td>
+                    分运单号:
+                </td>
+                <td>
+                    <input type="text" id="txtSwbSerialNum" name="txtSwbSerialNum" class="easyui-validatebox"
+                        required="true" />
+                </td>
+                <td>
+                    中文货物名称:
+                </td>
+                <td>
+                    <input type="text" id="txtSwbDescription_CHN" name="txtSwbDescription_CHN" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    英文货物名称:
+                </td>
+                <td>
+                    <input type="text" id="txtSwbDescription_ENG" name="txtSwbDescription_ENG" />
+                </td>
+                <td>
+                    件数:
+                </td>
+                <td>
+                    <input type="text" id="txtSwbNumber" name="txtSwbNumber" class="easyui-numberbox"
+                        data-options="min:0" />
+                </td>
+                <td>
+                    重量（公斤）:
+                </td>
+                <td>
+                    <input type="text" id="txtSwbWeight" name="txtSwbWeight" class="easyui-numberbox"
+                        data-options="min:0,precision:2" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    价值:
+                </td>
+                <td>
+                    <input type="text" id="txtValue" name="txtValue" class="easyui-numberbox" data-options="min:0,precision:2" />
+                </td>
+                <td>
+                    币值:
+                </td>
+                <td>
+                    <input type="text" id="txtSwbMonetary" name="txtSwbMonetary" />
+                </td>
+                <td>
+                    报关类别:
+                </td>
+                <td>
+                    <select id="ddlSwbCustomsCategory" name="ddlSwbCustomsCategory" class="easyui-combobox"
+                        editable="false" panelheight="auto">
+                        <option value="---请选择---">---请选择---</option>
+                        <option value="2">样品</option>
+                        <option value="3">KJ-3</option>
+                        <option value="4">D类</option>
+                        <option value="5">个人物品</option>
+                        <option value="6">分运行李</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    收件人:
+                </td>
+                <td colspan="5">
+                    <input type="text" id="txtSwbRecipients" name="txtSwbRecipients" style="width: 400px" />
+                </td>
+            </tr>
+        </table>
+    }
+</body>
+</html>

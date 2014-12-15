@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script  src="@Url.Content("~/JS/Common/RejectSheetSetting.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="14" align="center">
+                    <span style="font-weight: bold; font-size: large">退货单打印设置信息</span><span id="lblTip"></span><hr />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    退货单流水号:
+                </td>
+                <td>
+                    <input  type="text" id="FlowNum_ForSetting" name="FlowNum_ForSetting" value='@ViewData["FlowNum_ForSetting"]' />
+                </td>
+                <td align="right">
+                    主运单号:
+                </td>
+                <td>
+                    <input  type="text" id="wbSerialNum_ForPrint" name="wbSerialNum_ForPrint" value='@ViewData["wbSerialNum_ForSetting"]' readonly/>
+                    <input  type="hidden" id="wbID_ForPrint" name="wbID_ForPrint" value='@ViewData["wbID_ForSetting"]'/>
+                </td>
+                <td align="right">
+                    业务类型:
+                </td>
+                <td>
+                    <input  type="text" id="CustomCategory_ForSetting" name="CustomCategory_ForSetting" value='@ViewData["CustomCategory_ForSetting"]' readonly/>
+                    <input  type="hidden" id="hid_CustomCategory_ForSetting" name="hid_CustomCategory_ForSetting" value='@ViewData["hid_CustomCategory_ForSetting"]'/>
+                </td>
+                <td align="right">
+                    总运单入库日期:
+                </td>
+                <td>
+                    <input type="text" id="InStoreDate_ForSetting" name="InStoreDate_ForSetting" onfocus="WdatePicker();"
+                class="Wdate" style="width: 90px"  value='@ViewData["InStoreDate_ForSetting"]'/>
+                </td>
+                <td align="right">
+                    退运日期:
+                </td>
+                <td>
+                    <input type="text" id="RejectDate_ForSetting" name="RejectDate_ForSetting" onfocus="WdatePicker();"
+                class="Wdate" style="width: 90px"  value='@(DateTime.Now.ToString("yyyy-MM-dd"))'/>
+                </td>
+                <td align="right">
+                    退运件数:
+                </td>
+                <td>
+                    <input  type="text" id="RejectNum_ForSetting" name="RejectNum_ForSetting" value='@ViewData["RejectNum_ForSetting"]' style="width: 50px" />
+                </td>
+                <td>
+                    日期:
+                </td>
+                <td>
+                    @DateTime.Now.ToString("yyyy-MM-dd")
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="14">
+                    退运货物明细:
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14">
+                    <div id="toolBar_Print" style="padding: 2px; height: auto">
+                        退货日期:<input type="text" id="txtBeginD_Print" name="txtBeginD_Print" onfocus="WdatePicker();"
+                class="Wdate" style="width: 90px"  value='@(DateTime.Now.ToString("yyyy-MM-01"))'/>---<input type="text" id="txtEndD_Print" name="txtEndD_Print"
+                    onfocus="WdatePicker();" class="Wdate" style="width: 90px"  value='@(DateTime.Now.ToString("yyyy-MM-dd"))'/>&nbsp;
+                        <a href="#" id="btnQuery_Print" name="btnQuery_Print" class="easyui-linkbutton" data-options="iconCls:'icon-search'">
+                            查询</a>&nbsp;&nbsp;&nbsp;<span style="color: Red; font-weight: bold">如果默认没有看到退货明细，请确认您之前进行退货的时间</span>
+                    </div>
+                    <div id="DG_SubWayBillResult" style="width: 1200px; height: 360px">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14">
+                    <table>
+                        <tr>
+                            @* <td align="right">
+                                直航\转关:
+                            </td>
+                            <td>
+                                <input type="text" style="width: 80px" id="ddlReceiptMode_ForSetting" name="ddlReceiptMode_ForSetting" />
+                            </td>*@
+                            <td align="right">
+                                结算方式:
+                            </td>
+                            <td>
+                                <input type="text" style="width: 80px" id="ddlPayMode_ForSetting" name="ddlPayMode_ForSetting" />
+                            </td>
+                            <td align="right">
+                                退运重量:
+                            </td>
+                            <td>
+                                <input  type="text" style=" width:80px" id="RejectWeight_ForSetting" name="RejectWeight_ForSetting" value='@ViewData["RejectWeight_ForSetting"]' />
+                            </td>
+                            <td align="right">
+                                退运费用:
+                            </td>
+                            <td>
+                                <input type="text"  style=" width:80px"  id="RejectFee_ForSetting" name="RejectFee_ForSetting" value='@ViewData["RejectFee_ForSetting"]' />
+                            </td>
+                            <td align="right">
+                                仓储费:
+                            </td>
+                            <td>
+                                <input type="text"  style=" width:80px"  id="KeepFee_ForSetting" name="KeepFee_ForSetting" value='@ViewData["KeepFee_ForSetting"]' />
+                            </td>
+                            <td align="right">
+                                合计:
+                            </td>
+                            <td colspan="5">
+                                <input type="text"  style="width:100px"  id="TotalFee_ForSetting" name="TotalFee_ForSetting"
+                          value='@ViewData["TotalFee_ForSetting"]'/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="14" align="center">
+                    <a href="#" id="btnPrePrint" name="btnPrePrint" class="easyui-linkbutton" data-options="iconCls:'icon-print'">
+                        打印预览</a>|<a href="#" id="btnPreExcel" name="btnPreExcel" class="easyui-linkbutton"
+                            data-options="iconCls:'icon-excel'">导出查看</a> &nbsp;&nbsp;&nbsp; <a href="#" id="btnConfirmPrint"
+                                name="btnConfirmPrint" class="easyui-linkbutton" data-options="iconCls:'icon-print'"
+                                style="color: Red">正式打印</a>|<a href="#" id="btnConfirmExcel" name="btnConfirmExcel"
+                                    class="easyui-linkbutton" data-options="iconCls:'icon-excel'" style="color: Red">正式导出</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

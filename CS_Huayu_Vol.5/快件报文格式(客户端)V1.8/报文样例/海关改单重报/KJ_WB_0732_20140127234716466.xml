@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Head>
+    <MessageID>KJ_WB_0732_20140127234716466</MessageID>
+    <BusinessType>200</BusinessType>
+    <Sender>0000</Sender>
+    <ReceiverID>0732</ReceiverID>
+    <SendTime>20140127234716466</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <TransportContractDocument>
+      <ID>QQ0987</ID>
+      <Quantity>0</Quantity>
+      <Measure>0</Measure>
+      <Country>US</Country>
+      <Port />
+    </TransportContractDocument>
+    <AssociatedTransportDocumentList>
+      <AssociatedTransportDocument>
+        <ID>DB063202664US</ID>
+        <GoodsName>电动剃须刀/1.00*360.0000</GoodsName>
+        <Quantity>1.00</Quantity>
+        <Measure>0.8000</Measure>
+        <ConsignorName />
+        <ConsigneeName>孙建东A</ConsigneeName>
+        <ConsigneeIDNumber>432501195306230019</ConsigneeIDNumber>
+        <ConsigneeAddress>湖南省娄底市娄星区,湖南省娄底市娄星区湘中大道黄泥一号A栋</ConsigneeAddress>
+        <ConsigneeTel>13907381573</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>1</DeclarationType>
+        <BillType>1</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>电动剃须刀</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>360.0000</DeclaredPrice>
+            <GoodsCode>11021130</GoodsCode>
+            <TaxRate>0.20</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB163205385US</ID>
+        <GoodsName>单肩包coach/1.00*630.0000,手拿包coach/1.00*320.0000</GoodsName>
+        <Quantity>2.00</Quantity>
+        <Measure>1.6000</Measure>
+        <ConsignorName />
+        <ConsigneeName>王琳A</ConsigneeName>
+        <ConsigneeIDNumber>522501198505072426</ConsigneeIDNumber>
+        <ConsigneeAddress>四川省成都市金牛区银河北街188号4栋一单元3102号</ConsigneeAddress>
+        <ConsigneeTel>13980476473</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>1</DeclarationType>
+        <BillType>1</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>单肩包coach</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>630.0000</DeclaredPrice>
+            <GoodsCode>06010200</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+          <TaxBill>
+            <GoodsName>手拿包coach</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>320.0000</DeclaredPrice>
+            <GoodsCode>06010200</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB173205538US</ID>
+        <GoodsName>维生素/5.00*60.0000,外衣/2.00*250.0000</GoodsName>
+        <Quantity>7.00</Quantity>
+        <Measure>3.3000</Measure>
+        <ConsignorName />
+        <ConsigneeName>丁凝冶A</ConsigneeName>
+        <ConsigneeIDNumber>231282198107187334</ConsigneeIDNumber>
+        <ConsigneeAddress>北京市北京市房山区燕房路1号组织部</ConsigneeAddress>
+        <ConsigneeTel>13836057768</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>1</DeclarationType>
+        <BillType>1</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>维生素</GoodsName>
+            <Quantity>5.00</Quantity>
+            <DeclaredPrice>60.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+          <TaxBill>
+            <GoodsName>外衣</GoodsName>
+            <Quantity>2.00</Quantity>
+            <DeclaredPrice>250.0000</DeclaredPrice>
+            <GoodsCode>04010100</GoodsCode>
+            <TaxRate>0.20</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB183200422US</ID>
+        <GoodsName>手提包coach/2.00*310.0000</GoodsName>
+        <Quantity>2.00</Quantity>
+        <Measure>0.9000</Measure>
+        <ConsignorName />
+        <ConsigneeName>丁薇A</ConsigneeName>
+        <ConsigneeIDNumber>510108198812023324</ConsigneeIDNumber>
+        <ConsigneeAddress>四川省成都市成华区西林路199号北回归线8-1-804</ConsigneeAddress>
+        <ConsigneeTel>18628212266</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>1</DeclarationType>
+        <BillType>1</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>手提包coach</GoodsName>
+            <Quantity>2.00</Quantity>
+            <DeclaredPrice>310.0000</DeclaredPrice>
+            <GoodsCode>06010200</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+      <AssociatedTransportDocument>
+        <ID>DB183200545US</ID>
+        <GoodsName>外裤/1.00*370.0000</GoodsName>
+        <Quantity>1.00</Quantity>
+        <Measure>0.8000</Measure>
+        <ConsignorName />
+        <ConsigneeName>马吉辉A</ConsigneeName>
+        <ConsigneeIDNumber>230102198201092835</ConsigneeIDNumber>
+        <ConsigneeAddress>天津天津河西区 友谊路50号 友谊大厦C-1-302</ConsigneeAddress>
+        <ConsigneeTel>13612029711</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>1</DeclarationType>
+        <BillType>1</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>外裤</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>370.0000</DeclaredPrice>
+            <GoodsCode>04010200</GoodsCode>
+            <TaxRate>0.20</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+    </AssociatedTransportDocumentList>
+  </Body>
+</Manifest>

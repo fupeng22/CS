@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShowWayBillInfo_DS" targetNamespace="http://tempuri.org/ShowWayBillInfo_DS.xsd" xmlns:mstns="http://tempuri.org/ShowWayBillInfo_DS.xsd" xmlns="http://tempuri.org/ShowWayBillInfo_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShowWayBillInfo_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ShowWayBillInfo_DS" msprop:Generator_UserDSName="ShowWayBillInfo_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wbCompany" msprop:Generator_ColumnVarNameInTable="columnwbCompany" msprop:Generator_ColumnPropNameInRow="wbCompany" msprop:Generator_ColumnPropNameInTable="wbCompanyColumn" msprop:Generator_UserColumnName="wbCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="wbSerialNum" msprop:Generator_ColumnVarNameInTable="columnwbSerialNum" msprop:Generator_ColumnPropNameInRow="wbSerialNum" msprop:Generator_ColumnPropNameInTable="wbSerialNumColumn" msprop:Generator_UserColumnName="wbSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="StoreCount" msprop:Generator_ColumnVarNameInTable="columnStoreCount" msprop:Generator_ColumnPropNameInRow="StoreCount" msprop:Generator_ColumnPropNameInTable="StoreCountColumn" msprop:Generator_UserColumnName="StoreCount" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalWeight" msprop:Generator_ColumnVarNameInTable="columnwbTotalWeight" msprop:Generator_ColumnPropNameInRow="wbTotalWeight" msprop:Generator_ColumnPropNameInTable="wbTotalWeightColumn" msprop:Generator_UserColumnName="wbTotalWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="InStoreCount" msprop:Generator_ColumnVarNameInTable="columnInStoreCount" msprop:Generator_ColumnPropNameInRow="InStoreCount" msprop:Generator_ColumnPropNameInTable="InStoreCountColumn" msprop:Generator_UserColumnName="InStoreCount" type="xs:string" minOccurs="0" />
+              <xs:element name="OutStoreCount" msprop:Generator_ColumnVarNameInTable="columnOutStoreCount" msprop:Generator_ColumnPropNameInRow="OutStoreCount" msprop:Generator_ColumnPropNameInTable="OutStoreCountColumn" msprop:Generator_UserColumnName="OutStoreCount" type="xs:string" minOccurs="0" />
+              <xs:element name="wbID" msprop:Generator_ColumnVarNameInTable="columnwbID" msprop:Generator_ColumnPropNameInRow="wbID" msprop:Generator_ColumnPropNameInTable="wbIDColumn" msprop:Generator_UserColumnName="wbID" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalNumbe" msprop:Generator_ColumnVarNameInTable="columnwbTotalNumbe" msprop:Generator_ColumnPropNameInRow="wbTotalNumbe" msprop:Generator_ColumnPropNameInTable="wbTotalNumbeColumn" msprop:Generator_UserColumnName="wbTotalNumbe" type="xs:string" minOccurs="0" />
+              <xs:element name="NotInStoreCount" msprop:Generator_ColumnVarNameInTable="columnNotInStoreCount" msprop:Generator_ColumnPropNameInRow="NotInStoreCount" msprop:Generator_ColumnPropNameInTable="NotInStoreCountColumn" msprop:Generator_UserColumnName="NotInStoreCount" type="xs:string" minOccurs="0" />
+              <xs:element name="RejectNum" msprop:Generator_ColumnVarNameInTable="columnRejectNum" msprop:Generator_ColumnPropNameInRow="RejectNum" msprop:Generator_ColumnPropNameInTable="RejectNumColumn" msprop:Generator_UserColumnName="RejectNum" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

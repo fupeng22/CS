@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation=".\Type\Type.xsd"/>
+	<xs:element name="ReturnReceipt">
+		<xs:annotation>
+			<xs:documentation>报文回执</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Head">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID" type="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文名</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="BusinessType" type="BusinessType">
+								<xs:annotation>
+									<xs:documentation>业务类型</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Sender" type="Sender">
+								<xs:annotation>
+									<xs:documentation>发送方
+001</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ReceiverID" type="ReceiverID">
+								<xs:annotation>
+									<xs:documentation>接收方代码
+华宇海关编码</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SendTime" type="SendTime">
+								<xs:annotation>
+									<xs:documentation>发送时间</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Version">
+								<xs:annotation>
+									<xs:documentation>报文版本号（循环次数：1）例如:1.0</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Operation">
+								<xs:annotation>
+									<xs:documentation>操作类型，成功或失败</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="2"/>
+										<xs:pattern value="[0-9]{2}"/>
+										<xs:enumeration value="02"/>
+										<xs:enumeration value="01"/>
+										<!-- 01成功 ，02 失败-->
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Description" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>失败原因描述</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="500"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="FileName" type="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文名称 MessageID</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,6 @@
+E:\MyWork\RedGlove\源码\RedGlovePermission.DBUtility\bin\Release\RedGlovePermission.DBUtility.dll
+E:\MyWork\RedGlove\源码\RedGlovePermission.DBUtility\bin\Release\RedGlovePermission.DBUtility.pdb
+E:\MyWork\RedGlove\源码\RedGlovePermission.DBUtility\bin\Release\MySql.Data.dll
+E:\MyWork\RedGlove\源码\RedGlovePermission.DBUtility\obj\Release\ResolveAssemblyReference.cache
+E:\MyWork\RedGlove\源码\RedGlovePermission.DBUtility\obj\Release\RedGlovePermission.DBUtility.dll
+E:\MyWork\RedGlove\源码\RedGlovePermission.DBUtility\obj\Release\RedGlovePermission.DBUtility.pdb

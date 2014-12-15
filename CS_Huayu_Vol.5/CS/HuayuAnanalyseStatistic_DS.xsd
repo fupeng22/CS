@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HuayuAnanalyseStatistic_DS" targetNamespace="http://tempuri.org/HuayuAnanalyseStatistic_DS.xsd" xmlns:mstns="http://tempuri.org/HuayuAnanalyseStatistic_DS.xsd" xmlns="http://tempuri.org/HuayuAnanalyseStatistic_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HuayuAnanalyseStatistic_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="HuayuAnanalyseStatistic_DS" msprop:Generator_UserDSName="HuayuAnanalyseStatistic_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dStorageDate" msprop:Generator_ColumnVarNameInTable="columndStorageDate" msprop:Generator_ColumnPropNameInRow="dStorageDate" msprop:Generator_ColumnPropNameInTable="dStorageDateColumn" msprop:Generator_UserColumnName="dStorageDate" type="xs:string" minOccurs="0" />
+              <xs:element name="vCompany" msprop:Generator_ColumnVarNameInTable="columnvCompany" msprop:Generator_ColumnPropNameInRow="vCompany" msprop:Generator_ColumnPropNameInTable="vCompanyColumn" msprop:Generator_UserColumnName="vCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="vSerialNum" msprop:Generator_ColumnVarNameInTable="columnvSerialNum" msprop:Generator_ColumnPropNameInRow="vSerialNum" msprop:Generator_ColumnPropNameInTable="vSerialNumColumn" msprop:Generator_UserColumnName="vSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="iTotalNum" msprop:Generator_ColumnVarNameInTable="columniTotalNum" msprop:Generator_ColumnPropNameInRow="iTotalNum" msprop:Generator_ColumnPropNameInTable="iTotalNumColumn" msprop:Generator_UserColumnName="iTotalNum" type="xs:string" minOccurs="0" />
+              <xs:element name="dTotalWeight" msprop:Generator_ColumnVarNameInTable="columndTotalWeight" msprop:Generator_ColumnPropNameInRow="dTotalWeight" msprop:Generator_ColumnPropNameInTable="dTotalWeightColumn" msprop:Generator_UserColumnName="dTotalWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="InStoreNum" msprop:Generator_ColumnVarNameInTable="columnInStoreNum" msprop:Generator_ColumnPropNameInRow="InStoreNum" msprop:Generator_ColumnPropNameInTable="InStoreNumColumn" msprop:Generator_UserColumnName="InStoreNum" type="xs:string" minOccurs="0" />
+              <xs:element name="OutStoreNum" msprop:Generator_ColumnVarNameInTable="columnOutStoreNum" msprop:Generator_ColumnPropNameInRow="OutStoreNum" msprop:Generator_ColumnPropNameInTable="OutStoreNumColumn" msprop:Generator_UserColumnName="OutStoreNum" type="xs:string" minOccurs="0" />
+              <xs:element name="ReleaseNum" msprop:Generator_ColumnVarNameInTable="columnReleaseNum" msprop:Generator_ColumnPropNameInRow="ReleaseNum" msprop:Generator_ColumnPropNameInTable="ReleaseNumColumn" msprop:Generator_UserColumnName="ReleaseNum" type="xs:string" minOccurs="0" />
+              <xs:element name="NotReleaseNum" msprop:Generator_ColumnVarNameInTable="columnNotReleaseNum" msprop:Generator_ColumnPropNameInRow="NotReleaseNum" msprop:Generator_ColumnPropNameInTable="NotReleaseNumColumn" msprop:Generator_UserColumnName="NotReleaseNum" type="xs:string" minOccurs="0" />
+              <xs:element name="wbID" msprop:Generator_ColumnVarNameInTable="columnwbID" msprop:Generator_ColumnPropNameInRow="wbID" msprop:Generator_ColumnPropNameInTable="wbIDColumn" msprop:Generator_UserColumnName="wbID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

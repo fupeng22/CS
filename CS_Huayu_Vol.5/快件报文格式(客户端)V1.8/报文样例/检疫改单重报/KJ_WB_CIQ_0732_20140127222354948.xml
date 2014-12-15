@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Head>
+    <MessageID>KJ_WB_CIQ_0732_20140127222354948</MessageID>
+    <BusinessType>200</BusinessType>
+    <Sender>0000</Sender>
+    <ReceiverID>0732</ReceiverID>
+    <SendTime>20140127222354948</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <TransportContractDocument>
+      <ID>QQ2000</ID>
+      <Quantity>0</Quantity>
+      <Measure>0</Measure>
+      <Country>HK</Country>
+      <Port />
+    </TransportContractDocument>
+    <AssociatedTransportDocumentList>
+      <AssociatedTransportDocument>
+        <ID>OICQ9001</ID>
+        <GoodsName>泡沫床垫/1.00*153.0000,枕头/3.00*100.0000,1111/1.0*1111</GoodsName>
+        <Quantity>5.00</Quantity>
+        <Measure>31.3800</Measure>
+        <ConsignorName>Dolore Morin</ConsignorName>
+        <ConsigneeName>于滨昌123</ConsigneeName>
+        <ConsigneeIDNumber>370625195504200038</ConsigneeIDNumber>
+        <ConsigneeAddress>asdadadsafaqqweqv</ConsigneeAddress>
+        <ConsigneeTel>18353512349</ConsigneeTel>
+        <TaxableType>0</TaxableType>
+        <DeclarationType>1</DeclarationType>
+        <BillType>1</BillType>
+        <TransportCompany />
+        <Website />
+        <TaxBillList>
+          <TaxBill>
+            <GoodsName>泡沫床垫</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>153.0000</DeclaredPrice>
+            <GoodsCode>12990000</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+          <TaxBill>
+            <GoodsName>枕头</GoodsName>
+            <Quantity>3.00</Quantity>
+            <DeclaredPrice>100.0000</DeclaredPrice>
+            <GoodsCode>04030200</GoodsCode>
+            <TaxRate>0.20</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+          <TaxBill>
+            <GoodsName>1111</GoodsName>
+            <Quantity>1.00</Quantity>
+            <DeclaredPrice>1111.0000</DeclaredPrice>
+            <GoodsCode>01019900</GoodsCode>
+            <TaxRate>0.10</TaxRate>
+            <SuggestedPrice>0.0000</SuggestedPrice>
+          </TaxBill>
+        </TaxBillList>
+      </AssociatedTransportDocument>
+    </AssociatedTransportDocumentList>
+  </Body>
+</Manifest>

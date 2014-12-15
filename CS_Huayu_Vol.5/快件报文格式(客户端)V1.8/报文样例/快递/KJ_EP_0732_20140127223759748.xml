@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Head>
+    <MessageID>KJ_EP_0732_20140127223759748</MessageID>
+    <BusinessType>900</BusinessType>
+    <Sender>0000</Sender>
+    <ReceiverID>0732</ReceiverID>
+    <SendTime>20140127223759748</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <TransportContractDocument>
+      <ID>99912345678</ID>
+    </TransportContractDocument>
+    <AssociatedTransportDocument>
+      <Item>
+        <ID>DB093201342US</ID>
+        <ExpressType>EMS</ExpressType>
+        <ExpressNo>1234567890123</ExpressNo>
+      </Item>
+      <Item>
+        <ID>DB093201343US</ID>
+        <ExpressType>EMS</ExpressType>
+        <ExpressNo>1234567890124</ExpressNo>
+      </Item>
+    </AssociatedTransportDocument>
+  </Body>
+</Manifest>

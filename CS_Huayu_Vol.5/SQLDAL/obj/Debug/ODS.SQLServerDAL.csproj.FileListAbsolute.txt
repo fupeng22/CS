@@ -1,0 +1,14 @@
+E:\医院系统\开发模板\ODS.SQLserverDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.SQLServerDAL.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.SQLServerDAL.pdb
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.DBUtility.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.IDAL.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.Lib.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.Model.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\MySql.Data.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.Lib.pdb
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.Model.pdb
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.DBUtility.pdb
+E:\医院系统\开发模板\ODS.SQLserverDAL\bin\Debug\ODS.IDAL.pdb
+E:\医院系统\开发模板\ODS.SQLserverDAL\obj\Debug\ODS.SQLServerDAL.dll
+E:\医院系统\开发模板\ODS.SQLserverDAL\obj\Debug\ODS.SQLServerDAL.pdb

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script src="@Url.Content("~/JS/Huayu/Huayu_ViewCheckResultDetail.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="toolBarDetail" style="padding: 1px; height: auto">
+        <div style="margin-bottom: 5px">
+            <a href="#" class="easyui-linkbutton" id="btnDetailQuery" iconcls="icon-search" plain="true">
+                查询</a><a href="javascript:void(0)" id="menuButtonReport_dlg" class="easyui-menubutton"
+                    data-options="menu:'#menuButtons_dlg',iconCls:'icon-report'">报表</a>
+            <div id="menuButtons_dlg" style="width: 150px;">
+                <div id="btnPrint_dlg" name="btnPrint_dlg" data-options="iconCls:'icon-print'">
+                    打印(PDF)</div>
+                <div id="btnExcel_dlg" name="btnExcel_dlg" data-options="iconCls:'icon-excel'">
+                    导出(Excel)</div>
+            </div>
+        </div>
+        总运单号:<input type="text" id="txtCode_Detail" name="txtCode_Detail"  value='@ViewData["Detail_wbSerialNum"]' />&nbsp;
+        分运单号:<input type="text" id="txtSubWayBillCode_Detail" name="txtSubWayBillCode_Detail"  value='@ViewData["Detail_swbSerialNum"]' />&nbsp;
+        货物中文名称:<input type="text" id="txtswbDescription_CHN" name="txtswbDescription_CHN" />
+        货物英文名称:<input type="text" id="txtswbDescription_ENG" name="txtswbDescription_ENG" /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;状态:<select id="ddlSwbStatus" name="ddlSwbStatus" multiple
+            style="width: 350px;" panelheight="auto">
+        </select>
+        <font style="color: Red">总运单号必须精确，子运单号、货物名称可模糊输入</font>
+        <input  type="hidden" id="hid_swbStatus" name="hid_swbStatus" value='@ViewData["Detail_swbStatus"]'/>
+    </div>
+    <div id="DG_SubWayBillDetail" fit="true" style="width: 800px; height: 600px">
+    </div>
+</body>
+</html>

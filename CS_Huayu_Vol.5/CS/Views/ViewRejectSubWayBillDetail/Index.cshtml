@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script src="@Url.Content("~/JS/Common/ViewRejectSubWayBillDetail.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="toolBarDetail_RejectSubWayBill" style="padding: 1px; height: auto">
+        <div style="margin-bottom: 0px">
+            <a href="#" class="easyui-linkbutton" id="btnRejectDetailQuery" iconcls="icon-search"
+                plain="true">查询</a><a href="#" class="easyui-linkbutton" id="btnRejectDetailSeleAll"
+                    iconcls="icon-seleall" plain="true">全选</a><a href="#" class="easyui-linkbutton" id="btnRejectDetailInverseSele"
+                        iconcls="icon-inversesele" plain="true">反选</a><a href="javascript:void(0)" id="menuButtonReport_RejectDetaildlg"
+                            class="easyui-menubutton" data-options="menu:'#menuButtons_RejectDetaildlg',iconCls:'icon-report'">报表</a>
+            <div id="menuButtons_RejectDetaildlg" style="width: 150px;">
+                <div id="btnPrint_RejectDetaildlg" name="btnPrint_RejectDetaildlg" data-options="iconCls:'icon-print'">
+                    打印(PDF)</div>
+                <div id="btnExcel_RejectDetaildlg" name="btnExcel_RejectDetaildlg" data-options="iconCls:'icon-excel'">
+                    导出(Excel)</div>
+            </div>
+            <font style="color: Red">总运单号必须精确，子运单号、货物名称可模糊输入</font>
+        </div>
+        总运单号:<input type="text" id="txtCode_Detail" name="txtCode_Detail"  value='@ViewData["Detail_wbSerialNum"]' />&nbsp;
+        分运单号:<input type="text" id="txtSubWayBillCode_Detail" name="txtSubWayBillCode_Detail"  value='@ViewData["Detail_swbSerialNum"]' />&nbsp;
+        货物中文名称:<input type="text" id="txtswbDescription_CHN" name="txtswbDescription_CHN" />
+        货物英文名称:<input type="text" id="txtswbDescription_ENG" name="txtswbDescription_ENG" />
+        退货日期:<input type="text" id="inputRejectBeginDate" name="inputRejectBeginDate" onfocus="WdatePicker();"
+            class="Wdate" style="width: 90px" value='' />---<input type="text" id="inputRejectEndDate"
+                name="inputRejectEndDate" onfocus="WdatePicker();" class="Wdate" style="width: 90px"
+                value='' />&nbsp;&nbsp;
+    </div>
+    <div id="DG_RejectSubWayBillDetail" fit="true" style="width: 800px; height: 600px">
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+20140330
+1.Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 ExpressCustomerNo 字段
+2.新增检疫版重报规范 Waybill_CIQ.xsd
+
+20140328
+1.Manifest.xsd 中 节点 TransportContractDocument 下增加备注字段 Memo
+2.Manifest.xsd、Express.xsd 中 AssociatedTransportDocument.Item 节点 增加 ExpressCustomerNo 字段
+
+20140311
+1.Manifest.xsd、Waybill.xsd 中 AssociatedTransportDocument.Item.TaxBill.Item 节点 增加 TaxID 字段
+2.增加税单报文 Tax.xsd
+
+20140226
+1.Manifest.xsd、Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 City 字段
+2.Manifest.xsd、Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 Postcode 字段
+3.Manifest.xsd、Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 ExpressType 字段
+4.Manifest.xsd、Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 ExpressNo 字段
+5.Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 TransportCompany 字段
+6.Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 Website 字段
+7.Waybill.xsd 中 AssociatedTransportDocument.Item 节点 修改 ConsignorName 字段为非必填项
+8.Waybill.xsd 中 AssociatedTransportDocument.Item 节点 删除 Country、Port 字段
+9.新增 Express.xsd 详情请看 报文格式及名称定义说明.docx 和报文样例
+
+20131225
+1.增加出入库报文
+2.增加检验检疫重报，文件名称"_CIQ_"
+3.增加检验检疫状态,文件名称"_CIQ_"
+
+20131209
+1.分单节点下增加转运公司和网站节点
+
+20131120
+1.原分单下的启运国和启运港调整到主单
+2.主单增加字段 IsIndividual
+
+
+20131108
+1.Manifest.xsd、Waybill.xsd 中 TaxBill 节点由最多7条调整为14条
+2.Manifest.xsd、Waybill.xsd 中 AssociatedTransportDocument.Item 节点 增加 GoodsName 字段
+
+20131105
+1.节点 AssociatedTransportDocument 下增加启运港字段 Port
+2.节点 TransportContractDocument 下删除 分单数 字段 Count

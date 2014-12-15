@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RBillBodyByControl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Head>
+    <MessageID>KJ_ST_0732_CU_20140127234451803</MessageID>
+    <BusinessType>300</BusinessType>
+    <Sender>001</Sender>
+    <ReceiverID>0000</ReceiverID>
+    <SendTime>20140127114451</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <Status>
+      <TransportContractDocumentID>QQ0987</TransportContractDocumentID>
+      <AssociatedTransportDocumentID>DB063202664US</AssociatedTransportDocumentID>
+      <Release>01</Release>
+    </Status>
+    <Status>
+      <TransportContractDocumentID>QQ0987</TransportContractDocumentID>
+      <AssociatedTransportDocumentID>DB163205385US</AssociatedTransportDocumentID>
+      <Release>01</Release>
+    </Status>
+    <Status>
+      <TransportContractDocumentID>QQ0987</TransportContractDocumentID>
+      <AssociatedTransportDocumentID>DB173205538US</AssociatedTransportDocumentID>
+      <Release>01</Release>
+    </Status>
+    <Status>
+      <TransportContractDocumentID>QQ0987</TransportContractDocumentID>
+      <AssociatedTransportDocumentID>DB183200422US</AssociatedTransportDocumentID>
+      <Release>01</Release>
+    </Status>
+    <Status>
+      <TransportContractDocumentID>QQ0987</TransportContractDocumentID>
+      <AssociatedTransportDocumentID>DB183200545US</AssociatedTransportDocumentID>
+      <Release>01</Release>
+    </Status>
+  </Body>
+</RBillBodyByControl>

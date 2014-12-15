@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JqueryUI/jquery.easyui.min.js")" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/black/easyui.css")" rel="stylesheet"
+        title="black" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/bootstrap/easyui.css")" rel="stylesheet"
+        title="bootstrap"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/cupertino/easyui.css")" rel="stylesheet"
+        title="cupertino"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/dark-hive/easyui.css")" rel="stylesheet"
+        title="dark-hive"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/default/easyui.css")" rel="stylesheet"
+        title="default"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/gray/easyui.css")" rel="stylesheet"
+        title="gray"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/metro/easyui.css")" rel="stylesheet"
+        title="metro"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/metro-blue/easyui.css")" rel="stylesheet"
+        title="metro-blue"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/metro-gray/easyui.css")" rel="stylesheet"
+        title="metro-gray"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/metro-green/easyui.css")" rel="stylesheet"
+        title="metro-green"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/metro-orange/easyui.css")" rel="stylesheet"
+        title="metro-orange"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/metro-red/easyui.css")" rel="stylesheet"
+        title="metro-red"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/pepper-grinder/easyui.css")" rel="stylesheet"
+        title="pepper-grinder"/>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/JqueryUI/themes/sunny/easyui.css")" rel="stylesheet"
+        title="sunny"/>
+    <link href="@Url.Content("~/JqueryUI/themes/icon.css")"  rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/JS/Huayu/Relese.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JqueryUI/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JS/Common/Common.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="toolBar" style="padding: 2px; height: auto">
+        <div class="easyui-panel" title="普通查询" style="height: 55px; padding: 2" collapsible="true">
+            <input type="hidden" id="hidSearchType" name="hidSearchType" value="-1" />
+            总运单号:<input type="text" id="txtCode" name="txtCode" />
+            <a href="#" id="btnQuery" name="btnQuery" class="easyui-linkbutton" data-options="iconCls:'icon-search'"  plain="true">
+                查询</a> <a href="#" id="btnReset" name="btnReset" class="easyui-linkbutton" data-options="iconCls:'icon-undo'"  plain="true">
+                    重置</a><a href="javascript:void(0)" id="menuButtonReport" class="easyui-menubutton"
+                        data-options="menu:'#menuButtons',iconCls:'icon-report',plain:true">报表</a>
+            <div id="menuButtons" style="width: 150px;">
+                <div id="btnPrint" name="btnPrint" data-options="iconCls:'icon-print'">
+                    打印(PDF)</div>
+                <div id="btnExcel" name="btnExcel" data-options="iconCls:'icon-excel'">
+                    导出(Excel)</div>
+            </div>
+            &nbsp;<span style="color: Red; font-weight: bold">只有出过库的并且放行的单方可进行提货</span>
+        </div>
+        <div class="easyui-panel" title="高级查询" style="height: 55px; padding: 2" collapsible="true">
+            报关日期:<input type="text" id="inputBeginDate" name="inputBeginDate" onfocus="WdatePicker();"
+                class="Wdate" style="width: 90px"  value='@(DateTime.Now.ToString("yyyy-MM-dd"))'/>---<input type="text" id="inputEndDate" name="inputEndDate"
+                    onfocus="WdatePicker();" class="Wdate" style="width: 90px"  value='@(DateTime.Now.ToString("yyyy-MM-dd"))'/>&nbsp;&nbsp;报关货代公司:<input
+                        type="text" id="txtCompany" name="txtCompany" />&nbsp;&nbsp; 航班号:<input type="text"
+                            id="txtVoyage" name="txtVoyage" />&nbsp;&nbsp;总运单号:<input type="text" id="txtGCode"
+                                name="txtGCode" />
+            <a href="#" id="GbtnQuery" name="GbtnQuery" class="easyui-linkbutton" data-options="iconCls:'icon-search'"  plain="true">
+                查询</a> <a href="#" id="GbtnReset" name="GbtnReset" class="easyui-linkbutton" data-options="iconCls:'icon-undo'"  plain="true">
+                    重置</a>
+        </div>
+    </div>
+    <div id="DG_WayBillResult" fit="true" style="width: 800px; height: 600px">
+    </div>
+    <div id="dlg_Detail" data-options="iconCls:'icon-save'" style="padding: 1px; width: 400px;
+        height: 300px;">
+    </div>
+    <div id="dlg_PrintFirstPickGoodsWayBill" data-options="iconCls:'icon-save'" style="padding: 1px;
+        width: 400px; height: 300px;">
+    </div>
+</body>
+</html>

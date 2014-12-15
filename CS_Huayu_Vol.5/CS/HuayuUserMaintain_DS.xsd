@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HuayuUserMaintain_DS" targetNamespace="http://tempuri.org/HuayuUserMaintain_DS.xsd" xmlns:mstns="http://tempuri.org/HuayuUserMaintain_DS.xsd" xmlns="http://tempuri.org/HuayuUserMaintain_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HuayuUserMaintain_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="HuayuUserMaintain_DS" msprop:Generator_UserDSName="HuayuUserMaintain_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userName" msprop:Generator_ColumnVarNameInTable="columnuserName" msprop:Generator_ColumnPropNameInRow="userName" msprop:Generator_ColumnPropNameInTable="userNameColumn" msprop:Generator_UserColumnName="userName" type="xs:string" minOccurs="0" />
+              <xs:element name="userPassword" msprop:Generator_ColumnVarNameInTable="columnuserPassword" msprop:Generator_ColumnPropNameInRow="userPassword" msprop:Generator_ColumnPropNameInTable="userPasswordColumn" msprop:Generator_UserColumnName="userPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="authority" msprop:Generator_ColumnVarNameInTable="columnauthority" msprop:Generator_ColumnPropNameInRow="authority" msprop:Generator_ColumnPropNameInTable="authorityColumn" msprop:Generator_UserColumnName="authority" type="xs:string" minOccurs="0" />
+              <xs:element name="comment" msprop:Generator_ColumnVarNameInTable="columncomment" msprop:Generator_ColumnPropNameInRow="comment" msprop:Generator_ColumnPropNameInTable="commentColumn" msprop:Generator_UserColumnName="comment" type="xs:string" minOccurs="0" />
+              <xs:element name="authorityDescription" msprop:Generator_ColumnVarNameInTable="columnauthorityDescription" msprop:Generator_ColumnPropNameInRow="authorityDescription" msprop:Generator_ColumnPropNameInTable="authorityDescriptionColumn" msprop:Generator_UserColumnName="authorityDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="commentDescription" msprop:Generator_ColumnVarNameInTable="columncommentDescription" msprop:Generator_ColumnPropNameInRow="commentDescription" msprop:Generator_ColumnPropNameInTable="commentDescriptionColumn" msprop:Generator_UserColumnName="commentDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="company" msprop:Generator_ColumnVarNameInTable="columncompany" msprop:Generator_ColumnPropNameInRow="company" msprop:Generator_ColumnPropNameInTable="companyColumn" msprop:Generator_UserColumnName="company" type="xs:string" minOccurs="0" />
+              <xs:element name="userID" msprop:Generator_ColumnVarNameInTable="columnuserID" msprop:Generator_ColumnPropNameInRow="userID" msprop:Generator_ColumnPropNameInTable="userIDColumn" msprop:Generator_UserColumnName="userID" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyFullName" msprop:Generator_ColumnVarNameInTable="columnCompanyFullName" msprop:Generator_ColumnPropNameInRow="CompanyFullName" msprop:Generator_ColumnPropNameInTable="CompanyFullNameColumn" msprop:Generator_UserColumnName="CompanyFullName" type="xs:string" minOccurs="0" />
+              <xs:element name="LinkPerson" msprop:Generator_ColumnVarNameInTable="columnLinkPerson" msprop:Generator_ColumnPropNameInRow="LinkPerson" msprop:Generator_ColumnPropNameInTable="LinkPersonColumn" msprop:Generator_UserColumnName="LinkPerson" type="xs:string" minOccurs="0" />
+              <xs:element name="IdentityCode" msprop:Generator_ColumnVarNameInTable="columnIdentityCode" msprop:Generator_ColumnPropNameInRow="IdentityCode" msprop:Generator_ColumnPropNameInTable="IdentityCodeColumn" msprop:Generator_UserColumnName="IdentityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="LinkTel" msprop:Generator_ColumnVarNameInTable="columnLinkTel" msprop:Generator_ColumnPropNameInRow="LinkTel" msprop:Generator_ColumnPropNameInTable="LinkTelColumn" msprop:Generator_UserColumnName="LinkTel" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyPhone" msprop:Generator_ColumnVarNameInTable="columnCompanyPhone" msprop:Generator_ColumnPropNameInRow="CompanyPhone" msprop:Generator_ColumnPropNameInTable="CompanyPhoneColumn" msprop:Generator_UserColumnName="CompanyPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyAddr" msprop:Generator_ColumnVarNameInTable="columnCompanyAddr" msprop:Generator_ColumnPropNameInRow="CompanyAddr" msprop:Generator_ColumnPropNameInTable="CompanyAddrColumn" msprop:Generator_UserColumnName="CompanyAddr" type="xs:string" minOccurs="0" />
+              <xs:element name="LinkMail" msprop:Generator_ColumnVarNameInTable="columnLinkMail" msprop:Generator_ColumnPropNameInRow="LinkMail" msprop:Generator_ColumnPropNameInTable="LinkMailColumn" msprop:Generator_UserColumnName="LinkMail" type="xs:string" minOccurs="0" />
+              <xs:element name="iSendFirstPickGoodsEmail" msprop:Generator_ColumnVarNameInTable="columniSendFirstPickGoodsEmail" msprop:Generator_ColumnPropNameInRow="iSendFirstPickGoodsEmail" msprop:Generator_ColumnPropNameInTable="iSendFirstPickGoodsEmailColumn" msprop:Generator_UserColumnName="iSendFirstPickGoodsEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="iSendUnReleaseGoodsEmail" msprop:Generator_ColumnVarNameInTable="columniSendUnReleaseGoodsEmail" msprop:Generator_ColumnPropNameInRow="iSendUnReleaseGoodsEmail" msprop:Generator_ColumnPropNameInTable="iSendUnReleaseGoodsEmailColumn" msprop:Generator_UserColumnName="iSendUnReleaseGoodsEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="iSendRejectGoodsEmail" msprop:Generator_ColumnVarNameInTable="columniSendRejectGoodsEmail" msprop:Generator_ColumnPropNameInRow="iSendRejectGoodsEmail" msprop:Generator_ColumnPropNameInTable="iSendRejectGoodsEmailColumn" msprop:Generator_UserColumnName="iSendRejectGoodsEmail" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

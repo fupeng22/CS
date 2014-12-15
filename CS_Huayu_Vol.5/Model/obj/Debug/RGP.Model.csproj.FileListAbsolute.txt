@@ -1,0 +1,10 @@
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.dll
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\bin\Debug\RedGlovePermission.Model.pdb
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.dll
+D:\MyWork\学习源码\RGPMVC\RedGlovePermission.Model\obj\Debug\RedGlovePermission.Model.pdb
+E:\new\医疗管理系统\1_资料\his\RedGlovePermission\RGP.Model\bin\Debug\RGP.Model.dll
+E:\new\医疗管理系统\1_资料\his\RedGlovePermission\RGP.Model\bin\Debug\RGP.Model.pdb
+E:\new\医疗管理系统\1_资料\his\RedGlovePermission\RGP.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\new\医疗管理系统\1_资料\his\RedGlovePermission\RGP.Model\obj\Debug\RGP.Model.dll
+E:\new\医疗管理系统\1_资料\his\RedGlovePermission\RGP.Model\obj\Debug\RGP.Model.pdb

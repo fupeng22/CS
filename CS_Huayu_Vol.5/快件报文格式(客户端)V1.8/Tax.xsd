@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by fox (cenin) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation=".\Type\Type.xsd"/>
+	<xs:element name="Tax">
+		<xs:annotation>
+			<xs:documentation>税单信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Head">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID" type="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文名</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="BusinessType" type="BusinessType">
+								<xs:annotation>
+									<xs:documentation>业务类型</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Sender" type="Sender">
+								<xs:annotation>
+									<xs:documentation>发送方
+001</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ReceiverID" type="ReceiverID">
+								<xs:annotation>
+									<xs:documentation>接收方代码
+华宇海关编码</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="SendTime" type="SendTime">
+								<xs:annotation>
+									<xs:documentation>发送时间</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Version">
+								<xs:annotation>
+									<xs:documentation>报文版本号（循环次数：1）例如:1.0</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:complexType>
+						<xs:sequence maxOccurs="9999">
+							<xs:element name="TransportContractDocument">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ID" type="TransportContractDocumentIdentificationIdentifier">
+											<xs:annotation>
+												<xs:documentation>主单号</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="AssociatedTransportDocument">
+								<xs:complexType>
+									<xs:sequence maxOccurs="9999">
+										<xs:element name="Item">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ID" type="AssociatedTransportDocumentIdentificationIdentifier">
+														<xs:annotation>
+															<xs:documentation>分单号</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="Discount">
+														<xs:annotation>
+															<xs:documentation>折扣</xs:documentation>
+															<!-- 该字段描述:发送方默认填0,接受方计算后，将数据回填该字段然后将报文返回给发送方-->
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+																<xs:maxInclusive value="99.99"/>
+																<xs:fractionDigits value="2"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="TotalPrice">
+														<xs:annotation>
+															<xs:documentation>总额</xs:documentation>
+															<!-- 该字段描述:发送方默认填0,接受方计算后，将数据回填该字段然后将报文返回给发送方-->
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+																<xs:maxInclusive value="999999999.9999"/>
+																<xs:fractionDigits value="4"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="TaxBill">
+														<xs:complexType>
+															<xs:sequence maxOccurs="14">
+																<xs:element name="Item">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="TaxID">
+																				<xs:annotation>
+																					<xs:documentation>唯一标识</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="1"/>
+																						<xs:maxLength value="50"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="TaxRate">
+																				<xs:annotation>
+																					<xs:documentation>税率</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:decimal">
+																						<xs:minInclusive value="0"/>
+																						<xs:maxInclusive value="999999999.9999"/>
+																						<xs:fractionDigits value="4"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="TaxPrice">
+																				<xs:annotation>
+																					<xs:documentation>完税价格</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:decimal">
+																						<xs:minInclusive value="0"/>
+																						<xs:maxInclusive value="999999999.9999"/>
+																						<xs:fractionDigits value="4"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="Price">
+																				<xs:annotation>
+																					<xs:documentation>进口税金额</xs:documentation>
+																				</xs:annotation>
+																				<!-- 该字段描述:发送方默认填0,接受方计算后，将数据回填该字段然后将报文返回给发送方-->
+																				<xs:simpleType>
+																					<xs:restriction base="xs:decimal">
+																						<xs:maxInclusive value="999999999.9999"/>
+																						<xs:minInclusive value="0"/>
+																						<xs:fractionDigits value="4"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

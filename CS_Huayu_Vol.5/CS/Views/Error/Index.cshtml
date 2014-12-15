@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>出错啦！！！</title>
+    <style type="text/css">
+        INPUT
+        {
+            font-size: 12px;
+        }
+        TD
+        {
+            font-size: 12px;
+        }
+        .p2
+        {
+            font-size: 12px;
+        }
+        .p6
+        {
+            font-size: 12px;
+            color: #1b6ad8;
+        }
+        A
+        {
+            color: #1b6ad8;
+            text-decoration: none;
+        }
+        A:hover
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p align="center">
+    </p>
+    <p align="center">
+    </p>
+    <table cellspacing="0" cellpadding="0" width="540" align="center" border="0">
+        <tbody>
+            <tr>
+                <td valign="top" height="270">
+                    <div align="center">
+                        <br>
+                        <img height="211" src="@Url.Content("~/images/Error/error.gif")" width="329"><br>
+                        <br>
+                        <font style="font-weight: bold">错误原因:</font> @Html.Raw(ViewData["errorMsg"].ToString())
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td height="5">
+                </td>
+                <tr>
+                    <td align="middle">
+                        <center>
+                            <table cellspacing="0" cellpadding="0" width="480" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="6">
+                                            <img height="26" src="@Url.Content("~/images/Error/left.gif")" width="7">
+                                        </td>
+                                        <td background="@Url.Content("~/images/Error/bg.gif")">
+                                            <div align="center">
+                                                <font class="p6"><a href="/Login/Index">返回登录页</a> </font>
+                                            </div>
+                                        </td>
+                                        <td width="7">
+                                            <img src="@Url.Content("~/images/Error/right.gif")" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <p align="center">
+    </p>
+    <p align="center">
+    </p>
+</body>
+</html>

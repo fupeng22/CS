@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Head>
+		<MessageID>CY_WBS_20140417103723748</MessageID>
+		<SenderID>0001</SenderID>
+		<ReceiverID>022</ReceiverID>
+		<SendTime>20140417103723748</SendTime>
+	</Head>
+	<Body>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108350976</swbSerialNum>
+			<swbCheckFlag_Custom>2</swbCheckFlag_Custom>
+		</Status>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108350959</swbSerialNum>
+			<swbCheckFlag_Custom>2</swbCheckFlag_Custom>
+		</Status>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108350940</swbSerialNum>
+			<swbCheckFlag_Custom>2</swbCheckFlag_Custom>
+		</Status>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108352387</swbSerialNum>
+			<swbCheckFlag_Custom>2</swbCheckFlag_Custom>
+		</Status>
+	</Body>
+</Manifest>

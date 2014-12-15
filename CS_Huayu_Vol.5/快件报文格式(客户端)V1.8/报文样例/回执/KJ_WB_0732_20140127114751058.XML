@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReturnReceipt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Head>
+    <MessageID>KJ_WB_0732_20140127114751058</MessageID>
+    <BusinessType>200</BusinessType>
+    <Sender>0732</Sender>
+    <ReceiverID>0000</ReceiverID>
+    <SendTime>20140127114751</SendTime>
+    <Version>1.0</Version>
+  </Head>
+  <Body>
+    <Operation>1</Operation>
+    <FileName>KJ_WB_0732_20140127234716466</FileName>
+  </Body>
+</ReturnReceipt>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Head>
+		<MessageID>FX_WBS_20140420113723748</MessageID>
+		<SenderID>0001</SenderID>
+		<ReceiverID>022</ReceiverID>
+		<SendTime>20140420113723748</SendTime>
+	</Head>
+	<Body>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108350976</swbSerialNum>
+			<swbReleaseFlag>2</swbReleaseFlag>
+		</Status>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108350959</swbSerialNum>
+			<swbReleaseFlag>2</swbReleaseFlag>
+		</Status>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108350940</swbSerialNum>
+			<swbReleaseFlag>2</swbReleaseFlag>
+		</Status>
+		<Status>
+			<wbSerialNum>618-7352</wbSerialNum>
+			<swbSerialNum>13108352387</swbSerialNum>
+			<swbReleaseFlag>2</swbReleaseFlag>
+		</Status>
+	</Body>
+</Manifest>

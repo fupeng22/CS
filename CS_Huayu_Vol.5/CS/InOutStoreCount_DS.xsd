@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InOutStoreCount_DS" targetNamespace="http://tempuri.org/InOutStoreCount_DS.xsd" xmlns:mstns="http://tempuri.org/InOutStoreCount_DS.xsd" xmlns="http://tempuri.org/InOutStoreCount_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InOutStoreCount_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="InOutStoreCount_DS" msprop:Generator_UserDSName="InOutStoreCount_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wbSerialNum" msprop:Generator_ColumnVarNameInTable="columnwbSerialNum" msprop:Generator_ColumnPropNameInRow="wbSerialNum" msprop:Generator_ColumnPropNameInTable="wbSerialNumColumn" msprop:Generator_UserColumnName="wbSerialNum" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalNumber" msprop:Generator_ColumnVarNameInTable="columnwbTotalNumber" msprop:Generator_ColumnPropNameInRow="wbTotalNumber" msprop:Generator_ColumnPropNameInTable="wbTotalNumberColumn" msprop:Generator_UserColumnName="wbTotalNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalWeight" msprop:Generator_ColumnVarNameInTable="columnwbTotalWeight" msprop:Generator_ColumnPropNameInRow="wbTotalWeight" msprop:Generator_ColumnPropNameInTable="wbTotalWeightColumn" msprop:Generator_UserColumnName="wbTotalWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalNumber_Customize" msprop:Generator_ColumnVarNameInTable="columnwbTotalNumber_Customize" msprop:Generator_ColumnPropNameInRow="wbTotalNumber_Customize" msprop:Generator_ColumnPropNameInTable="wbTotalNumber_CustomizeColumn" msprop:Generator_UserColumnName="wbTotalNumber_Customize" type="xs:string" minOccurs="0" />
+              <xs:element name="wbTotalWeight_Customize" msprop:Generator_ColumnVarNameInTable="columnwbTotalWeight_Customize" msprop:Generator_ColumnPropNameInRow="wbTotalWeight_Customize" msprop:Generator_ColumnPropNameInTable="wbTotalWeight_CustomizeColumn" msprop:Generator_UserColumnName="wbTotalWeight_Customize" type="xs:string" minOccurs="0" />
+              <xs:element name="wbActualTotalWeight__Customize" msprop:Generator_ColumnVarNameInTable="columnwbActualTotalWeight__Customize" msprop:Generator_ColumnPropNameInRow="wbActualTotalWeight__Customize" msprop:Generator_ColumnPropNameInTable="wbActualTotalWeight__CustomizeColumn" msprop:Generator_UserColumnName="wbActualTotalWeight__Customize" type="xs:string" minOccurs="0" />
+              <xs:element name="wbCompany" msprop:Generator_ColumnVarNameInTable="columnwbCompany" msprop:Generator_ColumnPropNameInRow="wbCompany" msprop:Generator_ColumnPropNameInTable="wbCompanyColumn" msprop:Generator_UserColumnName="wbCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="wbStorageDate" msprop:Generator_ColumnVarNameInTable="columnwbStorageDate" msprop:Generator_ColumnPropNameInRow="wbStorageDate" msprop:Generator_ColumnPropNameInTable="wbStorageDateColumn" msprop:Generator_UserColumnName="wbStorageDate" type="xs:string" minOccurs="0" />
+              <xs:element name="wbStatus" msprop:Generator_ColumnVarNameInTable="columnwbStatus" msprop:Generator_ColumnPropNameInRow="wbStatus" msprop:Generator_ColumnPropNameInTable="wbStatusColumn" msprop:Generator_UserColumnName="wbStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="ForeStore_Count" msprop:Generator_ColumnVarNameInTable="columnForeStore_Count" msprop:Generator_ColumnPropNameInRow="ForeStore_Count" msprop:Generator_ColumnPropNameInTable="ForeStore_CountColumn" msprop:Generator_UserColumnName="ForeStore_Count" type="xs:string" minOccurs="0" />
+              <xs:element name="InStore_Count" msprop:Generator_ColumnVarNameInTable="columnInStore_Count" msprop:Generator_ColumnPropNameInRow="InStore_Count" msprop:Generator_ColumnPropNameInTable="InStore_CountColumn" msprop:Generator_UserColumnName="InStore_Count" type="xs:string" minOccurs="0" />
+              <xs:element name="OutStore_Count" msprop:Generator_ColumnVarNameInTable="columnOutStore_Count" msprop:Generator_ColumnPropNameInRow="OutStore_Count" msprop:Generator_ColumnPropNameInTable="OutStore_CountColumn" msprop:Generator_UserColumnName="OutStore_Count" type="xs:string" minOccurs="0" />
+              <xs:element name="wbID" msprop:Generator_ColumnVarNameInTable="columnwbID" msprop:Generator_ColumnPropNameInRow="wbID" msprop:Generator_ColumnPropNameInTable="wbIDColumn" msprop:Generator_UserColumnName="wbID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
